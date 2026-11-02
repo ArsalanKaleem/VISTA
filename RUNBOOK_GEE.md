@@ -8,7 +8,7 @@ in Google's queue after that.
 > (all 33 IDs resolve) and smoke5 (MAE 0.032) all passed, and wave 1 has been submitted. Asset
 > writes first returned 404, because the project's asset root did not exist yet. It became writable
 > about 7 minutes after the project was opened in the Code Editor, and then step 8 (upload-admin) went
-> through. The EE login on this PC is arsalanabbasi.here@gmail.com, so Drive exports land in that account's Drive.
+> through. Drive exports land in the Drive of the Google account that is signed in to Earth Engine on this PC.
 
 ## 0. Before you start
 
