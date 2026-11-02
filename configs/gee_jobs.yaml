@@ -1,0 +1,63 @@
+# Submission waves. `python -m gee.run wave <n> --dry-run` previews, drop --dry-run to submit.
+# Re-running a wave is safe: tasks already COMPLETED or READY/RUNNING are skipped (manifest).
+
+waves:
+  "1":
+    description: >-
+      TOMORROW (after check/verify-assets/smoke5/upload-admin). Zone-independent exports:
+      climate grids, settlement evidence, building centroids, pilot provisional settlements.
+    jobs:
+      - job: chirps_grid                 # 45 tasks, tiny GeoTIFFs (0.05 deg)
+      - job: era5_grid                   # 45 tasks, tiny GeoTIFFs (0.1 deg)
+      - job: grace_grid                  # 1 task, regional context only
+      - job: settlement_evidence         # 1 task, per-taluka evidence table
+      - job: provisional_settlements     # 6 tasks (asset + GeoJSON) for the 3 pilot talukas
+      - job: open_buildings_centroids    # 125 tasks (one per taluka); large CSVs in Drive
+
+  "2":
+    description: >-
+      PILOT zonal run (Day 26 test) on provisional zones of the 3 pilot talukas.
+      Prerequisite: scripts/make_zones.py on the provisional settlements, then
+      `python -m gee.run upload-zones data/village_inventory/zones/pilot_zones_v0.geojson zones/pilot_v0`.
+    jobs:
+      - {job: s2_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: landsat_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: s1_zonal, zones: zones/pilot_v0, years: [2022, 2022]}
+      - {job: dw_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: modis_vi_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: modis_lst_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: chirps_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: era5_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: jrc_zonal, zones: zones/pilot_v0, years: [2021, 2021]}
+      - {job: jrc_static_zonal, zones: zones/pilot_v0}
+      - {job: terrain_zonal, zones: zones/pilot_v0}
+      - {job: context_zonal, zones: zones/pilot_v0}
+
+  "3":
+    description: >-
+      PROVINCE run on the frozen inventory v1.0 (Days 28-39). Upload zones first:
+      `python -m gee.run upload-zones data/village_inventory/zones/zones_v1_0.parquet zones/v1_0`.
+      Submit in this order; S2 is split into two batches (Days 28-29).
+    jobs:
+      - {job: s2_zonal, zones: zones/v1_0, years: [2019, 2025]}          # batch 1 (Day 28)
+      - {job: s2_zonal, zones: zones/v1_0, years: [2017, 2018]}          # batch 2 (Day 29)
+      - {job: landsat_zonal, zones: zones/v1_0}                          # Day 31
+      - {job: landsat_season_zonal, zones: zones/v1_0}
+      - {job: s1_zonal, zones: zones/v1_0}                               # Day 32
+      - {job: dw_zonal, zones: zones/v1_0}                               # Day 33
+      - {job: modis_vi_zonal, zones: zones/v1_0, zone_types: [resource]} # Day 34: resource zone only
+      - {job: modis_lst_zonal, zones: zones/v1_0, zone_types: [resource]}
+      - {job: modis_et_zonal, zones: zones/v1_0, zone_types: [resource]}
+      - {job: chirps_zonal, zones: zones/v1_0}                           # Day 35
+      - {job: era5_zonal, zones: zones/v1_0}                             # Day 36
+      - {job: jrc_zonal, zones: zones/v1_0}                              # Day 37
+      - {job: jrc_static_zonal, zones: zones/v1_0}
+      - {job: terrain_zonal, zones: zones/v1_0}                          # Day 38
+      - {job: context_zonal, zones: zones/v1_0}                          # Day 39
+
+  "4":
+    description: Later and optional (Days 73, 92).
+    jobs:
+      - {job: embedding_zonal, zones: zones/v1_0, zone_types: [resource]}
+      - {job: chips, zones: chips/subset_v1}   # centroid points of the Day-9 chip subset
+      - {job: province_maps}
