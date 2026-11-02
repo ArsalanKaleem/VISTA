@@ -1,0 +1,165 @@
+# VISTA-Sindh Earth Engine configuration (Days 6, 8, 26-39).
+# Edit the two YOUR_CLOUD_PROJECT_ID values after creating the Cloud project, then run
+#   python -m gee.run check
+# Dataset IDs are hypotheses until `python -m gee.run verify-assets` (Day 8) resolves them;
+# the first existing candidate is written to configs/resolved_assets.json and used by all jobs.
+
+gee:
+  project: vista-sindh
+  asset_root: projects/vista-sindh/assets/vista
+  drive_folder: vista_gee            # Drive exports land in My Drive/<folder>/<job>
+  gcs_bucket: null                    # set to export to Cloud Storage instead of Drive
+  max_queued_tasks: 300               # throttle: submitter waits while READY+RUNNING >= this
+  submit_pause_s: 1.0                 # pause between task submissions
+  submit_retries: 4                   # exponential backoff on submission errors
+  manifest: experiments/gee_task_manifest.csv
+
+aoi:
+  # Fallback bbox (lon_min, lat_min, lon_max, lat_max); real boundaries come from geoBoundaries.
+  sindh_bbox: [66.4, 23.6, 71.2, 28.6]
+  local_admin_dir: data/village_inventory/admin    # written by scripts/prepare_admin.py
+  assets:                                          # names under gee.asset_root
+    sindh: admin/sindh_adm1
+    districts: admin/sindh_adm2
+    talukas: admin/sindh_adm3
+  name_field: shapeName
+  # Day 14 pilots: desert, canal plain, delta. Matched case-insensitively against name_field.
+  pilot_talukas: [MITHI, SANGHAR, SHAH BUNDER]
+  # Day 10 smoke-test points (lon, lat). Hand-picked rural locations; adjust after a visual check.
+  smoke_points:
+    thar_mithi:       [69.92, 24.80]
+    badin_coast:      [68.70, 24.30]
+    dadu_canal:       [67.70, 26.80]
+    jacobabad:        [68.35, 28.20]
+    khairpur:         [68.85, 27.45]
+
+periods:
+  study: [2001, 2025]
+  train: [2001, 2017]
+  validation: [2018, 2019]
+  test: [2020, 2025]          # locked (Day 5)
+  climate_baseline: [1981, 2010]
+  seasons:                    # modelling convention (Section 4.3)
+    rabi: [11, 12, 1, 2, 3, 4]
+    kharif: [5, 6, 7, 8, 9, 10]
+
+zones:
+  id_field: vid
+  zone_field: zone            # core | resource | connectivity
+  chunk_field: chunk          # integer assigned at upload (sorted by vid)
+  base_chunk_size: 250        # features per chunk at upload
+  simplify_m: 5               # Day 26: simplify to 5 m before upload
+  tile_scale: 8
+
+# Candidate IDs per dataset (first existing wins). Appendix B of the plan.
+datasets:
+  s2_sr: [COPERNICUS/S2_SR_HARMONIZED]
+  cloud_score_plus: [GOOGLE/CLOUD_SCORE_PLUS/V1/S2_HARMONIZED]
+  s2_cloud_prob: [COPERNICUS/S2_CLOUD_PROBABILITY]
+  s1_grd: [COPERNICUS/S1_GRD]
+  landsat_l5: [LANDSAT/LT05/C02/T1_L2]
+  landsat_l7: [LANDSAT/LE07/C02/T1_L2]
+  landsat_l8: [LANDSAT/LC08/C02/T1_L2]
+  landsat_l9: [LANDSAT/LC09/C02/T1_L2]
+  dynamic_world: [GOOGLE/DYNAMICWORLD/V1]
+  mod13q1: [MODIS/061/MOD13Q1]
+  mod11a2: [MODIS/061/MOD11A2]
+  myd11a2: [MODIS/061/MYD11A2]
+  mod16a2gf: [MODIS/061/MOD16A2GF]
+  mod17a2hgf: [MODIS/061/MOD17A2HGF]
+  jrc_monthly: [JRC/GSW1_4/MonthlyHistory]
+  jrc_global: [JRC/GSW1_4/GlobalSurfaceWater]
+  jrc_yearly: [JRC/GSW1_4/YearlyHistory]
+  chirps_daily: [UCSB-CHG/CHIRPS/DAILY]
+  era5_land_monthly: [ECMWF/ERA5_LAND/MONTHLY_AGGR]
+  era5_land_daily: [ECMWF/ERA5_LAND/DAILY_AGGR]
+  grace: [NASA/GRACE/MASS_GRIDS_V04/LAND, NASA/GRACE/MASS_GRIDS_V03/LAND, NASA/GRACE/MASS_GRACE_LAND_V04]
+  srtm: [USGS/SRTMGL1_003]
+  glo30: [COPERNICUS/DEM/GLO30]
+  merit_hydro: [MERIT/Hydro/v1_0_1]
+  ghsl_pop: [JRC/GHSL/P2023A/GHS_POP]
+  ghsl_built_s: [JRC/GHSL/P2023A/GHS_BUILT_S]
+  ghsl_smod: [JRC/GHSL/P2023A/GHS_SMOD_V2-0, JRC/GHSL/P2023A/GHS_SMOD]
+  worldpop: [WorldPop/GP/100m/pop]
+  embeddings: [GOOGLE/SATELLITE_EMBEDDING/V1/ANNUAL]
+  viirs_annual: [NOAA/VIIRS/DNB/ANNUAL_V22, NOAA/VIIRS/DNB/ANNUAL_V21]
+  accessibility: [projects/malariaatlasproject/assets/accessibility/accessibility_to_cities/2015_v1_0, Oxford/MAP/accessibility_to_cities_2015_v1_0]
+  open_buildings: [GOOGLE/Research/open-buildings/v3/polygons]
+  fao_gaul_l1: [FAO/GAUL/2015/level1]
+
+# Product parameters (Days 27-39). Thresholds are parameters, recorded in DECISIONS.csv when tuned.
+products:
+  s2:
+    years: [2017, 2025]
+    scale: 10
+    chunk_group: 4              # 4 x 250 = 1000 features per task
+    cs_threshold: 0.6           # Cloud Score+ cs_cdf; tune per ecoregion (Day 27)
+    cloud_prob_max: 40          # fallback s2cloudless
+  landsat:
+    years: [2000, 2025]
+    scale: 30
+    chunk_group: 4
+    harmonise_to_oli: true      # Roy et al. (2016) OLS coefficients
+  s1:
+    years: [2015, 2025]
+    scale: 20
+    chunk_group: 4
+    orbit_pass: DESCENDING      # one geometry per area (Day 32); confirm from verify-assets counts
+    speckle_radius_m: 50
+    otsu_bounds_db: [-26, -14]  # clamp for per-month Otsu threshold on VH
+    fallback_threshold_db: -20
+    change_db: -3               # flood requires VH drop vs dry-season baseline
+    dry_months: [2, 3, 4]
+    permanent_water_occurrence: 90
+  dw:
+    years: [2016, 2025]
+    scale: 10
+    chunk_group: 4
+    classes: [water, trees, grass, flooded_vegetation, crops, shrub_and_scrub, built, bare]
+  modis:
+    years: [2000, 2025]
+    chunk_group: 8
+    vi_scale: 250
+    lst_scale: 1000
+    et_scale: 500
+  chirps:
+    years: [1981, 2025]
+    chunk_group: 20
+    wet_day_mm: 1.0
+  era5:
+    years: [1981, 2025]
+    chunk_group: 20
+    bands:
+      t2m: temperature_2m
+      skt: skin_temperature
+      tp: total_precipitation_sum
+      pev: potential_evaporation_sum
+      evap: total_evaporation_sum
+      swvl1: volumetric_soil_water_layer_1
+      swvl2: volumetric_soil_water_layer_2
+      swvl3: volumetric_soil_water_layer_3
+      sro: surface_runoff_sum
+  jrc:
+    years: [2000, 2021]
+    scale: 30
+    chunk_group: 8
+  terrain:
+    scale: 30
+    chunk_group: 8
+  context:
+    scale: 100
+    chunk_group: 8
+    ghsl_epochs: [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025, 2030]   # 2025/2030 = projections
+    worldpop_years: [2000, 2020]
+    viirs_years: [2013, 2024]
+  embeddings:                  # optional (cut list item 1)
+    years: [2017, 2024]
+    chunk_group: 4
+  settlements:
+    open_buildings_min_conf: 0.65
+    raster_scale: 10
+    dilate_m: 40                # Day 14: buffer 40 m, dissolve
+    min_buildings: 5
+  chips:
+    size_px: 32
+    scale: 10
