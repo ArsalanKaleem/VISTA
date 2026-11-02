@@ -1,0 +1,19 @@
+# data stay out of Git (manifest.csv + sha256 instead, Section 9.4)
+data/raw/**
+!data/raw/manifest.csv
+data/processed/**
+data/satellite/**
+data/climate/**
+data/reference/**
+documentation/literature/**
+data/village_inventory/settlements/**
+data/village_inventory/raw/**
+data/village_inventory/zones/**
+outputs/predictions/**
+*.part
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+mlruns/
+.env
+configs/resolved_assets.json
