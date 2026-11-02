@@ -1,0 +1,53 @@
+# VISTA-Sindh environment (Day 6). Python 3.11 as in the plan.
+#   conda env create -f environment.yml && conda activate vista
+# Needs ~6 GB with PyTorch; the GEE-only subset is requirements-gee.txt (~200 MB).
+name: vista
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - earthengine-api
+  - geemap
+  - pyyaml
+  - geopandas>=1.0
+  - shapely>=2.0
+  - pyogrio
+  - pyarrow
+  - rasterio
+  - rioxarray
+  - xarray
+  - zarr
+  - duckdb
+  - h3-py>=4
+  - osmium-tool
+  - pyosmium
+  - osmnx
+  - rapidfuzz
+  - pdfplumber
+  - camelot-py
+  - pandas
+  - numpy
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - xgboost
+  - optuna
+  - mlflow
+  - shap
+  - libpysal
+  - esda
+  - scikit-gstat
+  - lifelines
+  - ruptures
+  - tslearn
+  - matplotlib
+  - cartopy
+  - folium
+  - pytest
+  - pre-commit
+  - black
+  - ruff
+  - nbstripout
+  - pip
+  - pip:
+      - torch
+      - torch-geometric

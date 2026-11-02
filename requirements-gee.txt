@@ -1,0 +1,12 @@
+# Minimal set to run everything under gee/ tomorrow:  pip install -r requirements-gee.txt
+earthengine-api>=1.0
+pyyaml
+requests
+# for scripts/make_zones.py and scripts/gee_to_long.py
+geopandas>=1.0
+shapely>=2.0
+pyogrio
+pandas
+pyarrow
+h3>=4
+pytest
