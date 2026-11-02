@@ -1,0 +1,5 @@
+id,date,decision,alternatives,reason,day,evidence
+D001,2026-11-01,Earth Engine via Python API with a job registry (gee/jobs.py) and task manifest,"Code Editor JS scripts; geemap notebooks",Reproducible re-extraction (level 2) and resumable batch submission,6,gee/
+D002,2026-11-01,Talukas from geoBoundaries ADM3 (125 features) as the provisional admin spine,"geoBoundaries ADM2; OCHA COD-AB",geoBoundaries ADM2 lacks Larkana and uses pre-2017 districts; replace with OCHA COD-AB on Day 12,12,data/village_inventory/admin/sindh_admin_names.csv
+D003,2026-11-01,Climate grids (CHIRPS/ERA5-Land) exported as rasters before the inventory exists,Zonal only after Day 25,Coarse cells are shared by many villages; cell-id join locally; zonal variant kept,35-36,configs/gee_jobs.yaml wave 1
+D004,2026-11-01,"Wave 1 submitted with local GeoJSON admin layers embedded in tasks instead of uploaded assets","Wait for asset access; upload-admin first","Asset root not writable on day of submission; admin() falls back to data/village_inventory/admin/*_simplified.geojson, so outputs are identical; provisional settlements go to Drive GeoJSON only",6,documentation/compute.md
