@@ -203,9 +203,9 @@ zonal_job("modis_lst_zonal", "34, 46", "MODIS MOD11A2/MYD11A2 day/night LST mont
 zonal_job("modis_et_zonal", "34", "MODIS ET/PET/GPP gap-filled (NON-CAUSAL, descriptive only)",
           "modis", coarse.modis_et_stack, _b(coarse.modis_et_bands), "et_scale")
 zonal_job("chirps_zonal", "35", "CHIRPS monthly precip/wet days/RX1/RX5/dry spell per zone",
-          "chirps", coarse.chirps_year_stack, _b(coarse.chirps_bands), 5566, stats=("mean", "count"))
+          "chirps", coarse.chirps_year_stack, _b(coarse.chirps_bands), "zonal_scale", stats=("mean", "count"))
 zonal_job("era5_zonal", "36", "ERA5-Land monthly variables + tmax/tmin per zone",
-          "era5", coarse.era5_year_stack, coarse.era5_bands, 11132, stats=("mean", "count"))
+          "era5", coarse.era5_year_stack, coarse.era5_bands, "zonal_scale", stats=("mean", "count"))
 zonal_job("jrc_zonal", "37", "JRC GSW monthly water fraction + valid share 2000-2021",
           "jrc", landcover.jrc_year_stack, _b(landcover.jrc_bands), "scale", stats=("mean", "count"))
 zonal_job("jrc_static_zonal", "37, 47", "JRC GSW occurrence/recurrence/seasonality/max extent/change + permanent water share",

@@ -125,10 +125,12 @@ products:
   chirps:
     years: [1981, 2025]
     chunk_group: 20
+    zonal_scale: 100            # sample the 5.5 km grid at 100 m: native scale leaves small zones empty
     wet_day_mm: 1.0
   era5:
     years: [1981, 2025]
     chunk_group: 20
+    zonal_scale: 100            # same for the 11 km grid
     bands:
       t2m: temperature_2m
       skt: skin_temperature
