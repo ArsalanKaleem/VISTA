@@ -64,6 +64,23 @@ def selectors(cfg: dict, band_names: list[str], stats: list[str]) -> list[str]:
             *[f"{b}_{s}" for b in band_names for s in stats]]
 
 
+SPLIT_ERRORS = ("timed out", "memory", "too many", "capacity")
+
+
+def split_failed(submitter, desc_fn: Callable[[int, int], str], lo: int, hi: int) -> list[tuple[int, int]]:
+    """Replace a chunk group whose last task failed on size (timeout/memory) by its halves, recursively.
+
+    Groups that succeeded or never ran are kept as they are, so re-running a wave only adds the halves.
+    """
+    prev = submitter.manifest.latest(desc_fn(lo, hi))
+    too_big = (prev is not None and prev["state"].startswith("FAILED") and hi > lo
+               and any(e in (prev.get("error") or "").lower() for e in SPLIT_ERRORS))
+    if not too_big:
+        return [(lo, hi)]
+    mid = (lo + hi) // 2
+    return split_failed(submitter, desc_fn, lo, mid) + split_failed(submitter, desc_fn, mid + 1, hi)
+
+
 def submit_zonal(cfg: dict, submitter, *, job: str, product: str, zones_name: str,
                  image_fn: Callable[[int | None, ee.Geometry], ee.Image],
                  band_fn: Callable[[int | None], list[str]], years: list[int | None],
@@ -85,14 +102,20 @@ def submit_zonal(cfg: dict, submitter, *, job: str, product: str, zones_name: st
     for year in years:
         bands = band_fn(year)
         sel = selectors(cfg, bands, stats)
-        for lo, hi in ranges:
+        ytag = "static" if year is None else str(year)
+
+        def desc_fn(lo: int, hi: int) -> str:
+            return f"{product}_{zones_name.split('/')[-1]}_{ytag}_c{lo:04d}-{hi:04d}"
+        year_ranges = [r for lo, hi in ranges for r in split_failed(submitter, desc_fn, lo, hi)]
+        if len(year_ranges) > len(ranges):
+            print(f"  {product} {ytag}: {len(year_ranges) - len(ranges)} extra task(s) from splitting timed-out groups")
+        for lo, hi in year_ranges:
             sub = chunk(cfg, fc, lo, hi)
             region = sub.geometry(100).bounds(100)
             img = image_fn(year, region)
             table = img.reduceRegions(collection=sub, reducer=red, scale=scale,
                                       tileScale=cfg["zones"]["tile_scale"])
-            ytag = "static" if year is None else str(year)
-            desc = f"{product}_{zones_name.split('/')[-1]}_{ytag}_c{lo:04d}-{hi:04d}"
+            desc = desc_fn(lo, hi)
             task = export_table(cfg, table, desc, subfolder=product, selectors=sel)
             submitter.submit(task, job=job, product=product, year=ytag, chunk=f"{lo}-{hi}",
                              destination=f"{product}/{desc}.csv",
