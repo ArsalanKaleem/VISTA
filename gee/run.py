@@ -6,7 +6,7 @@
     python -m gee.run upload-admin                # Sindh province/district/taluka assets
     python -m gee.run upload-zones FILE NAME      # village zones (vid, zone) -> <asset_root>/<NAME>/part_*
     python -m gee.run list-jobs
-    python -m gee.run submit JOB [--zones NAME] [--years A B] [--regions ...] [--dry-run] [--limit N]
+    python -m gee.run submit JOB [--zones NAME] [--years A B] [--regions ...] [--dry-run] [--limit N] [--force]
     python -m gee.run wave N [--dry-run]          # every job of wave N in configs/gee_jobs.yaml
     python -m gee.run status [--watch MINUTES]    # refresh manifest from Earth Engine
     python -m gee.run retry-failed [--dry-run]    # resubmit FAILED/CANCELLED jobs by re-running their job spec
@@ -39,11 +39,11 @@ def cmd_list_jobs(cfg, args):
         print(f"{name:26s} {j.day:14s} {'yes' if j.needs_zones else 'no':7s} {j.summary}")
 
 
-def run_job(cfg, name: str, ctx, dry_run: bool, limit: int | None) -> Submitter:
+def run_job(cfg, name: str, ctx, dry_run: bool, limit: int | None, force: bool = False) -> Submitter:
     from .jobs import JOBS
     if name not in JOBS:
         raise SystemExit(f"unknown job {name}; see `list-jobs`")
-    sub = Submitter(cfg, dry_run=dry_run, limit=limit)
+    sub = Submitter(cfg, dry_run=dry_run, limit=limit, force=force)
     print(f"[{name}] day {JOBS[name].day}: {JOBS[name].summary}")
     JOBS[name].fn(cfg, ctx, sub)
     print(f"[{name}] submitted {sub.submitted}, skipped (done/active) {sub.skipped}")
@@ -51,7 +51,7 @@ def run_job(cfg, name: str, ctx, dry_run: bool, limit: int | None) -> Submitter:
 
 
 def cmd_submit(cfg, args):
-    run_job(cfg, args.job, _ctx(args), args.dry_run, args.limit)
+    run_job(cfg, args.job, _ctx(args), args.dry_run, args.limit, force=args.force)
 
 
 def cmd_wave(cfg, args):
@@ -139,6 +139,7 @@ def main(argv=None):
     s.add_argument("--regions", nargs="*")
     s.add_argument("--dry-run", action="store_true")
     s.add_argument("--limit", type=int)
+    s.add_argument("--force", action="store_true", help="resubmit tasks that already succeeded (after a fix)")
     w = sp.add_parser("wave")
     w.add_argument("n")
     w.add_argument("--dry-run", action="store_true")

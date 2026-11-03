@@ -85,8 +85,9 @@ def active_task_count() -> int:
 class Submitter:
     """Wraps task.start() with dedup, queue throttling and exponential backoff."""
 
-    def __init__(self, cfg: dict, dry_run: bool = False, limit: int | None = None):
-        self.cfg, self.dry_run, self.limit = cfg, dry_run, limit
+    def __init__(self, cfg: dict, dry_run: bool = False, limit: int | None = None, force: bool = False):
+        # force: resubmit even if the last run SUCCEEDED (after a method fix); active tasks are still skipped
+        self.cfg, self.dry_run, self.limit, self.force = cfg, dry_run, limit, force
         self.manifest = Manifest(cfg)
         self.submitted = 0
         self.skipped = 0
@@ -110,7 +111,7 @@ class Submitter:
                destination: str = "", params: dict | None = None) -> bool:
         desc = task.config.get("description") or task.config.get("state", {}).get("description", "")
         prev = self.manifest.latest(desc)
-        if prev and (prev["state"] in DONE or prev["state"] in ACTIVE):
+        if prev and ((prev["state"] in DONE and not self.force) or prev["state"] in ACTIVE):
             self.skipped += 1
             return False
         if self.limit is not None and self.submitted >= self.limit:
