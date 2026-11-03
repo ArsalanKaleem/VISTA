@@ -188,6 +188,6 @@ later. They use the same commands; see `configs/gee_jobs.yaml`.
 | `ee.Initialize failed` | not authenticated / project not registered | step 1.3 and `earthengine authenticate` |
 | chirps_grid task "computation timed out" or "memory" | RX5 nested 5-day sums | lower to one task per half-year, or drop rx5 and derive it locally |
 | provisional_settlements "too many pixels"/memory | large taluka at 10 m | `submit provisional_settlements --regions <smaller taluka>`, or set `settlements.raster_scale: 20` |
-| zonal task "memory limit exceeded" | chunk too large | lower `chunk_group` for that product (e.g. s2 4 -> 2) |
+| zonal task "Computation timed out" / "memory limit exceeded" | chunk group too large | re-run the same `wave`/`submit`: failed groups are split into halves automatically (and halved again if those fail). For a whole new run, lower `chunk_group` (e.g. s2 4 -> 2) |
 | `Dictionary.get: Dictionary does not contain key` in s1 | month with images but no pixels in the region | report it; set the month's threshold to the fallback |
 | an `open_buildings` CSV is very large | dense taluka | normal; buildings on taluka borders appear twice, so dedupe by `plus_code` locally |
