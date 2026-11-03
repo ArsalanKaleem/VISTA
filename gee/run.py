@@ -68,13 +68,35 @@ def cmd_wave(cfg, args):
             print(f"  !! {spec['job']}: {exc}")
 
 
+def _was_split(man, r) -> bool:
+    """True if a zonal group was resubmitted as smaller chunk ranges (see zonal.split_failed)."""
+    try:
+        lo, hi = map(int, r["chunk"].split("-"))
+    except ValueError:
+        return False
+    for o in man.rows:
+        if o is r or o["job"] != r["job"] or o["year"] != r["year"]:
+            continue
+        try:
+            a, b = map(int, o["chunk"].split("-"))
+        except ValueError:
+            continue
+        if lo <= a <= b <= hi and (a, b) != (lo, hi):
+            return True
+    return False
+
+
 def cmd_status(cfg, args):
     while True:
         counts = Manifest(cfg).refresh()
         print(time.strftime("%H:%M:%S"), dict(sorted(counts.items())))
-        failed = [r for r in Manifest(cfg).rows if r["state"] in ("FAILED", "SUBMIT_FAILED")]
+        man = Manifest(cfg)
+        # hide failures a later resubmission of the same description superseded
+        failed = [r for r in man.rows if r["state"] in ("FAILED", "SUBMIT_FAILED")
+                  and man.latest(r["description"]) is r]
         for r in failed[-10:]:
-            print(f"  FAILED {r['description']}: {r['error'][:150]}")
+            note = "  [split into smaller tasks]" if _was_split(man, r) else ""
+            print(f"  FAILED {r['description']}: {r['error'][:150]}{note}")
         if not args.watch:
             break
         time.sleep(args.watch * 60)
