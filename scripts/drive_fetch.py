@@ -125,7 +125,11 @@ def main() -> int:
         return 1
     args.dest.mkdir(parents=True, exist_ok=True)
     n = 0
-    for f in files_in(ids, token):
+    # a re-exported task leaves two Drive files with the same name: keep only the newest
+    newest = {}
+    for f in sorted(files_in(ids, token), key=lambda f: f.get("modifiedTime", "")):
+        newest[f["name"]] = f
+    for f in newest.values():
         if args.pattern not in f["name"]:
             continue
         dest = args.dest / f["name"]
