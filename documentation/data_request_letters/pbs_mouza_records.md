@@ -1,7 +1,6 @@
-# DRAFT, not sent. Data request: PBS Mouza Census 2020, Sindh record-level data
+# Data request: PBS Mouza Census 2020, Sindh record-level data
 
-Status: draft written 2026-11-06. To be reviewed, signed and sent by the project author, then logged
-in `documentation/data_request_letters/log.csv`.
+Status: draft written 2026-11-06; saved as a Gmail draft 2026-11-07 with affiliation added; not yet sent.
 
 To: Agricultural Census Wing, Pakistan Bureau of Statistics, Gurumangat Road, Gulberg-III, Lahore
 (e-mail and phone as printed in the provincial report)
@@ -26,4 +25,5 @@ agreement and to share the resulting village-level indicators with PBS.
 
 Yours sincerely,
 
-[name, affiliation, contact]
+Arsalan Kaleem
+Independent researcher, VISTA-Sindh project
