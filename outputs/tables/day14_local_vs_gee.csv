@@ -1,0 +1,4 @@
+taluka,buildings,local_clusters,gee_clusters,local_buildings_in_clusters,gee_buildings_in_clusters,local_area_km2,gee_area_km2,area_iou,gee_clusters_with_1_local,gee_clusters_with_0_local,gee_clusters_split_into_2plus
+MITHI,298397,2038,1999,279060,279391,227.81,240.69,0.943,1909,29,61
+SANGHAR,190006,5241,5002,180686,181424,221.27,244.38,0.902,4733,32,237
+SHAH_BUNDER,51655,1318,1244,48932,49150,57.4,64.49,0.884,1173,8,63
