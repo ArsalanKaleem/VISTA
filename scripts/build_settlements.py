@@ -3,6 +3,7 @@
     python scripts/build_settlements.py pilot        # local vs GEE provisional polygons (3 pilots)
     python scripts/build_settlements.py sensitivity  # dilate_m x min_buildings grid on the pilots
     python scripts/build_settlements.py province     # all of Sindh -> settlements_v0.parquet
+    python scripts/build_settlements.py counts       # per-taluka counts from the saved parquet
 
 Inputs: data/village_inventory/raw/footprints/open_buildings/*.csv (lon, lat, area_m2, confidence,
 plus_code; confidence >= 0.65 already applied in Earth Engine). Talukas overlap at their edges, so
@@ -116,6 +117,32 @@ def cmd_sensitivity(_):
     print(out.pivot_table(index=["dilate_m"], columns=["taluka", "min_buildings"], values="ratio_to_pbs").to_string())
 
 
+def per_taluka(cl: pd.DataFrame) -> pd.DataFrame:
+    """Counts per OCHA tehsil vs PBS 2020. Clusters outside every tehsil are one 'outside' row."""
+    per = cl.assign(adm3_pcode=cl.adm3_pcode.fillna("outside")).groupby(
+        ["adm2_name", "adm3_pcode", "adm3_name"], dropna=False).agg(
+        clusters=("cluster", "size"), villages=("village_tier", "nunique"), buildings=("n_buildings", "sum"),
+        median_buildings=("n_buildings", "median"), largest_cluster=("n_buildings", "max"),
+        area_km2=("area_m2", lambda a: a.sum() / 1e6)).reset_index()
+    pbs = pbs_settlements()
+    pbs = pbs[pbs.ocha_adm3_pcode.notna()][["ocha_adm3_pcode", "pbs_taluka", "settlements_total",
+                                            "rural_populated_mouzas"]]
+    per = per.merge(pbs, left_on="adm3_pcode", right_on="ocha_adm3_pcode", how="left").drop(columns="ocha_adm3_pcode")
+    per["ratio_to_pbs"] = (per.clusters / per.settlements_total).round(2)
+    per["village_ratio_to_pbs"] = (per.villages / per.settlements_total).round(2)
+    per.round(3).to_csv(SET / "settlement_counts_by_taluka.csv", index=False)
+    return per
+
+
+def cmd_counts(_):
+    cl = gpd.read_parquet(SET / "settlements_v0.parquet").to_crs(CRS)
+    per = per_taluka(cl)
+    r = per[per.settlements_total.notna()]
+    print(f"{len(per)} rows; clusters {per.clusters.sum():,}, villages {cl.village_tier.nunique():,}, "
+          f"buildings {per.buildings.sum():,}; PBS settlements matched {r.settlements_total.sum():,.0f}")
+    print(r[["ratio_to_pbs", "village_ratio_to_pbs"]].describe().round(2).to_string())
+
+
 def cmd_province(args):
     t0 = time.time()
     files = sorted(OB.glob("open_buildings_*.csv"))
@@ -159,14 +186,7 @@ def cmd_province(args):
     out = SET / "settlements_v0.parquet"
     cl.drop(columns=["x", "y"]).to_crs(4326).to_parquet(out)
     pd.DataFrame([qc]).to_csv(SET / "qc_topology.csv", index=False)
-    per = cl.groupby(["adm2_name", "adm3_pcode", "adm3_name"], dropna=False).agg(
-        clusters=("cluster", "size"), villages=("village_tier", "nunique"), buildings=("n_buildings", "sum"),
-        median_buildings=("n_buildings", "median"), area_km2=("area_m2", lambda a: a.sum() / 1e6)).reset_index()
-    pbs = pbs_settlements()[["ocha_adm3_pcode", "pbs_taluka", "settlements_total", "rural_populated_mouzas"]]
-    per = per.merge(pbs, left_on="adm3_pcode", right_on="ocha_adm3_pcode", how="left").drop(columns="ocha_adm3_pcode")
-    per["ratio_to_pbs"] = (per.clusters / per.settlements_total).round(2)
-    per["village_ratio_to_pbs"] = (per.villages / per.settlements_total).round(2)
-    per.round(3).to_csv(SET / "settlement_counts_by_taluka.csv", index=False)
+    per_taluka(cl)
     print(pd.DataFrame([qc]).T.to_string())
     print(f"wrote {out} ({out.stat().st_size / 2**20:.0f} MB) in {time.time() - t0:.0f} s")
 
@@ -176,12 +196,13 @@ def main() -> int:
     sub = ap.add_subparsers(dest="cmd", required=True)
     sub.add_parser("pilot")
     sub.add_parser("sensitivity")
+    sub.add_parser("counts")
     p = sub.add_parser("province")
     p.add_argument("--dilate-m", type=float, default=40.0)
     p.add_argument("--min-buildings", type=int, default=5)
     p.add_argument("--village-dilate-m", type=float, default=150.0)
     args = ap.parse_args()
-    {"pilot": cmd_pilot, "sensitivity": cmd_sensitivity, "province": cmd_province}[args.cmd](args)
+    {"pilot": cmd_pilot, "sensitivity": cmd_sensitivity, "province": cmd_province, "counts": cmd_counts}[args.cmd](args)
     return 0
 
 
