@@ -1,6 +1,6 @@
 # Data request: PBS Mouza Census 2020, Sindh record-level data
 
-Status: draft written 2026-11-06; saved as a Gmail draft 2026-11-07 with affiliation added; not yet sent.
+Status: sent by e-mail on 2026-11-07 (Gmail thread 1a1b2a4268f48eff). Awaiting reply.
 
 To: Agricultural Census Wing, Pakistan Bureau of Statistics, Gurumangat Road, Gulberg-III, Lahore
 (e-mail and phone as printed in the provincial report)
