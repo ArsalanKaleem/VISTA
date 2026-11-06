@@ -99,9 +99,11 @@ def cmd_sensitivity(_):
         df = df[inside.values].reset_index(drop=True)
         p = pbs.loc[pcode]
         for d in (20, 40, 60, 100, 150, 250):
+            t = time.time()
+            # components do not depend on min_buildings: cluster once, then filter
+            _, all_cl = run(df, Params(dilate_m=d, min_buildings=1), polygons=False)
             for mb in (3, 5, 10, 20, 50):
-                t = time.time()
-                _, cl = run(df, Params(dilate_m=d, min_buildings=mb), polygons=False)
+                cl = all_cl[all_cl.n_buildings >= mb]
                 rows.append({"taluka": tag, "ocha_pcode": pcode, "dilate_m": d, "min_buildings": mb,
                              "buildings": len(df), "clusters": len(cl),
                              "share_buildings_clustered": round(cl.n_buildings.sum() / len(df), 3),
@@ -122,6 +124,17 @@ def cmd_province(args):
     prm = Params(dilate_m=args.dilate_m, min_buildings=args.min_buildings)
     df, cl = run(df, prm, polygons=True)
     print(f"{len(cl):,} clusters >= {prm.min_buildings} buildings ({time.time() - t0:.0f} s)")
+    # village tier (Day 14 two-tier definition): hamlets merged at a wider dilation. A hamlet is
+    # connected at 40 m, hence at any wider dilation, so all its buildings share one village id.
+    vmember, _ = cluster(df.x.values, df.y.values, Params(dilate_m=args.village_dilate_m, min_buildings=1),
+                         polygons=False)
+    hv = pd.Series(vmember).groupby(df.cluster.values).first().drop(-1, errors="ignore")
+    cl["village_tier"] = cl.cluster.map(hv)
+    vsize = cl.groupby("village_tier").n_buildings.transform("sum")
+    cl["village_tier"] = pd.factorize(cl.village_tier, sort=True)[0]
+    cl["village_tier_buildings"] = vsize
+    cl["village_tier_hamlets"] = cl.groupby("village_tier").cluster.transform("size")
+    print(f"village tier ({args.village_dilate_m:g} m): {cl.village_tier.nunique():,} villages")
     # admin attributes from the OCHA spine, by cluster centroid (building-weighted)
     o3 = gpd.read_file(ADMIN / "admin_boundaries.gpkg", layer="ocha_adm3").to_crs(CRS)
     pts = gpd.GeoDataFrame(cl[["cluster"]], geometry=gpd.points_from_xy(cl.x, cl.y), crs=CRS)
@@ -147,11 +160,12 @@ def cmd_province(args):
     cl.drop(columns=["x", "y"]).to_crs(4326).to_parquet(out)
     pd.DataFrame([qc]).to_csv(SET / "qc_topology.csv", index=False)
     per = cl.groupby(["adm2_name", "adm3_pcode", "adm3_name"], dropna=False).agg(
-        clusters=("cluster", "size"), buildings=("n_buildings", "sum"),
+        clusters=("cluster", "size"), villages=("village_tier", "nunique"), buildings=("n_buildings", "sum"),
         median_buildings=("n_buildings", "median"), area_km2=("area_m2", lambda a: a.sum() / 1e6)).reset_index()
     pbs = pbs_settlements()[["ocha_adm3_pcode", "pbs_taluka", "settlements_total", "rural_populated_mouzas"]]
     per = per.merge(pbs, left_on="adm3_pcode", right_on="ocha_adm3_pcode", how="left").drop(columns="ocha_adm3_pcode")
     per["ratio_to_pbs"] = (per.clusters / per.settlements_total).round(2)
+    per["village_ratio_to_pbs"] = (per.villages / per.settlements_total).round(2)
     per.round(3).to_csv(SET / "settlement_counts_by_taluka.csv", index=False)
     print(pd.DataFrame([qc]).T.to_string())
     print(f"wrote {out} ({out.stat().st_size / 2**20:.0f} MB) in {time.time() - t0:.0f} s")
@@ -165,6 +179,7 @@ def main() -> int:
     p = sub.add_parser("province")
     p.add_argument("--dilate-m", type=float, default=40.0)
     p.add_argument("--min-buildings", type=int, default=5)
+    p.add_argument("--village-dilate-m", type=float, default=150.0)
     args = ap.parse_args()
     {"pilot": cmd_pilot, "sensitivity": cmd_sensitivity, "province": cmd_province}[args.cmd](args)
     return 0
