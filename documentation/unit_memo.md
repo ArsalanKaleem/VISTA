@@ -30,14 +30,18 @@ Karachi West and Malir appear with 66 rural populated mouzas.
    a named *goth* with its hamlets usually counts as one settlement. Building clusters split hamlets that
    are more than about 80 m apart (40 m dilation on both sides). Provisional pilot clusters versus PBS:
 
-   | pilot taluka | PBS rural populated mouzas | PBS settlements | provisional clusters (>= 5 buildings) | ratio |
+   | pilot taluka (OCHA tehsil) | PBS rural populated mouzas | PBS settlements | clusters, 40 m and >= 5 buildings | ratio |
    |---|---|---|---|---|
-   | Mithi (Thar desert) | 26 | 161 | 1,999 | 12.4 |
-   | Sanghar (canal plain) | 65 | 411 | 5,002 | 12.2 |
-   | Shah Bunder (delta) | 72 | 336 | 1,244 | 3.7 |
+   | Mithi (Thar desert) | 26 | 161 | 898 | 5.6 |
+   | Sanghar (canal plain) | 65 | 411 | 5,215 | 12.7 |
+   | Shah Bunder (delta) | 72 | 336 | 1,261 | 3.8 |
 
-   The ratio is a calibration target for Day 14, not an error. The two-tier fallback (hamlet cluster vs
-   village = merged hamlets) is the planned answer if a single dilation cannot bring the ratio near 1-3.
+   (The geoBoundaries Mithi polygon used for the GEE pilot is about twice the OCHA tehsil, because it still
+   includes the newer Islamkot and Kaloi talukas, so its 1,999 clusters are not comparable with PBS.)
+
+   The ratio is expected, not an error. Day 14 (documentation/day14_settlement_clustering.md) adopts the
+   two-tier definition: hamlets (40 m) are the inventory unit, and a village tier (hamlets merged at 150 m)
+   is used for comparisons with PBS.
 4. **PBS reference variables for later validation (Day 54), never model inputs:** Table 7.2 (mouzas
    reporting drought / flood / other disasters in the last five years), Table 3.4 (sweet vs brackish
    groundwater, a salinity reference) and Table 2.3 (water-table depth classes). These are 2016-2020
