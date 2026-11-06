@@ -1,0 +1,30 @@
+district,in_pbs_2020,in_ocha_2022,note
+BADIN,True,True,
+CENTRAL KARACHI,False,True,urban Karachi district: not enumerated in the Mouza Census
+DADU,True,True,
+EAST KARACHI,False,True,urban Karachi district: not enumerated in the Mouza Census
+GHOTKI,True,True,
+HYDERABAD,True,True,
+JACOBABAD,True,True,
+JAMSHORO,True,True,
+KAMBAR SHAHDAD KOT,True,True,
+KASHMORE,True,True,
+KHAIRPUR,True,True,
+KORANGI KARACHI,False,True,urban Karachi district: not enumerated in the Mouza Census
+LARKANA,True,True,
+MALIR KARACHI,True,True,
+MATIARI,True,True,
+MIRPUR KHAS,True,True,
+NAUSHAHRO FEROZE,True,True,
+SANGHAR,True,True,
+SHAHEED BENAZIR ABAD,True,True,
+SHIKARPUR,True,True,
+SOUTH KARACHI,False,True,urban Karachi district: not enumerated in the Mouza Census
+SUJAWAL,True,True,
+SUKKUR,True,True,
+TANDO ALLAHYAR,True,True,
+TANDO MUHAMMAD KHAN,True,True,
+THARPARKAR,True,True,
+THATTA,True,True,
+UMER KOT,True,True,
+WEST KARACHI,True,True,
