@@ -77,7 +77,6 @@ def cluster(x: np.ndarray, y: np.ndarray, prm: Params = Params(), polygons: bool
     lc, lr = col - c0, row - r0
     tc, tr = lc // T, lr // T
     struct8 = np.ones((3, 3), bool)
-    square = np.ones((2 * r + 1, 2 * r + 1), bool)
     halo = r + 1
     order = np.lexsort((tc, tr))
     tc_s, tr_s = tc[order], tr[order]
@@ -111,7 +110,8 @@ def cluster(x: np.ndarray, y: np.ndarray, prm: Params = Params(), polygons: bool
             continue
         img = np.zeros((H, W), bool)
         img[lr[allj] - R0, lc[allj] - C0] = True
-        grown = ndimage.binary_dilation(img, structure=square)
+        # square dilation == separable max filter (much faster than binary_dilation for large r)
+        grown = ndimage.maximum_filter(img.view(np.uint8), size=2 * r + 1, mode="constant").view(bool)
         # core + 1 px overlap to the south and east, so seams can be matched
         core = grown[halo:halo + T + 1, halo:halo + T + 1]
         lab, n = ndimage.label(core, structure=struct8)
