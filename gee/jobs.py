@@ -106,6 +106,34 @@ def open_buildings_centroids(cfg, ctx, sub):
                    destination=f"open_buildings/open_buildings_{tag}.csv")
 
 
+@job("open_buildings_gaps", "15", False, "Open Buildings centroids for OCHA tehsils missing from the geoBoundaries ADM3 spine (Jacobabad) -> CSV")
+def open_buildings_gaps(cfg, ctx, sub):
+    # geoBoundaries ADM3 has no polygon for Jacobabad taluka (3% covered), so open_buildings_centroids
+    # never exported it. Gap tehsils come from scripts/admin_crosswalk.py (gb_coverage < 0.9).
+    import json
+
+    import geopandas as gpd
+    import pandas as pd
+
+    from .lib.common import ROOT
+    adm = ROOT / cfg["aoi"]["local_admin_dir"]
+    cw = pd.read_csv(adm / "taluka_crosswalk.csv")
+    gaps = cw[cw.gb_coverage < 0.9].drop_duplicates("ocha_adm3_pcode")
+    o3 = gpd.read_file(adm / "admin_boundaries.gpkg", layer="ocha_adm3")
+    o3 = o3[o3.adm3_pcode.isin(gaps.ocha_adm3_pcode)]
+    if ctx.regions:
+        o3 = o3[o3.adm3_name.str.upper().isin([r.upper() for r in ctx.regions])]
+    print(f"  {len(o3)} gap tehsils: {', '.join(o3.adm3_name)}")
+    for _, r in o3.iterrows():
+        g = r.geometry.simplify(0.0005)  # ~50 m: enough for a filterBounds region
+        geom = ee.Geometry(json.loads(gpd.GeoSeries([g]).to_json())["features"][0]["geometry"])
+        fc = settlements.building_centroids(cfg, geom)
+        tag = f"OCHA_{r.adm3_pcode}_{r.adm3_name.upper().replace(' ', '_')}"
+        t = export_table(cfg, fc, f"open_buildings_{tag}", "open_buildings", selectors=settlements.CENTROID_COLS)
+        sub.submit(t, job="open_buildings_gaps", product="open_buildings", chunk=r.adm3_pcode,
+                   destination=f"open_buildings/open_buildings_{tag}.csv")
+
+
 @job("settlement_evidence", "13", False, "Per-taluka evidence: building counts, GHSL pop/built, SMOD urban share, WorldPop -> CSV")
 def settlement_evidence(cfg, ctx, sub):
     fc = settlements.taluka_evidence(cfg, admin(cfg, 3))
