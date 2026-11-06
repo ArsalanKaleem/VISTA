@@ -11,7 +11,7 @@ Outputs
     data/village_inventory/admin/admin_boundaries.gpkg   layers ocha_adm1/2/3, gb_adm3 (EPSG:4326), repaired
     data/village_inventory/admin/taluka_crosswalk.csv     one row per PBS taluka (plus unmatched OCHA tehsils)
     data/village_inventory/admin/gb_ocha_overlap.csv      geoBoundaries ADM3 x OCHA ADM3 area shares (>= 1%)
-    data/village_inventory/admin/district_history.csv     district set in each source, with the differences
+    data/village_inventory/admin/district_sources.csv     district set in PBS 2020 vs OCHA 2022 (year-by-year history: admin_history.py)
     data/village_inventory/admin/geometry_qc.csv          invalid / empty geometry counts before and after repair
 """
 from __future__ import annotations
@@ -167,7 +167,7 @@ def main() -> int:
     hist["note"] = ""
     hist.loc[~hist.in_pbs_2020 & hist.district.str.contains("KARACHI"), "note"] = \
         "urban Karachi district: not enumerated in the Mouza Census"
-    hist.to_csv(ADMIN / "district_history.csv", index=False)
+    hist.to_csv(ADMIN / "district_sources.csv", index=False)
 
     # coverage of each OCHA tehsil by the geoBoundaries spine (holes = missing GEE inputs)
     gu = a.union_all()
