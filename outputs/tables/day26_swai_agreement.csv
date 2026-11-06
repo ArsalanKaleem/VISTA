@@ -1,0 +1,5 @@
+check,method,n,pearson_r,spearman_rho,mae,median_abs_diff,mean_bias,expect
+annual rainfall 2020-24 (mm),local CHIRPS grids at all SWAI points vs SWAI GEE export,5159,0.9999,0.9999,0.074,0.0,0.038,near-identical
+dry-season rainfall Nov-May 2020-24 (mm),local CHIRPS grids at all SWAI points vs SWAI GEE export,5159,0.9999,0.9999,0.015,0.0,-0.006,near-identical
+elevation (m),SWAI SRTM at point vs VISTA SRTM mean over core zone,163,0.9853,0.9736,3.201,2.557,0.611,agreement
+S2 NDVI 2023,SWAI annual composite in 1 km buffer vs VISTA mean of monthly means over resource zone,163,0.88,0.7839,0.027,0.016,0.004,agreement
