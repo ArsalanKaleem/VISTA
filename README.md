@@ -73,6 +73,9 @@ Derived: `data/village_inventory/admin/sindh_adm{1,2,3}[_simplified].geojson` (1
 
 - geoBoundaries ADM2 has **no Larkana district** and uses the pre-2017 district set. That is
   why GEE jobs chunk by taluka (ADM3, 125 units). Rebuild districts from OCHA COD-AB on Day 12 (D002).
+- geoBoundaries ADM3 has **no Jacobabad taluka** (3% covered) and lacks Islamkot, Kaloi and Dahli.
+  From Day 12 on, OCHA COD-AB 2022 is the admin spine (D005). `open_buildings_gaps` exported the
+  buildings that the geoBoundaries-based job missed.
 - The PBS Sindh report URL given in the plan (`/sites/default/files/...`) returns 404. The working
   path is `/wp-content/uploads/2020/07/mouza_census_2020_sindh_report.pdf`, and the downloader now uses it.
 
@@ -87,7 +90,8 @@ gee/                run.py (CLI), jobs.py (registry), interactive.py, lib/{commo
                     optical,radar,coarse,landcover,static,settlements}.py
 src/{preprocessing,village_mapping,feature_engineering,temporal_analysis,
      graph_construction,models,validation,visualization,utils}/
-scripts/            download_data.py, prepare_admin.py, make_zones.py, gee_to_long.py
+scripts/            download_data.py, prepare_admin.py, make_zones.py, gee_to_long.py, drive_fetch.py,
+                    parse_pbs_mouza.py, admin_crosswalk.py, settlement_sources.py, build_settlements.py
 experiments/        gee_task_manifest.csv, run registry
 outputs/{maps,figures,tables,predictions}/
 documentation/      day_tracker.csv, DECISIONS.csv, LOG.md, charter.md, compute.md, data/model cards
@@ -114,10 +118,11 @@ manuscript/  notebooks/  tests/
 | 6 | `python -m gee.run check`; `environment.yml`, `requirements-gee.txt`, `src/utils/seed.py` |
 | 8 | `python -m gee.run verify-assets` |
 | 10 | `python -m gee.run smoke5` |
-| 11 | `data/raw/pbs/*.pdf` (parse with pdfplumber) |
-| 12 | `scripts/prepare_admin.py`; OCHA COD-AB in `data/raw/hdx/` |
-| 13 | `submit open_buildings_centroids`, `submit settlement_evidence`; GeoNames in `data/raw/geonames/` |
-| 14 | `submit provisional_settlements` (pilot), then the local clustering sensitivity analysis |
+| 11 | `scripts/parse_pbs_mouza.py` -> `data/village_inventory/pbs_sindh_tables/`; `documentation/unit_memo.md` |
+| 12 | `scripts/admin_crosswalk.py` -> `admin_boundaries.gpkg`, `taluka_crosswalk.csv` |
+| 13 | `submit open_buildings_centroids`, `submit settlement_evidence`; `scripts/settlement_sources.py` |
+| 14 | `src/village_mapping/settlements.py`; `scripts/build_settlements.py pilot`, `sensitivity` |
+| 15 | `scripts/build_settlements.py province` -> `settlements_v0.parquet` |
 | 18 | `src/village_mapping/ids.py`, `tests/test_ids.py` |
 | 23 | `src/village_mapping/zones.py`, `scripts/make_zones.py` |
 | 26 | `gee/lib/zonal.py`, `gee/lib/manifest.py`, `upload-zones`, wave 2 |
