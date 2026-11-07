@@ -20,3 +20,5 @@ configs/resolved_assets.json
 data/village_inventory/admin/*.gpkg
 data/context/**
 data/village_inventory/deh/*.parquet
+data/village_inventory/registry/*.parquet
+data/village_inventory/registry/crosswalks/**

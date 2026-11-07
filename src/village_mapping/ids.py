@@ -31,22 +31,24 @@ def geohash(lat: float, lon: float, precision: int = 9) -> str:
     return "".join(out)
 
 
-def spatial_key(lat: float, lon: float) -> str:
-    try:
-        import h3
-        return h3.latlng_to_cell(lat, lon, 10)
-    except ImportError:
+def spatial_key(lat: float, lon: float, scheme: str = "h3") -> str:
+    """H3 res-10 cell (default) or 'g' + geohash-9. The scheme is explicit: switching silently when h3 is
+    missing would give different IDs on different machines."""
+    if scheme == "geohash":
         return "g" + geohash(lat, lon, 9)
+    import h3  # required for the default scheme
+    return h3.latlng_to_cell(lat, lon, 10)
 
 
-def make_vids(rows: list[tuple[str, str, float, float]]) -> list[str]:
+def make_vids(rows: list[tuple[str, str, float, float]], prefix: str = "SD", scheme: str = "h3") -> list[str]:
     """rows: (district_code, taluka_code, lat, lon) in a deterministic order -> VIDs.
 
     Ties within the same spatial key are broken by rounded centroid (1e-5 deg), then order.
+    prefix 'SD' = settlement (hamlet); 'SV' is used for the village tier.
     """
     keyed = []
     for i, (d, t, lat, lon) in enumerate(rows):
-        base = f"SD{str(d).zfill(2)[:2]}{str(t).zfill(3)[:3]}{spatial_key(lat, lon)}"
+        base = f"{prefix}{str(d).zfill(2)[:2]}{str(t).zfill(3)[:3]}{spatial_key(lat, lon, scheme)}"
         keyed.append((base, round(lat, 5), round(lon, 5), i))
     vids = [""] * len(rows)
     seen: dict[str, int] = {}
