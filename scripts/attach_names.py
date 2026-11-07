@@ -108,6 +108,14 @@ def main() -> int:
     named = hamlets.merge(prim[["cluster", "name_raw", "name_latin", "name_key", "source", "match", "distance_m"]]
                           .rename(columns={"name_raw": "name", "source": "name_source", "match": "name_match",
                                            "distance_m": "name_distance_m"}), on="cluster", how="left")
+    # a primary name in Arabic script has no key: take the best-ranked Latin key among the candidates
+    keyed = alt[alt.name_key.notna()].copy()
+    keyed["rank"] = [RANK.get((s if s != "geonames_alt" else "geonames", m), 9) + (0.5 if s == "geonames_alt" else 0)
+                     for s, m in zip(keyed.source, keyed.match)]
+    best_key = keyed.sort_values(["cluster", "rank", "distance_m"]).drop_duplicates("cluster").set_index("cluster")
+    miss = named.name.notna() & named.name_key.isna()
+    named.loc[miss, "name_key"] = named.loc[miss, "cluster"].map(best_key.name_key)
+    named.loc[miss, "name_latin"] = named.loc[miss, "cluster"].map(best_key.name_latin)
     n_names = alt[alt.source != "geonames_alt"].groupby("cluster").size()
     named["n_name_candidates"] = named.cluster.map(n_names).fillna(0).astype(int)
     named.to_crs(4326).to_parquet(SET / "settlements_v0_named.parquet")
@@ -129,6 +137,7 @@ def main() -> int:
           f"buildings in named hamlets {named[named.is_named].n_buildings.sum() / named.n_buildings.sum():.1%}; "
           f"village tier named {vt.named.mean():.1%}")
     print(named[named.is_named].groupby(["name_source", "name_match"]).size().to_string())
+    print(f"named hamlets without a Latin key: {int((named.is_named & named.name_key.isna()).sum()):,}")
     print("unmatched points: osm", len(osm) - c_osm.shape[0], "geonames", len(gn) - c_gn.shape[0])
     return 0
 
