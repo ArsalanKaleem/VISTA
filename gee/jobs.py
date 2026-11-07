@@ -88,6 +88,19 @@ def grace_grid(cfg, ctx, sub):
     sub.submit(t, job="grace_grid", product="grace", destination="grace/grace_lwe_2002_2025.tif")
 
 
+@job("smod_grid", "16", False, "GHSL SMOD degree of urbanisation, all epochs 1975-2030, native 1 km grid over Sindh -> GeoTIFF")
+def smod_grid(cfg, ctx, sub):
+    # Used locally to flag urban settlement clusters (cities chain into single 40 m clusters).
+    region = sindh_bbox(cfg).buffer(20_000)
+    col = ee.ImageCollection(ds(cfg, "ghsl_smod"))
+    proj = col.first().projection().getInfo()
+    years = col.aggregate_array("system:index").getInfo()
+    img = col.toBands().rename([f"smod_{str(y)[:4]}" for y in years]).toByte()
+    t = export_image(cfg, img, "ghsl_smod_sindh", "context", region,
+                     crs=proj.get("wkt") or proj["crs"], crs_transform=proj["transform"])
+    sub.submit(t, job="smod_grid", product="context", destination="context/ghsl_smod_sindh.tif")
+
+
 @job("open_buildings_centroids", "13", False, "Open Buildings v3 centroids (lon, lat, area, confidence) per Sindh taluka -> CSV")
 def open_buildings_centroids(cfg, ctx, sub):
     # Talukas, not districts: geoBoundaries ADM2 lacks Larkana and uses the pre-2017 districts.
