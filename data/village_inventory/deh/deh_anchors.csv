@@ -1,0 +1,1428 @@
+ocha_pcode,district,taluka,deh,deh_key,sno,cluster,anchor_name,anchor_source,match,ratio
+PK70101,Badin,Badin,Badin,badin,9,140846,Badin,geonames,exact,1.0
+PK70101,Badin,Badin,Bokhi,bokhi,20,141746,Bokhi,osm,exact,1.0
+PK70101,Badin,Badin,Chanesri,chanesri,25,143395,Chanesri,geonames,exact,1.0
+PK70101,Badin,Badin,Gurho,gurho,46,148704,Guraho,geonames_alt,fuzzy,0.909
+PK70101,Badin,Badin,Jhalar,jhalar,53,138088,Jhalar,geonames,exact,1.0
+PK70101,Badin,Badin,Kadhan,kadhan,56,150221,Kadhan,geonames,exact,1.0
+PK70101,Badin,Badin,Kamaro,kamaro,61,142827,Kamaro,geonames,exact,1.0
+PK70101,Badin,Badin,Lohan,lohan,75,154010,Lohan,geonames_alt,exact,1.0
+PK70101,Badin,Badin,Markhan,markhan,87,141553,Markha,geonames_alt,fuzzy,0.923
+PK70101,Badin,Badin,Mithi,mithi,89,150792,Goth Mithi,geonames,exact,1.0
+PK70101,Badin,Badin,Mithi-2,mithi,90,150707,Mithi,osm,exact,1.0
+PK70101,Badin,Badin,Padhar,padhar,102,148227,Padhar,geonames_alt,exact,1.0
+PK70101,Badin,Badin,Patar,patar,114,141224,Patar,geonames,exact,1.0
+PK70101,Badin,Badin,Seerani,seerani,125,149643,Seerani,osm,exact,1.0
+PK70101,Badin,Badin,Waldhari,waldhari,139,152629,Walhari,osm,fuzzy,0.933
+PK70102,Badin,Matli,Ali pur,alipur,144,123856,Ali Pur,geonames,exact,1.0
+PK70102,Badin,Matli,Chan Ganga,changanga,155,114981,Chhan Ganga,geonames,fuzzy,0.947
+PK70102,Badin,Matli,Doomani,doomani,170,122776,Doomani,geonames_alt,exact,1.0
+PK70102,Badin,Matli,Dumbalo,dumbalo,171,115254,Dumbalo,geonames,exact,1.0
+PK70102,Badin,Matli,Jarki,jarki,181,120011,Jarki,geonames,exact,1.0
+PK70102,Badin,Matli,Khachar,khachar,194,114572,Khachar,geonames_alt,exact,1.0
+PK70102,Badin,Matli,Khori,khori,201,123709,Goth Kori,geonames,fuzzy,0.889
+PK70102,Badin,Matli,Malhan,malhan,209,120629,Goth Malhan,geonames,exact,1.0
+PK70102,Badin,Matli,Mangria,mangria,210,118596,Mangria,geonames,exact,1.0
+PK70102,Badin,Matli,Matli,matli,211,121210,Matli,geonames,exact,1.0
+PK70102,Badin,Matli,Padhar,padhar,216,119042,Padhar,geonames,exact,1.0
+PK70102,Badin,Matli,Thari,thari,236,120506,Goth Thari,geonames,exact,1.0
+PK70103,Badin,S.F.Rahu,Ahmed rajo-1,ahmedrajo,242,152416,Ahmed Rajo,geonames_alt,exact,1.0
+PK70103,Badin,S.F.Rahu,Akai,akai,248,134912,Akai,geonames,exact,1.0
+PK70103,Badin,S.F.Rahu,Dasarki,dasarki,260,135046,Dasarki,geonames_alt,exact,1.0
+PK70103,Badin,S.F.Rahu,Gharo,gharo,264,135495,Gharo,geonames,exact,1.0
+PK70103,Badin,S.F.Rahu,Golarchi,golarchi,271,141252,Golarchi,geonames,exact,1.0
+PK70103,Badin,S.F.Rahu,Gujhari,gujhari,272,141446,Gujhari,geonames,exact,1.0
+PK70103,Badin,S.F.Rahu,Kand,kand,285,153154,Goth Kando,geonames,fuzzy,0.889
+PK70103,Badin,S.F.Rahu,"Kario-1,2",kario,287,133557,Kario,geonames_alt,exact,1.0
+PK70103,Badin,S.F.Rahu,Kathar,kathar,288,133410,Khathar,geonames,fuzzy,0.923
+PK70103,Badin,S.F.Rahu,Khorwah,khorwah,296,136235,Khorwah,osm,exact,1.0
+PK70103,Badin,S.F.Rahu,Rahuki,rahuki,322,136261,Rahki,geonames,fuzzy,0.909
+PK70103,Badin,S.F.Rahu,Tarai,tarai,336,140235,Tarai,osm,exact,1.0
+PK70104,Badin,Talhar,Kocho Sajan Sawai,kochosajansawai,360,126763,Kochho Sajan Sawari,geonames,fuzzy,0.938
+PK70104,Badin,Talhar,Rembhan,rembhan,375,137234,Rebhan,geonames,fuzzy,0.923
+PK70104,Badin,Talhar,Rip,rip,376,134662,Rip,geonames,exact,1.0
+PK70104,Badin,Talhar,Sandhki,sandhki,381,133082,Goth Sandhki,geonames,exact,1.0
+PK70104,Badin,Talhar,Wasi Adil,wasiadil,391,129631,Wasi Adil,osm,exact,1.0
+PK70105,Badin,Tando Bago,Aqil,aqil,398,129232,Goth Aqil,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Chhabralo,chhabralo,413,134200,Chhabral,geonames_alt,fuzzy,0.941
+PK70105,Badin,Tando Bago,Chhan,chhan,415,133590,Chhan,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Dadah,dadah,417,126974,Dadah,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Dei,dei,420,127946,Dei,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Duz,duz,427,133781,Duz,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Gujo,gujo,433,141168,Gujo,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Har,har,436,134241,Goth Har,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Kamaro,kamaro,445,125665,Kamaro,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Kangpir,kangpir,447,128447,Kang Pir,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Khairpur,khairpur,455,130259,Khairpur,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Liar,liar,465,129613,Liari,geonames,fuzzy,0.889
+PK70105,Badin,Tando Bago,Mena,mena,469,126498,Mena,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Mohna,mohna,471,137516,Mohana,geonames,fuzzy,0.909
+PK70105,Badin,Tando Bago,Sangi,sangi,489,126960,Sangi,geonames,exact,1.0
+PK70105,Badin,Tando Bago,Sonhar,sonhar,491,139870,Sonhar,geonames_alt,exact,1.0
+PK70105,Badin,Tando Bago,Tando Bago,tandobago,493,134120,Tando Bago,geonames,exact,1.0
+PK70301,Dadu,Dadu,Aminiani,aminiani,503,58729,Aminani,geonames,fuzzy,0.933
+PK70301,Dadu,Dadu,Badani,badani,504,59543,Badani,geonames,exact,1.0
+PK70301,Dadu,Dadu,Bakhrani,bakhrani,506,56733,Bakrani,geonames,fuzzy,0.933
+PK70301,Dadu,Dadu,Buthi,buthi,510,58070,Buthi,geonames,exact,1.0
+PK70301,Dadu,Dadu,Dadu,dadu,514,54996,Dadu,geonames,exact,1.0
+PK70301,Dadu,Dadu,Duabo,duabo,517,57899,Duabo,geonames_alt,exact,1.0
+PK70301,Dadu,Dadu,Jakhpari,jakhpari,521,50412,Jakhpari,geonames_alt,exact,1.0
+PK70301,Dadu,Dadu,Kalhora,kalhora,524,58086,Kalhora,geonames,exact,1.0
+PK70301,Dadu,Dadu,Kandi,kandi,525,51692,Goth Kandi,geonames_alt,exact,1.0
+PK70301,Dadu,Dadu,Khariro,khariro,534,60014,Khairo,geonames_alt,fuzzy,0.923
+PK70301,Dadu,Dadu,Khasa chandia,khasachandia,535,53501,Khassa Chandio,osm,fuzzy,0.917
+PK70301,Dadu,Dadu,Khero,khero,536,49879,Khero,osm,exact,1.0
+PK70301,Dadu,Dadu,Makhdoom Sahib,makhdoomsahib,541,53112,Goth Makhdum Sahib,geonames,fuzzy,0.88
+PK70301,Dadu,Dadu,Malkani,malkani,542,57747,Malkani,osm,exact,1.0
+PK70301,Dadu,Dadu,Markhpur,markhpur,543,55299,Goth Markhpur,geonames,exact,1.0
+PK70301,Dadu,Dadu,Moundar,moundar,545,53969,Goth Mondar,geonames,fuzzy,0.923
+PK70301,Dadu,Dadu,Naulakho,naulakho,547,58510,Nau Lakho,geonames,exact,1.0
+PK70301,Dadu,Dadu,Palha,palha,550,48975,Palha,osm,exact,1.0
+PK70301,Dadu,Dadu,Phaka,phaka,552,58432,Phaka,geonames,exact,1.0
+PK70301,Dadu,Dadu,Pipri,pipri,554,56104,Pipri,geonames,exact,1.0
+PK70301,Dadu,Dadu,Pir gunio,pirgunio,555,54191,Goth Pir Gunio,geonames,exact,1.0
+PK70301,Dadu,Dadu,Purano Dero,puranodero,559,51844,Purano Dero,osm,exact,1.0
+PK70301,Dadu,Dadu,Sial,sial,563,55835,Sial,geonames_alt,exact,1.0
+PK70301,Dadu,Dadu,Sutcharo,sutcharo,567,49098,Goth Sucharo,geonames,fuzzy,0.933
+PK70302,Dadu,Johi,Bhlali Shah,bhlalishah,580,60590,Goth Bali Shah,geonames,fuzzy,0.889
+PK70302,Dadu,Johi,Chakar Kot,chakarkot,583,53628,Chakar Kot,osm,exact,1.0
+PK70302,Dadu,Johi,Dabhari,dabhari,587,65354,Dabhri,osm,fuzzy,0.923
+PK70302,Dadu,Johi,Drigh Bala,drighbala,593,54197,Drigh Bala,geonames,exact,1.0
+PK70302,Dadu,Johi,Gorandi,gorandi,599,66440,Gorandi,geonames,exact,1.0
+PK70302,Dadu,Johi,Hairo Khan,hairokhan,600,52915,Hairo Khan,geonames,exact,1.0
+PK70302,Dadu,Johi,Haji Khan,hajikhan,601,55243,Haji Khan,geonames_alt,exact,1.0
+PK70302,Dadu,Johi,Johi,johi,608,56887,Johi,geonames,exact,1.0
+PK70302,Dadu,Johi,Khandhani,khandhani,612,61543,Khandhani,geonames,exact,1.0
+PK70302,Dadu,Johi,Lalhar,lalhar,620,49265,Goth Lalhar,geonames,exact,1.0
+PK70302,Dadu,Johi,Landho Dero,landhodero,621,50577,Goth Ladho Dero,geonames,fuzzy,0.947
+PK70302,Dadu,Johi,Mothri,mothri,631,52397,Goth Mothri,geonames,exact,1.0
+PK70302,Dadu,Johi,Pat Gul Mohammad,patgulmohammad,641,50919,Pat Gul Mohammad,geonames_alt,exact,1.0
+PK70302,Dadu,Johi,Pat Khanhari,patkhanhari,642,60832,Pat Kanhri,osm,fuzzy,0.9
+PK70302,Dadu,Johi,Phadak,phadak,651,64935,Phadak,geonames,exact,1.0
+PK70302,Dadu,Johi,Pir Gaji shah,pirgajishah,654,63537,Pirgaji Shah,geonames_alt,exact,1.0
+PK70302,Dadu,Johi,Potho,potho,655,53805,Potho,geonames,exact,1.0
+PK70302,Dadu,Johi,Qasbo,qasbo,656,51101,Qasbo,osm,exact,1.0
+PK70302,Dadu,Johi,Rajo Dero,rajodero,659,50158,Goth Rajo Dero,geonames,exact,1.0
+PK70302,Dadu,Johi,Sawaro,sawaro,663,60451,Sawro,geonames,fuzzy,0.909
+PK70302,Dadu,Johi,Shah Hassan,shahhassan,664,63825,Shah Hassan,geonames_alt,exact,1.0
+PK70302,Dadu,Johi,Thull,thull,671,59693,Thul,osm,fuzzy,0.889
+PK70302,Dadu,Johi,Tori,tori,674,62938,Goth Tori,geonames,exact,1.0
+PK70302,Dadu,Johi,Wahi Pandhi,wahipandhi,679,57754,Wahi Pandhi,geonames_alt,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Bahadurpur,bahadurpur,684,44391,Bahadurpur,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Baid,baid,685,45216,Baid,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Bego dero,begodero,690,46576,Begodero,geonames_alt,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Bhangar,bhangar,692,44776,Bhangar,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Buttra,buttra,699,44474,Goth Butra,geonames,fuzzy,0.909
+PK70303,Dadu,Khairpur Nathan Shah,Dangar,dangar,704,47912,Dangar,osm,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Dur mohammad,durmohammad,708,49977,Goth Dur Muhammad,geonames,fuzzy,0.909
+PK70303,Dadu,Khairpur Nathan Shah,Fateh Pur,fatehpur,709,45195,Fatehpur,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Gabariji,gabariji,711,47763,Gabarji,osm,fuzzy,0.933
+PK70303,Dadu,Khairpur Nathan Shah,Gachal,gachal,712,44463,Gachal,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Gharo,gharo,714,46711,Gharo,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Jakhiro,jakhiro,721,48475,Goth Jakhro,geonames,fuzzy,0.923
+PK70303,Dadu,Khairpur Nathan Shah,Kakar,kakar,722,48858,Kakar,geonames_alt,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Kande chukhi,kandechukhi,723,45948,Kande Chauki,geonames_alt,fuzzy,0.909
+PK70303,Dadu,Khairpur Nathan Shah,Kario Ghulam-ullah,karioghulamullah,724,43866,Kario Ghulamullah,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Khanpur,khanpur,730,48021,Khanpur,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Khat Lashikar,khatlashikar,732,48397,Khat Lashkar,osm,fuzzy,0.957
+PK70303,Dadu,Khairpur Nathan Shah,Khathri,khathri,733,47489,Khatri,geonames,fuzzy,0.923
+PK70303,Dadu,Khairpur Nathan Shah,Ladho Dero,ladhodero,741,44731,Goth Ladhodero,geonames_alt,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Mir Mohammad,mirmohammad,750,47330,Mir Muhammad,geonames,fuzzy,0.909
+PK70303,Dadu,Khairpur Nathan Shah,Miro Kalhoro,mirokalhoro,751,45084,Miro Kalhoro,osm,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Pai,pai,752,48229,Goth Pai,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Pusia,pusia,754,48941,Goth Pusi,geonames,fuzzy,0.889
+PK70303,Dadu,Khairpur Nathan Shah,Rahuja,rahuja,758,47925,Goth Rahuja,geonames,exact,1.0
+PK70303,Dadu,Khairpur Nathan Shah,Thalho,thalho,771,44883,Goth Thalo,geonames_alt,fuzzy,0.909
+PK70304,Dadu,Mehar,Baledai,baledai,779,40274,Baledai,geonames,exact,1.0
+PK70304,Dadu,Mehar,Betto,betto,784,43805,Goth Beto,geonames,fuzzy,0.889
+PK70304,Dadu,Mehar,Bhand Mari,bhandmari,785,43382,Chandmari,osm,fuzzy,0.889
+PK70304,Dadu,Mehar,Bothro,bothro,789,40308,Bothro,osm,exact,1.0
+PK70304,Dadu,Mehar,Butt Serai,buttserai,790,43142,Goth But Serai,geonames,fuzzy,0.941
+PK70304,Dadu,Mehar,Dakhani,dakhani,795,42659,Darkhani,geonames,fuzzy,0.933
+PK70304,Dadu,Mehar,Faridabad,faridabad,797,40651,Faridabad,geonames,exact,1.0
+PK70304,Dadu,Mehar,Gahi Maheasr,gahimaheasr,799,42898,Goth Gahi Mahesar,geonames,fuzzy,0.909
+PK70304,Dadu,Mehar,Garkan,garkan,801,41871,Garkan,geonames_alt,exact,1.0
+PK70304,Dadu,Mehar,Kamalpur,kamalpur,808,41036,Kamalpur,geonames,exact,1.0
+PK70304,Dadu,Mehar,Kamangar,kamangar,809,41452,Kamangar,osm,exact,1.0
+PK70304,Dadu,Mehar,Khondi,khondi,815,42617,Khondi,osm,exact,1.0
+PK70304,Dadu,Mehar,Kolachi,kolachi,817,44132,Kolachi,osm,exact,1.0
+PK70304,Dadu,Mehar,Kothi Khokhar,kothikhokhar,818,45077,Goth Kothi Khokhar,geonames,exact,1.0
+PK70304,Dadu,Mehar,Magsi,magsi,825,43263,Goth Magsi,geonames,exact,1.0
+PK70304,Dadu,Mehar,Mangwani,mangwani,826,43902,Mangwani,geonames,exact,1.0
+PK70304,Dadu,Mehar,Manjan,manjan,827,41119,Manjan,geonames,exact,1.0
+PK70304,Dadu,Mehar,Mureed Lakhiar,mureedlakhiar,829,46462,Goth Murad Lakhiar,geonames_alt,fuzzy,0.88
+PK70304,Dadu,Mehar,Nari,nari,830,45820,Goth Nari,geonames,exact,1.0
+PK70304,Dadu,Mehar,Neerah,neerah,834,42928,Neerah,osm,exact,1.0
+PK70304,Dadu,Mehar,Pateji,pateji,836,43913,Goth Pateji,geonames,exact,1.0
+PK70304,Dadu,Mehar,Peroz Shah,perozshah,837,45233,Peroz Shah,osm,exact,1.0
+PK70304,Dadu,Mehar,Pipri,pipri,838,42748,Pipri,osm,exact,1.0
+PK70304,Dadu,Mehar,Sadhar Aliwal,sadharaliwal,845,42045,Sadar Aliwal,geonames,fuzzy,0.957
+PK70304,Dadu,Mehar,Shah Panjo,shahpanjo,848,44674,Goth Shah Panjo,geonames,exact,1.0
+PK70304,Dadu,Mehar,Thariri Muhabat,tharirimuhabat,849,42556,Thariri Mohabat,osm,fuzzy,0.966
+PK70501,Ghotki,Daharki,Daharki,daharki,938,13446,Daharki,geonames,exact,1.0
+PK70501,Ghotki,Daharki,Jampur,jampur,948,17014,Goth Jampur,geonames,exact,1.0
+PK70501,Ghotki,Daharki,Lal Pitafi,lalpitafi,958,24493,Goth Lal Pitafi,geonames,exact,1.0
+PK70501,Ghotki,Daharki,Raharki,raharki,964,14048,Raharki,geonames,exact,1.0
+PK70501,Ghotki,Daharki,Wahi Gul Khan,wahigulkhan,978,16046,Wahi Gul Khan,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Adilpur,adilpur,854,19613,Adilpur,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Attal Muradani,attalmuradani,856,15095,Attalmuradani,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Bago Daho,bagodaho,857,11880,Bago Daho,osm,exact,1.0
+PK70502,Ghotki,Ghotki,Bandh,bandh,858,14260,Bandh,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Bhanjro,bhanjro,865,17883,Bhanjro,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Changlani,changlani,868,20180,Goth Changlani,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Dari,dari,869,22473,Dari,osm,exact,1.0
+PK70502,Ghotki,Ghotki,Dhamaji,dhamaji,870,19143,Goth Dhamanji,geonames,fuzzy,0.933
+PK70502,Ghotki,Ghotki,Drago,drago,872,20532,Drago,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Hakra,hakra,877,20020,Hakra,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Hussain Beli,hussainbeli,879,17098,Hussain Beli,osm,exact,1.0
+PK70502,Ghotki,Ghotki,Jahanpur,jahanpur,880,13271,Goth Jahan Pur,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Jamal,jamal,881,14016,Jamal,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Janghiari,janghiari,882,19169,Janghiari,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Katcho Bindi,katchobindi,884,14390,Kacho Bindi,geonames,fuzzy,0.952
+PK70502,Ghotki,Ghotki,Khadwari,khadwari,888,20132,Khadwari,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Khuhara,khuhara,891,18187,Khuhara,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Kotlo Bullo,kotlobullo,892,11625,Kutlo Bullo,geonames_alt,fuzzy,0.9
+PK70502,Ghotki,Ghotki,Lakhan,lakhan,894,15258,Goth Lakha,geonames,fuzzy,0.909
+PK70502,Ghotki,Ghotki,Mathelo,mathelo,899,18334,Mathelo,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Muhammad Pur,muhammadpur,902,19127,Muhammad Pur,osm,exact,1.0
+PK70502,Ghotki,Ghotki,Pano Khalso,panokhalso,909,13042,Pano Khalso,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Phekrato,phekrato,910,15280,Phekrato,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Qadirpur,qadirpur,911,13833,Qadirpur,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Qazi Wahan,qaziwahan,913,16580,Qazi Wahan,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Ruk,ruk,914,19319,Ruk,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Saleh Mahar,salehmahar,915,19194,Saleh Mahar,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Sarhad,sarhad,918,14221,Goth Sarhad,geonames,exact,1.0
+PK70502,Ghotki,Ghotki,Satabo Bhayo,satabobhayo,919,11805,Satabo Bhayo,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Suhriani,suhriani,922,13536,Suhrani,geonames_alt,fuzzy,0.933
+PK70502,Ghotki,Ghotki,Thatho Malhan,thathomalhan,924,13272,Thatha Malhan,geonames,fuzzy,0.917
+PK70502,Ghotki,Ghotki,Wad Pagiya,wadpagiya,926,18463,Wadpagia,geonames,fuzzy,0.941
+PK70502,Ghotki,Ghotki,Wasayo Chachar,wasayochachar,928,10567,Wasayo Chachar,geonames_alt,exact,1.0
+PK70502,Ghotki,Ghotki,Wasti Inayat Shah,wastiinayatshah,929,11733,Wasti Inayat Shah,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Aithi,aithi,979,24335,Aithi,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Ali Mahar,alimahar,980,23908,Goth Ali Mahar,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Bambli,bambli,982,25136,Bambli,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Bari,bari,984,22237,Bari,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Chhanwani,chhanwani,988,23054,Chhanwari,geonames,fuzzy,0.941
+PK70503,Ghotki,Khan Garh,Dakhano,dakhano,989,20759,Dakhano,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Ibrahim Mahar,ibrahimmahar,990,30075,Ibrahim Mahtam,geonames,fuzzy,0.909
+PK70503,Ghotki,Khan Garh,Kandlo,kandlo,992,26206,Goth Kando,geonames,fuzzy,0.909
+PK70503,Ghotki,Khan Garh,Khangarh,khangarh,994,22731,Khangarh,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Khanpur,khanpur,995,23474,Khanpur,geonames_alt,exact,1.0
+PK70503,Ghotki,Khan Garh,Lakho Mahar,lakhomahar,996,25140,Lakho Mahar,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Lohi,lohi,997,27895,Lohi,osm,exact,1.0
+PK70503,Ghotki,Khan Garh,Mithri,mithri,999,22531,Mithri,geonames_alt,exact,1.0
+PK70503,Ghotki,Khan Garh,Naro,naro,1000,23833,Naro,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Pathan Mahar,pathanmahar,1001,26681,Goth Pathan Mahar,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Phul Daho,phuldaho,1002,20811,Phuldaho,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Qazi Badal,qazibadal,1003,23835,Kazi Badal,geonames,fuzzy,0.889
+PK70503,Ghotki,Khan Garh,Sanharo,sanharo,1007,23001,Sanhro,geonames,fuzzy,0.923
+PK70503,Ghotki,Khan Garh,Shahpur,shahpur,1008,26886,Shahpur,geonames,exact,1.0
+PK70503,Ghotki,Khan Garh,Wahi Dhano,wahidhano,1012,22967,Wahi Dhano,geonames_alt,exact,1.0
+PK70503,Ghotki,Khan Garh,Warwaro,warwaro,1015,27245,Warwaro,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Barar,barar,1019,20114,Goth Barar,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Bhiri Laghari,bhirilaghari,1023,22602,Bhiri Laghari,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Darwesh Naich,darweshnaich,1026,16948,Goth Darwesh Naich,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Dil Muard Gabole,dilmuardgabole,1028,24420,Dilmurad Gabol,geonames,fuzzy,0.889
+PK70504,Ghotki,Mirpur Matelo,Gaji Gadani,gajigadani,1033,25353,Gaji Gadani,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Garhi Chakar,garhichakar,1034,19163,Garhi Chakar,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Haj Korai,hajkorai,1037,11900,Haji Korai,geonames,fuzzy,0.941
+PK70504,Ghotki,Mirpur Matelo,Hayat Pitafi,hayatpitafi,1039,18752,Hayat Pitafi,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Jahan Khan Unar,jahankhanunar,1041,14960,Jahan Khan Unar,geonames_alt,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Jarwar,jarwar,1042,20613,Jarwar,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Karampur,karampur,1046,26872,Goth Karampur,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Khui Khengi,khuikhengi,1049,28246,Khuhi Khengi,geonames_alt,fuzzy,0.952
+PK70504,Ghotki,Mirpur Matelo,Malnas,malnas,1053,21512,Malnas,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Mitho Lund,mitholund,1056,25905,Mitho Lund,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Saeed Khan Chandio,saeedkhanchandio,1060,16111,Said Khan Chandio,geonames_alt,fuzzy,0.903
+PK70504,Ghotki,Mirpur Matelo,Sher Khan Kolachi,sherkhankolachi,1065,20742,Sher Khan Kolachi,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Sobho Lund,sobholund,1066,27192,Goth Sobho Lund,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Tahir Gadani,tahirgadani,1071,26603,Tahir Gadani,geonames,exact,1.0
+PK70504,Ghotki,Mirpur Matelo,Wahi Ghoto,wahighoto,1073,27082,Wahi Ghoto,geonames_alt,exact,1.0
+PK70505,Ghotki,Ubauro,B.Rano Rahar,branorahar,1076,13404,Goth Rano Rahar,geonames,fuzzy,0.947
+PK70505,Ghotki,Ubauro,Band,band,1077,3995,Deh Band,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Chandia,chandia,1084,2894,Chandia,geonames_alt,exact,1.0
+PK70505,Ghotki,Ubauro,Chatu Daho,chatudaho,1085,7905,Chato Daho,geonames_alt,fuzzy,0.889
+PK70505,Ghotki,Ubauro,Dabli,dabli,1086,9513,Goth Dabuli,geonames_alt,fuzzy,0.909
+PK70505,Ghotki,Ubauro,Daulatpur,daulatpur,1087,3928,Daulatpur,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Islam Lashari,islamlashari,1097,14717,Goth Islam Lashari,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Khambhra,khambhra,1104,4924,Khambhra,geonames_alt,exact,1.0
+PK70505,Ghotki,Ubauro,Khamiso Chachar,khamisochachar,1105,8898,Goth Khamiso Chachar,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Kundri Walo,kundriwalo,1110,4353,Kundriwalo,geonames_alt,exact,1.0
+PK70505,Ghotki,Ubauro,Langho,langho,1111,8061,Langho,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Likhpur,likhpur,1113,11866,Likpur,geonames,fuzzy,0.923
+PK70505,Ghotki,Ubauro,Mari,mari,1116,9402,Mari,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Matar Kot,matarkot,1118,8449,Goth Matar Kot,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Muhammad Pur,muhammadpur,1119,11385,Goth Muhammad Pur,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Rajanpur,rajanpur,1125,10587,Rajan Pur,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Rawanti,rawanti,1127,8824,Goth Rawati,geonames,fuzzy,0.923
+PK70505,Ghotki,Ubauro,Reti,reti,1128,13088,Reti,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Shadi walo,shadiwalo,1131,11707,Shadiwala,geonames,fuzzy,0.947
+PK70505,Ghotki,Ubauro,Shahwali,shahwali,1132,6284,Shahwali,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Shams chapri,shamschapri,1133,6871,Goth Shams Chipri,geonames,fuzzy,0.909
+PK70505,Ghotki,Ubauro,Soi Sharef,soisharef,1135,11806,Goth Soi Sharif,geonames,fuzzy,0.889
+PK70505,Ghotki,Ubauro,Tig,tig,1137,10969,Goth Tig,geonames,exact,1.0
+PK70505,Ghotki,Ubauro,Ubauro,ubauro,1138,9291,Ubauro,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Abri,abri,1141,102577,Abri,osm,exact,1.0
+PK70601,Hyderabad,Hyderabad,Chukhi,chukhi,1157,107707,Goth Chukhi,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Dachrapur,dachrapur,1158,109739,Dhachrapur,geonames_alt,fuzzy,0.947
+PK70601,Hyderabad,Hyderabad,Dali Wadi,daliwadi,1160,101943,Dali Wadi,geonames_alt,exact,1.0
+PK70601,Hyderabad,Hyderabad,Ghotana,ghotana,1164,107390,Ghotana,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Halepota,halepota,1167,98485,Halepota,geonames_alt,exact,1.0
+PK70601,Hyderabad,Hyderabad,Hatri,hatri,1168,100345,Hatri,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Hussain Khan Thoro,hussainkhanthoro,1170,106228,Hussain Khan Thoro,geonames_alt,exact,1.0
+PK70601,Hyderabad,Hyderabad,Kathro,kathro,1173,108427,Kathro,geonames_alt,exact,1.0
+PK70601,Hyderabad,Hyderabad,Khanpota,khanpota,1174,99827,Goth Khan Potha,geonames_alt,fuzzy,0.941
+PK70601,Hyderabad,Hyderabad,Khunjejani,khunjejani,1175,110709,Khujejani,osm,fuzzy,0.947
+PK70601,Hyderabad,Hyderabad,Liyar Jagir,liyarjagir,1178,113548,Goth Liari Jagir,geonames,fuzzy,0.9
+PK70601,Hyderabad,Hyderabad,Mati,mati,1179,107509,Goth Mati,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Narejani,narejani,1186,102877,Narejani,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Sahita,sahita,1197,112367,Sahta,geonames,fuzzy,0.909
+PK70601,Hyderabad,Hyderabad,Sukhpur,sukhpur,1203,105801,Sukhpur,geonames_alt,exact,1.0
+PK70601,Hyderabad,Hyderabad,Tando Fazal,tandofazal,1206,110642,Goth Tando Fazal,geonames,exact,1.0
+PK70601,Hyderabad,Hyderabad,Tando Qaiser,tandoqaiser,1207,104616,Tando Qaisar,geonames,fuzzy,0.909
+PK70601,Hyderabad,Hyderabad,Widh,widh,1210,106927,Widh,geonames,exact,1.0
+PK70602,Hyderabad,Hyderabad City,Hyderabad,hyderabad,1228,100779,Hyderabad,geonames,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Allahabad,allahabad,1382,14325,Allah Abad,osm,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Amir Abad,amirabad,1383,12928,Amirabad,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Baharo Khokhar,baharokhokhar,1385,17177,Goth Baharo Khokhar,geonames,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Doda Pur,dodapur,1390,13987,Doda Pur,geonames,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Garhi Khairo,garhikhairo,1393,13752,Garhi Khairo,geonames,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Ghouse Abad,ghouseabad,1394,12546,Ghousabad,geonames_alt,fuzzy,0.947
+PK70701,Jacobabad,Garhi Khairo,Gokal Pur,gokalpur,1395,8397,Gokalpur,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Jafar Abad,jafarabad,1398,11141,Jafarabad,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Jahan Pur,jahanpur,1399,13722,Jahanpur,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Khuda Abad,khudaabad,1407,16642,Khudaabad,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Kohari,kohari,1409,12399,Kohri,geonames,fuzzy,0.909
+PK70701,Jacobabad,Garhi Khairo,Kotari,kotari,1413,16378,Kotri,geonames,fuzzy,0.909
+PK70701,Jacobabad,Garhi Khairo,Lund,lund,1417,20302,Lund,osm,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Muhammad Pur,muhammadpur,1421,16398,Muhammadpur,geonames,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Punhoon Bhatti,punhoonbhatti,1425,18744,Goth Punho Bhatti,geonames,fuzzy,0.917
+PK70701,Jacobabad,Garhi Khairo,Rasol Abad,rasolabad,1427,15761,Rasulabad,geonames,fuzzy,0.889
+PK70701,Jacobabad,Garhi Khairo,Sawan Lashari,sawanlashari,1429,13615,Sawan Lashari,osm,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Shah Bazi Mahar,shahbazimahar,1430,18134,Shahbazi Mahar,geonames_alt,exact,1.0
+PK70701,Jacobabad,Garhi Khairo,Thariri,thariri,1437,11101,Thariri,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Abad,abad,1229,8652,Abad,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Alipur,alipur,1233,5017,Alipur,osm,exact,1.0
+PK70702,Jacobabad,Jacobabad,Attai,attai,1234,10368,Attai,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Bachal Pur,bachalpur,1235,7336,Bachalpur,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Bajhani,bajhani,1237,10394,Goth Bajhani,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Chajjra,chajjra,1243,10623,Chajra,geonames_alt,fuzzy,0.923
+PK70702,Jacobabad,Jacobabad,Dasti,dasti,1247,4940,Dasti,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Detha,detha,1248,8845,Detha,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Dilawarpur,dilawarpur,1249,4566,Dilawarpur,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Garhi Chand,garhichand,1251,9296,Goth Garhi Chand,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Jacobabad,jacobabad,1255,4499,Jacobabad,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Janidero,janidero,1256,6366,Jani Dero,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Khairwah,khairwah,1257,8878,Khair Wah,osm,exact,1.0
+PK70702,Jacobabad,Jacobabad,Koureja,koureja,1259,9976,Koureja,geonames_alt,exact,1.0
+PK70702,Jacobabad,Jacobabad,Nawara,nawara,1268,6966,Goth Nawra,geonames,fuzzy,0.909
+PK70702,Jacobabad,Jacobabad,Nawazo,nawazo,1269,7940,Nawaz,geonames,fuzzy,0.909
+PK70702,Jacobabad,Jacobabad,Qadirpur,qadirpur,1273,10444,Qadirpur,geonames,exact,1.0
+PK70702,Jacobabad,Jacobabad,Ramzanpur,ramzanpur,1276,9556,Ramzanpur,osm,exact,1.0
+PK70702,Jacobabad,Jacobabad,Soomanpur,soomanpur,1282,10486,Somanpur,geonames_alt,fuzzy,0.941
+PK70702,Jacobabad,Jacobabad,Thariri Bhalidino,thariribhalidino,1283,7909,Thariri Bhaledino,geonames_alt,fuzzy,0.938
+PK70703,Jacobabad,Thul,Bachro,bachro,1291,5691,Bachro,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Bahadurpur,bahadurpur,1292,4258,Bahadurpur,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Chandan,chandan,1301,8636,Chandan,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Channa,channa,1302,10872,Chana,geonames_alt,fuzzy,0.909
+PK70703,Jacobabad,Thul,Dil Murad,dilmurad,1308,4715,Dil Murad,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Garhi Hassan,garhihassan,1313,4766,Garhi Hasan,geonames,fuzzy,0.952
+PK70703,Jacobabad,Thul,Ghunia,ghunia,1316,7070,Ghunia,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Gujo,gujo,1319,9785,Gujo,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Karim Abad,karimabad,1329,5742,Karimabad Goth,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Karim Bux,karimbux,1330,2063,Karim Bux,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Kot Gul Muhammad,kotgulmuhammad,1336,5592,Goth Gul Muhammad,geonames,fuzzy,0.88
+PK70703,Jacobabad,Thul,Maloi,maloi,1342,2924,Maloi,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Miral Nau,miralnau,1345,5788,Miral Nau,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Miral Purano,miralpurano,1346,7396,Miral Purano,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Mirpur,mirpur,1347,8994,Mirpur,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Mitho Thariri,mithothariri,1349,6633,Mitho Thari,geonames_alt,fuzzy,0.909
+PK70703,Jacobabad,Thul,Mubarak Pur,mubarakpur,1351,9602,Mubarakpur,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Odhano,odhano,1355,5106,Odhano,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Ranjhapur,ranjhapur,1362,9329,Ranjhapur,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Sarki,sarki,1367,3761,Sarki,geonames_alt,exact,1.0
+PK70703,Jacobabad,Thul,Toj,toj,1376,9019,Toj,geonames,exact,1.0
+PK70703,Jacobabad,Thul,Udi,udi,1377,8256,Udi,osm,exact,1.0
+PK70703,Jacobabad,Thul,Zangipur,zangipur,1379,5055,Zangi Pur,osm,exact,1.0
+PK70801,Jamshoro,Kotri,Kotri,kotri,1449,104075,Kotri,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Abad,abad,1466,71661,Goth Abad,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Amri,amri,1467,73999,Goth Amri,osm,exact,1.0
+PK70802,Jamshoro,Manjhand,Bhadar,bhadar,1471,80368,Bhadar,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Bhiyan,bhiyan,1473,90302,Bhian,geonames,fuzzy,0.909
+PK70802,Jamshoro,Manjhand,Butho,butho,1476,80632,Butho,geonames_alt,exact,1.0
+PK70802,Jamshoro,Manjhand,Kachi,kachi,1486,81676,Kachhi,geonames_alt,fuzzy,0.909
+PK70802,Jamshoro,Manjhand,Khasai,khasai,1491,86601,Goth Khasai,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Khuman,khuman,1493,80764,Khuman,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Kubi,kubi,1495,80915,Kubi,geonames_alt,exact,1.0
+PK70802,Jamshoro,Manjhand,Lakha,lakha,1497,81197,Lakha,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Laki,laki,1499,70356,Laki,osm,exact,1.0
+PK70802,Jamshoro,Manjhand,Manjhand,manjhand,1501,82637,Manjhand,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Rajri,rajri,1506,85426,Rajri,geonames,exact,1.0
+PK70802,Jamshoro,Manjhand,Sann,sann,1508,78502,Sann,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Abad,abad,1516,60990,Abad,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Aktar,aktar,1519,62733,Aktar,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Arazi,arazi,1520,63333,Arazi,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Arbi,arbi,1521,62274,Arbi,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Bajara,bajara,1525,66552,Bajara,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Bhambha,bhambha,1527,61251,Bhamba,geonames,fuzzy,0.923
+PK70803,Jamshoro,Sehwan,Bhan,bhan,1528,60582,Bhan,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Bhootra,bhootra,1529,63895,Bhotra,osm,fuzzy,0.923
+PK70803,Jamshoro,Sehwan,Bilawalpur,bilawalpur,1531,61040,Bilawalpur,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Bukhtiar Pur,bukhtiarpur,1535,63264,Bakhtiarpur,geonames_alt,fuzzy,0.909
+PK70803,Jamshoro,Sehwan,Dal,dal,1539,62028,Dal,geonames_alt,exact,1.0
+PK70803,Jamshoro,Sehwan,Jhandiani,jhandiani,1550,60157,Jhandiani,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Jhangara,jhangara,1551,66918,Jhangara,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Kachhi,kachhi,1552,66734,Kachhi,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Kai,kai,1553,68330,Kai,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Karampur,karampur,1556,63265,Karampur,geonames_alt,exact,1.0
+PK70803,Jamshoro,Sehwan,Karyani,karyani,1557,61680,Karyani,osm,exact,1.0
+PK70803,Jamshoro,Sehwan,Lashari,lashari,1562,62517,Lashari,geonames_alt,exact,1.0
+PK70803,Jamshoro,Sehwan,Naing,naing,1566,69406,Naing,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Sehwan,sehwan,1573,64198,Sehwan,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Talti,talti,1579,61703,Talti,geonames,exact,1.0
+PK70803,Jamshoro,Sehwan,Tando Shahbazi,tandoshahbazi,1580,63577,Tando Shahbaz,geonames,fuzzy,0.96
+PK70804,Jamshoro,Thano Bula Khan,Bachani,bachani,1588,97977,Bachani,geonames_alt,exact,1.0
+PK70804,Jamshoro,Thano Bula Khan,Dhamach,dhamach,1593,107738,Goth Dhamach,geonames,exact,1.0
+PK70804,Jamshoro,Thano Bula Khan,Kalo Khohar,kalokhohar,1596,114415,Kalo Kohar,geonames_alt,fuzzy,0.947
+PK70804,Jamshoro,Thano Bula Khan,Kapat,kapat,1598,109342,Goth Kapat,geonames,exact,1.0
+PK70804,Jamshoro,Thano Bula Khan,Sari,sari,1608,108017,Sari,geonames_alt,exact,1.0
+PK70804,Jamshoro,Thano Bula Khan,Thando Arab Khan,thandoarabkhan,1610,103004,Thano Arab Khan,geonames_alt,fuzzy,0.963
+PK70804,Jamshoro,Thano Bula Khan,Toung,toung,1612,87151,Toung,geonames_alt,exact,1.0
+PK70804,Jamshoro,Thano Bula Khan,Wahi Arab khan,wahiarabkhan,1614,99871,Wahi Arab Khan,geonames_alt,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Bharmi,bharmi,1726,26201,Bharmi,osm,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Buthi,buthi,1727,29357,Buthi,osm,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Cheelo,cheelo,1728,29952,Chelo,geonames,fuzzy,0.909
+PK70901,Kamber Shahdadkot,Miro Khan,Chhajri,chhajri,1729,26585,Chhajri,geonames,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Chori,chori,1730,27730,Chhori,geonames,fuzzy,0.909
+PK70901,Kamber Shahdadkot,Miro Khan,Chutto joyo,chuttojoyo,1731,29367,Chutto Joyo,osm,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Jalal,jalal,1737,29529,Jalal,geonames,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Kalhora,kalhora,1738,29606,Kalhora,geonames_alt,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Khudi,khudi,1743,30506,Khudi,geonames_alt,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Pholro,pholro,1750,26495,Pholro,geonames,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Qaim gopang,qaimgopang,1751,29551,Kaim Gopang,geonames,fuzzy,0.9
+PK70901,Kamber Shahdadkot,Miro Khan,Rap,rap,1752,28460,Rap,geonames,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Tharo wadho,tharowadho,1755,28555,Tharo Wadho,osm,exact,1.0
+PK70901,Kamber Shahdadkot,Miro Khan,Thull,thull,1756,28295,Thul,geonames,fuzzy,0.889
+PK70902,Kamber Shahdadkot,Nasirabad,Adi Lashari,adilashari,1759,38852,Adi Lashari,geonames,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Ali Bahar,alibahar,1760,37349,Ali Bahar,osm,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Chinjni,chinjni,1763,38790,Chinjni,geonames_alt,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Dera,dera,1765,37230,Dera,osm,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Jalbani,jalbani,1770,38835,Jalbani,geonames_alt,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Mangio,mangio,1775,38648,Mangio,geonames,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Muradi,muradi,1776,37513,Muradi,geonames,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Nasirabad,nasirabad,1777,37778,Nasirabad,geonames,exact,1.0
+PK70902,Kamber Shahdadkot,Nasirabad,Wasu Kalhoro,wasukalhoro,1780,37714,Waso Kalhoro,osm,fuzzy,0.909
+PK70903,Kamber Shahdadkot,Kamber,Acha,acha,1616,31685,Acha,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Bagodero,bagodero,1619,32286,Baghodero,geonames,fuzzy,0.941
+PK70903,Kamber Shahdadkot,Kamber,Ber,ber,1620,33441,Ber,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Bhangar Acha,bhangaracha,1622,33484,Bhangar Aacha,osm,fuzzy,0.957
+PK70903,Kamber Shahdadkot,Kamber,Bhola Kalhora,bholakalhora,1624,34711,Bhola Kalhora,osm,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Boohar,boohar,1625,34177,Bohar,geonames,fuzzy,0.909
+PK70903,Kamber Shahdadkot,Kamber,Chacha,chacha,1626,30682,Chacha,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Changro,changro,1628,33281,Changro,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Dera,dera,1629,33757,Dera,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Dost Ali,dostali,1631,30661,Dost Ali,osm,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Ghathar,ghathar,1638,34012,Ghathar,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Hani,hani,1640,34058,Hani,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Hasula,hasula,1641,30567,Hasla,geonames,fuzzy,0.923
+PK70903,Kamber Shahdadkot,Kamber,Hulia,hulia,1642,30911,Hulia,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Jian Abro,jianabro,1685,32117,Jian Abro,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Juneja,juneja,1686,30706,Juneja,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Kalar,kalar,1687,32408,Kalar,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Kanwar`,kanwar,1690,33749,Kanwar,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Kario Murad Ali,kariomuradali,1691,31413,Kario Murad Ali,geonames,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Karohar,karohar,1692,35008,Karohar,geonames_alt,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Khahi Meehoon,khahimeehoon,1694,32656,Khahi Meenhoon,osm,fuzzy,0.96
+PK70903,Kamber Shahdadkot,Kamber,Lakhtiya,lakhtiya,1701,33009,Lakhtia,geonames,fuzzy,0.933
+PK70903,Kamber Shahdadkot,Kamber,Lashkari Chandio,lashkarichandio,1702,33428,Lashkari Khan Chandio,geonames,fuzzy,0.882
+PK70903,Kamber Shahdadkot,Kamber,Mena,mena,1704,30182,Mena,osm,exact,1.0
+PK70903,Kamber Shahdadkot,Kamber,Panhwaro,panhwaro,1710,33169,Goth Panwaro,osm,fuzzy,0.933
+PK70903,Kamber Shahdadkot,Kamber,Peroz Bhatti,perozbhatti,1711,31225,Peroz Bhatti,geonames,exact,1.0
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Bagodaro,bagodaro,1781,27277,Bago Daro,geonames_alt,exact,1.0
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Dur Mohammad,durmohammad,1784,20138,Dur Mohammad,geonames_alt,exact,1.0
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Gada,gada,1785,28573,Goth Gadra,geonames_alt,fuzzy,0.889
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Kot Shahbag,kotshahbag,1796,22500,Kot Shah Baig,geonames,fuzzy,0.952
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Machi,machi,1797,28963,Machi,geonames_alt,exact,1.0
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Mohammad Hassan,mohammadhassan,1799,23606,Deh Muhammad Hasan,geonames,fuzzy,0.889
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Qubo Saeed khan,qubosaeedkhan,1806,22251,Qubo Saeed Khan,geonames,exact,1.0
+PK70904,Kamber Shahdadkot,Qubo Saeed Khan,Zar,zar,1818,28162,Goth Zar,geonames,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Bhatti,bhatti,1819,19933,Bhatti,geonames,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Chandia,chandia,1822,22801,Chandia,geonames,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Dakhan,dakhan,1824,19261,Dakhan,geonames_alt,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Gopang,gopang,1827,18345,Gopang,geonames_alt,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Gurgaj,gurgaj,1828,20955,Gurgaij,geonames,fuzzy,0.923
+PK70905,Kamber Shahdadkot,Shahdadot,Jari,jari,1831,18890,Goth Jari,geonames,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Jatoi,jatoi,1832,19289,Jatoi,geonames_alt,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Sando,sando,1851,25541,Sando,geonames_alt,exact,1.0
+PK70905,Kamber Shahdadkot,Shahdadot,Sanjar Bhatti,sanjarbhatti,1852,18852,Sangar Bhatti,geonames,fuzzy,0.917
+PK70905,Kamber Shahdadkot,Shahdadot,Shahdadot,shahdadot,1854,22691,Shahdad Kot,geonames,fuzzy,0.947
+PK70905,Kamber Shahdadkot,Shahdadot,Shaho Jamali,shahojamali,1855,19082,Shahu Jamali,geonames,fuzzy,0.909
+PK70905,Kamber Shahdadkot,Shahdadot,Siyal,siyal,1856,18566,Sial,geonames_alt,fuzzy,0.889
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Arzi Bhutto,arzibhutto,1859,24187,Goth Arzi Bhutto,geonames,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Bakhsho Sario,bakhshosario,1860,25405,Bakhsho Sario,geonames_alt,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Belharo,belharo,1861,26531,Goth Belharo,geonames,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Chango,chango,1863,25827,Chango,geonames_alt,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Dhingano Mahesar,dhinganomahesar,1864,22167,Dhingano Mahesar,osm,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,"Ghulam,Muhammad Leghari",ghulammuhammadleghari,1867,28577,Ghulam Muhammad Laghari,geonames_alt,fuzzy,0.952
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Gul Kalhoro,gulkalhoro,1868,26411,Gul Kalhora,geonames,fuzzy,0.9
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Gul Shah,gulshah,1869,21477,Goth Gul Shah,osm,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Jiand Laak,jiandlaak,1874,23455,Goth Jiand Lak,geonames,fuzzy,0.941
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Korai,korai,1880,27915,Korai,geonames_alt,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Lal Khan Mastoi,lalkhanmastoi,1881,22426,Goth Lal Khan Mastoi,osm,exact,1.0
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Mohmammadi Tanwari,mohmammaditanwari,1885,23531,Mohammadi Tanwri,geonames_alt,fuzzy,0.938
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Sher Khan,sherkhan,1887,21729,Goth Shemir Khan,osm,fuzzy,0.889
+PK70906,Kamber Shahdadkot,Sijawal Junejo,Sijawal,sijawal,1888,23938,Sijawal,geonames_alt,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Abad,abad,1890,36629,Abad,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Garhi Markoro,garhimarkoro,1905,37475,Garhi Makoro,osm,fuzzy,0.957
+PK70907,Kamber Shahdadkot,Warah,Gul Buriro,gulburiro,1906,35344,Gul Buriro,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Hamal,hamal,1907,37789,Hamal,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Hamid wah,hamidwah,1908,36777,Hamidwah,geonames_alt,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Jakhar,jakhar,1910,34488,Jakhar,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Junani,junani,1912,36912,Junani,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Kalar,kalar,1913,36784,Goth Kalar,geonames_alt,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Lalu raounak,laluraounak,1915,34637,Lalu Raunk,geonames_alt,fuzzy,0.9
+PK70907,Kamber Shahdadkot,Warah,Maklani,maklani,1916,34980,Maklani,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Mangneja,mangneja,1917,35951,Mangneja,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Mirpur,mirpur,1918,38919,Goth Mirpur,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Mirzapur,mirzapur,1919,36478,Goth Mirzapur,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Pechuha,pechuha,1922,34823,Pechuha,geonames_alt,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Potho,potho,1923,34092,Potho,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Tahriri Hajran,tahririhajran,1926,36420,Thariri Hajran,geonames_alt,fuzzy,0.923
+PK70907,Kamber Shahdadkot,Warah,Thano`,thano,1927,36754,Thano,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Theth,theth,1928,39410,Theth,geonames_alt,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Ubedani,ubedani,1929,35534,Ubedani,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Wagan,wagan,1930,34919,Wagan,geonames,exact,1.0
+PK70907,Kamber Shahdadkot,Warah,Warah,warah,1931,36024,Warah,geonames,exact,1.0
+PK71001,Kashmore,Kandhkot,Dari,dari,1999,9820,Goth Dari,geonames_alt,exact,1.0
+PK71001,Kashmore,Kandhkot,Dhabhani,dhabhani,2000,5357,Dabhani,geonames,fuzzy,0.933
+PK71001,Kashmore,Kandhkot,Ghoraghat pako,ghoraghatpako,2008,8033,Ghora Ghat Pako,geonames_alt,exact,1.0
+PK71001,Kashmore,Kandhkot,Kandhkot,kandhkot,2017,6011,Kandhkot,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Bhanar,bhanar,1937,11259,Bhanar,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Chachar,chachar,1940,355,Chachar,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Elsi,elsi,1943,3707,Elsi Goth,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Gublo,gublo,1948,6347,Goth Gublo,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Gullanpur,gullanpur,1949,287,Gulanpur,osm,fuzzy,0.941
+PK71002,Kashmore,Kashmore,Haji Khan,hajikhan,1950,4195,Haji Khan,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Jakhrani,jakhrani,1951,2061,Goth Jakrani,geonames,fuzzy,0.933
+PK71002,Kashmore,Kashmore,Kauro Mahar,kauromahar,1958,3317,Kauro Mahar,geonames_alt,exact,1.0
+PK71002,Kashmore,Kashmore,Machhi,machhi,1967,3832,Goth Machhi,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Mahar,mahar,1968,8996,Goth Malhar,osm,fuzzy,0.909
+PK71002,Kashmore,Kashmore,Mithri,mithri,1971,1336,Mithri,geonames,exact,1.0
+PK71002,Kashmore,Kashmore,Sorah,sorah,1986,2333,Sorah,geonames_alt,exact,1.0
+PK71002,Kashmore,Kashmore,Zor Garh,zorgarh,1989,5279,Zorgarh,osm,exact,1.0
+PK71003,Kashmore,Targwani,Ghano Khoso,ghanokhoso,2048,4218,Gano Khoso,geonames,fuzzy,0.947
+PK71003,Kashmore,Targwani,Karampur,karampur,2057,12385,Karampur,osm,exact,1.0
+PK71003,Kashmore,Targwani,Salghni,salghni,2071,2550,Salghani,geonames_alt,fuzzy,0.933
+PK71003,Kashmore,Targwani,Sawan Gabol,sawangabol,2073,4788,Sawan Gabol,geonames,exact,1.0
+PK71003,Kashmore,Targwani,Shah gazi,shahgazi,2074,10625,Goth Shah Gazi,geonames,exact,1.0
+PK71003,Kashmore,Targwani,Sher garh,shergarh,2075,12527,Shergarh,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Akro,akro,2392,56033,Akro,geonames_alt,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Araro,araro,2397,53685,Goth Araro,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Buo,buo,2403,57283,Buo,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Derah,derah,2406,59165,Derah,geonames_alt,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Ghulam Nabi,ghulamnabi,2409,57473,Ghulam Nabi,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Hussian Pato,hussianpato,2411,51698,Hussain Pato,geonames_alt,fuzzy,0.909
+PK71101,Khairpur,Faiz Ganj,Kandiari,kandiari,2416,50557,Kandiari,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Karoondi,karoondi,2418,50965,Karoondi,geonames_alt,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Khair Muhammad,khairmuhammad,2419,53057,Goth Khan Muhammad,geonames,fuzzy,0.88
+PK71101,Khairpur,Faiz Ganj,Mari,mari,2425,50099,Goth Mari,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Mehar Ali Unar,meharaliunar,2426,51071,Goth Mehar Ali Unar,geonames_alt,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Pacca Chang,paccachang,2434,51927,Pacca Chang,geonames_alt,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Pario Mari,pariomari,2437,56476,Goth Pario Marri,geonames,fuzzy,0.947
+PK71101,Khairpur,Faiz Ganj,Radhan Mashaikh,radhanmashaikh,2441,56593,Goth Radhan Mashaikh,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Rattar,rattar,2442,51364,Goth Ratar,geonames,fuzzy,0.909
+PK71101,Khairpur,Faiz Ganj,Sahito,sahito,2443,52313,Goth Sahito,geonames,exact,1.0
+PK71101,Khairpur,Faiz Ganj,Uman,uman,2446,55205,Uman,geonames_alt,exact,1.0
+PK71102,Khairpur,Gambat,Agra,agra,2124,37595,Goth Agra,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Baharo Dero,baharodero,2125,34912,Baharo Dero,osm,exact,1.0
+PK71102,Khairpur,Gambat,Belharo,belharo,2127,37657,Goth Belaro,geonames,fuzzy,0.923
+PK71102,Khairpur,Gambat,Gambat,gambat,2135,38317,Gambat,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Gangar,gangar,2136,37332,Gangar,geonames_alt,exact,1.0
+PK71102,Khairpur,Gambat,Golo Wahan,golowahan,2138,37370,Goth Golo Wahan,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Jamra,jamra,2140,38638,Goth Jamra,osm,exact,1.0
+PK71102,Khairpur,Gambat,Kamal Dero,kamaldero,2142,36750,Kamaldero,osm,exact,1.0
+PK71102,Khairpur,Gambat,Khairo Dero,khairodero,2146,35948,Khairodero,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Khemtia,khemtia,2147,35946,Khemta,geonames_alt,fuzzy,0.923
+PK71102,Khairpur,Gambat,Khuhra,khuhra,2148,37947,Khuhra,geonames_alt,exact,1.0
+PK71102,Khairpur,Gambat,Lakha,lakha,2149,38786,Goth Lakha,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Miani,miani,2152,34250,Miani,osm,exact,1.0
+PK71102,Khairpur,Gambat,Paleeja,paleeja,2155,34024,Paleja,geonames_alt,fuzzy,0.923
+PK71102,Khairpur,Gambat,Razi Dero,razidero,2159,36547,Razidero,osm,exact,1.0
+PK71102,Khairpur,Gambat,Ripri,ripri,2161,34677,Goth Ripri,geonames,exact,1.0
+PK71102,Khairpur,Gambat,Satabo,satabo,2166,36683,Satabo,osm,exact,1.0
+PK71103,Khairpur,Khairpur,Abad Jagir,abadjagir,2082,35067,Abad Jagir,geonames_alt,exact,1.0
+PK71103,Khairpur,Khairpur,Atteri,atteri,2083,33709,Goth Ateri,geonames,fuzzy,0.909
+PK71103,Khairpur,Khairpur,Baberloi,baberloi,2084,30406,Baberloi,geonames_alt,exact,1.0
+PK71103,Khairpur,Khairpur,Bugro,bugro,2087,35628,Bugro,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Danwaro,danwaro,2090,34824,Goth Danwaro,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Gujo,gujo,2091,33354,Gujjo,osm,fuzzy,0.889
+PK71103,Khairpur,Khairpur,Khanpur,khanpur,2096,34457,Khanpur,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Mangi,mangi,2102,35425,Mangi Jo Goth,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Mitho Mari,mithomari,2104,34049,Mitho Mari,osm,exact,1.0
+PK71103,Khairpur,Khairpur,Nizamani,nizamani,2105,34741,Nizamani,osm,exact,1.0
+PK71103,Khairpur,Khairpur,Palh,palh,2106,32676,Palh Goth,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Paneero,paneero,2107,36376,Panero,geonames,fuzzy,0.923
+PK71103,Khairpur,Khairpur,Panwari,panwari,2108,35457,Panwari,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Pipri,pipri,2111,38321,Goth Pipri,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Pir Mangio,pirmangio,2112,32653,Pir Mangio,osm,exact,1.0
+PK71103,Khairpur,Khairpur,Raina,raina,2113,33118,Raina,osm,exact,1.0
+PK71103,Khairpur,Khairpur,Tando Masti,tandomasti,2117,36632,Tando Masti,geonames_alt,exact,1.0
+PK71103,Khairpur,Khairpur,Tando Nazar Ali,tandonazarali,2118,35212,Tando Nazar Ali,geonames,exact,1.0
+PK71103,Khairpur,Khairpur,Therhi,therhi,2120,32301,Theri Goth,geonames,fuzzy,0.909
+PK71104,Khairpur,Kingri,Ahmed Pur,ahmedpur,2175,33570,Ahmedpur,geonames_alt,exact,1.0
+PK71104,Khairpur,Kingri,Fateh Ali Chandio,fatehalichandio,2184,34067,Fateh Ali Chandio,osm,exact,1.0
+PK71104,Khairpur,Kingri,Kingri,kingri,2196,32538,Goth Kingri,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Mangerji,mangerji,2199,32165,Goth Mangerji,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Manghanwari,manghanwari,2200,33396,Manghan Wari,osm,exact,1.0
+PK71104,Khairpur,Kingri,Mian Khan,miankhan,2202,34007,Mian Khan,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Miano,miano,2203,34905,Goth Miano,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Mitho dero,mithodero,2204,32769,Mitho Dero,osm,exact,1.0
+PK71104,Khairpur,Kingri,Paki Khohi,pakikhohi,2207,36484,Paki Khuhi,geonames_alt,fuzzy,0.889
+PK71104,Khairpur,Kingri,Pir Shahbazi,pirshahbazi,2208,33661,Village Pir Shahbazi,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Piryalo,piryalo,2209,31038,Piryalo,geonames,exact,1.0
+PK71104,Khairpur,Kingri,Rafique Mahesar,rafiquemahesar,2211,35220,Rafique Mahesar,osm,exact,1.0
+PK71104,Khairpur,Kingri,Rahouja,rahouja,2212,32218,Rahuja,geonames_alt,fuzzy,0.923
+PK71104,Khairpur,Kingri,Sadarji,sadarji,2214,32615,Sadarji,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Arbani,arbani,2226,38462,Goth Arbani,geonames,exact,1.0
+PK71105,Khairpur,Kotdiji,Babar,babar,2227,41902,Babbar,geonames,fuzzy,0.909
+PK71105,Khairpur,Kotdiji,Bago Dharo,bagodharo,2228,42516,Bago Dhoro,geonames_alt,fuzzy,0.889
+PK71105,Khairpur,Kotdiji,Baharo Lashari,baharolashari,2229,36361,Baharo Lashari,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Bakho Lashari,bakholashari,2230,40727,Goth Bakho Lashari,geonames,exact,1.0
+PK71105,Khairpur,Kotdiji,Bapho,bapho,2231,40937,Bapho,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Hussainabad,hussainabad,2238,36217,Hussainabad,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Jahndo Mashaikh,jahndomashaikh,2239,41680,Jhando Mashaikh,geonames,fuzzy,0.929
+PK71105,Khairpur,Kotdiji,Jiskani,jiskani,2240,39559,Jiskani,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Kanasira,kanasira,2242,35577,Kanasra,geonames,fuzzy,0.933
+PK71105,Khairpur,Kotdiji,Kotdiji,kotdiji,2244,38911,Kot Diji,geonames,exact,1.0
+PK71105,Khairpur,Kotdiji,Layari,layari,2246,36867,Layari,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Luhrani,luhrani,2247,41469,Luhrani,geonames,exact,1.0
+PK71105,Khairpur,Kotdiji,Mehrano-1,mehrano,2249,39464,Mehrano,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Mithan Fakir,mithanfakir,2252,38280,Mithan Fakir,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Mithri,mithri,2253,37316,Mithri,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Muhammad Hajam,muhammadhajam,2254,39487,Mohammad Hajam,geonames_alt,fuzzy,0.923
+PK71105,Khairpur,Kotdiji,Noor Bozdar,noorbozdar,2261,42454,Noor Bozdar,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Pir Gudo,pirgudo,2264,38949,Pir Gudo,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Qaim Gopang,qaimgopang,2266,38774,Goth Qaim Gopang,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Rajpari,rajpari,2268,37226,Rajpari,osm,exact,1.0
+PK71105,Khairpur,Kotdiji,Rind,rind,2269,38302,Goth Rind,geonames_alt,exact,1.0
+PK71105,Khairpur,Kotdiji,Shafi Muhammad Ujjan,shafimuhammadujjan,2270,39722,Shafi Muhammad Ujan,geonames_alt,fuzzy,0.971
+PK71105,Khairpur,Kotdiji,Sohu,sohu,2271,37896,Deh Sohu,geonames,exact,1.0
+PK71105,Khairpur,Kotdiji,Sono Gopang,sonogopang,2272,38238,Sano Gopang,geonames,fuzzy,0.9
+PK71105,Khairpur,Kotdiji,Talpur Wada,talpurwada,2273,42821,Talpur Wado,geonames,fuzzy,0.9
+PK71105,Khairpur,Kotdiji,Wali Muhammad Bhatti,walimuhammadbhatti,2275,39751,Wali Muhammad Bhatti,osm,exact,1.0
+PK71106,Khairpur,Nara,Chachro,chachro,2339,43258,Chachro,geonames,exact,1.0
+PK71106,Khairpur,Nara,Dingari,dingari,2348,54737,Dingri,geonames,fuzzy,0.923
+PK71106,Khairpur,Nara,Illyas wari,illyaswari,2355,46803,Ilyaswari,geonames,fuzzy,0.947
+PK71106,Khairpur,Nara,Kathore,kathore,2360,47211,Kathore,geonames_alt,exact,1.0
+PK71106,Khairpur,Nara,Kharch,kharch,2361,53903,Kharch,geonames_alt,exact,1.0
+PK71106,Khairpur,Nara,Khenwari,khenwari,2362,60057,Khewari,geonames,fuzzy,0.933
+PK71106,Khairpur,Nara,Kirari,kirari,2364,55995,Kirar,geonames,fuzzy,0.909
+PK71106,Khairpur,Nara,Pateji,pateji,2374,53922,Goth Pateji,geonames,exact,1.0
+PK71106,Khairpur,Nara,Pir ibu,piribu,2379,63365,Pir Ïbu,geonames,exact,1.0
+PK71106,Khairpur,Nara,Saido,saido,2382,44103,Saido Goth,geonames,exact,1.0
+PK71106,Khairpur,Nara,Sorah,sorah,2386,44880,Sorah,geonames,exact,1.0
+PK71106,Khairpur,Nara,Tajal,tajal,2389,51715,Tajal,geonames_alt,exact,1.0
+PK71107,Khairpur,Sobho Dero,Bhellar,bhellar,2450,40899,Bhelar,geonames_alt,fuzzy,0.923
+PK71107,Khairpur,Sobho Dero,Gaddeji,gaddeji,2454,41332,Gadeji,osm,fuzzy,0.923
+PK71107,Khairpur,Sobho Dero,Gahno Bhagat,gahnobhagat,2455,41302,Goth Gahno Bhagat,geonames,exact,1.0
+PK71107,Khairpur,Sobho Dero,Hingoreja,hingoreja,2456,42382,Hingorja,geonames,fuzzy,0.941
+PK71107,Khairpur,Sobho Dero,Machhar,machhar,2465,42236,Machhar Jo Goth,geonames,exact,1.0
+PK71107,Khairpur,Sobho Dero,Mangnapota,mangnapota,2468,43312,Mangnapota,geonames_alt,exact,1.0
+PK71107,Khairpur,Sobho Dero,Mir Khan Shahani,mirkhanshahani,2471,40272,Goth Mir Khan Shahani,osm,exact,1.0
+PK71107,Khairpur,Sobho Dero,Niwaro,niwaro,2472,40722,Goth Niwaro,osm,exact,1.0
+PK71107,Khairpur,Sobho Dero,Pialo,pialo,2475,39706,Piyalo,geonames_alt,fuzzy,0.909
+PK71107,Khairpur,Sobho Dero,Rahopota,rahopota,2479,43482,Rahpota,geonames_alt,fuzzy,0.933
+PK71107,Khairpur,Sobho Dero,Sagyon,sagyon,2484,41074,Sagyoon,geonames_alt,fuzzy,0.923
+PK71107,Khairpur,Sobho Dero,Sami,sami,2486,41510,Goth Sami,geonames,exact,1.0
+PK71107,Khairpur,Sobho Dero,Setharja Lower,setharjalower,2488,40537,Setharja Lower,geonames_alt,exact,1.0
+PK71107,Khairpur,Sobho Dero,Sobhodero,sobhodero,2490,39885,Sobhodero,geonames,exact,1.0
+PK71107,Khairpur,Sobho Dero,Watani,watani,2493,40227,Watani Ji Jo Goth,osm,exact,1.0
+PK71108,Khairpur,Mirwah,Dato Dasti,datodasti,2282,45299,Data Dasti,geonames,fuzzy,0.889
+PK71108,Khairpur,Mirwah,Deparja,deparja,2283,43874,Deparja,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Hindyari,hindyari,2291,45061,Hindyari,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Jalalani,jalalani,2292,49187,Jalalani,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Jangwaro,jangwaro,2294,48282,Goth Jang Waro,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Kanchhi,kanchhi,2297,49124,Kanchhi,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Khuda Bux Kubar,khudabuxkubar,2299,43256,Khuda Bux Kubhar,geonames_alt,fuzzy,0.963
+PK71108,Khairpur,Mirwah,Mandan,mandan,2300,46911,Goth Mandan,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Mothar,mothar,2305,48274,Goth Mothar,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Muhammad Ashabi,muhammadashabi,2306,46859,Goth Muhammad Shafi,geonames,fuzzy,0.889
+PK71108,Khairpur,Mirwah,Pirwasan,pirwasan,2309,48168,Pir Wasan,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Sanjrani,sanjrani,2316,44805,Sanjrani,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Sawri,sawri,2317,49346,Goth Sawari,geonames,fuzzy,0.909
+PK71108,Khairpur,Mirwah,Seri,seri,2318,46839,Seri,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Sher Khan Lund,sherkhanlund,2320,43123,Sher Khan Lund,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Sutyaro,sutyaro,2322,48482,Sutyaro,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Tando Mir Ali,tandomirali,2324,45729,Tando Mir Ali,geonames,exact,1.0
+PK71108,Khairpur,Mirwah,Thari,thari,2327,46069,Thari,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Wagah,wagah,2328,48510,Wagah,geonames_alt,exact,1.0
+PK71108,Khairpur,Mirwah,Wali Dad Lund,walidadlund,2329,42670,Walidad Lund,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Amrot,amrot,2641,37946,Amrot,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Arija,arija,2642,37242,Goth Arija,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Bakrani,bakrani,2643,36373,Bakrani,geonames_alt,exact,1.0
+PK71301,Larkana,Bakrani,Garello,garello,2654,36597,Goth Garelo,geonames,fuzzy,0.923
+PK71301,Larkana,Bakrani,Gud,gud,2655,38038,Gud,osm,exact,1.0
+PK71301,Larkana,Bakrani,Hassan Wahan,hassanwahan,2656,39028,Hasan Wahan,osm,fuzzy,0.952
+PK71301,Larkana,Bakrani,Karira,karira,2660,37314,Karira,geonames_alt,exact,1.0
+PK71301,Larkana,Bakrani,Mad Bahu,madbahu,2662,36025,Goth Mad Bahu,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Mato,mato,2664,36386,Goth Mato,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Mehrab Pur,mehrabpur,2665,37066,Goth Mehrab Pur,geonames,exact,1.0
+PK71301,Larkana,Bakrani,Tagar,tagar,2678,35310,Goth Taggar,geonames,fuzzy,0.909
+PK71301,Larkana,Bakrani,Thullah,thullah,2679,36404,Thulah,geonames_alt,fuzzy,0.923
+PK71302,Larkana,Dokri,Baburi,baburi,2610,38232,Goth Baburi,geonames,exact,1.0
+PK71302,Larkana,Dokri,Badah,badah,2611,39118,Badah,geonames,exact,1.0
+PK71302,Larkana,Dokri,Bagi,bagi,2612,39302,Goth Bagi,geonames,exact,1.0
+PK71302,Larkana,Dokri,Chakro,chakro,2616,41865,Goth Chakro,geonames_alt,exact,1.0
+PK71302,Larkana,Dokri,Fateh pur,fatehpur,2619,41582,Goth Fatehpur,geonames,exact,1.0
+PK71302,Larkana,Dokri,Gaji dero,gajidero,2620,40711,Goth Gaji Dero,geonames,exact,1.0
+PK71302,Larkana,Dokri,Ghanghriko,ghanghriko,2621,40169,Goth Ghanghirko,geonames,fuzzy,0.9
+PK71302,Larkana,Dokri,Gujar,gujar,2622,37920,Gujhar,osm,fuzzy,0.909
+PK71302,Larkana,Dokri,Karani,karani,2625,40954,Karani,osm,exact,1.0
+PK71302,Larkana,Dokri,Khachar pur,khacharpur,2626,41519,Goth Khachar Pur,geonames,exact,1.0
+PK71302,Larkana,Dokri,Khairo jhatiyal,khairojhatiyal,2628,40988,Khairo Jhatial,geonames_alt,fuzzy,0.963
+PK71302,Larkana,Dokri,Nari Lashari,narilashari,2632,43613,Nari Lashari,osm,exact,1.0
+PK71302,Larkana,Dokri,Samitia,samitia,2633,41502,Goth Samtia,geonames,fuzzy,0.923
+PK71302,Larkana,Dokri,Seehar,seehar,2634,41573,Goth Sehar,geonames,fuzzy,0.909
+PK71302,Larkana,Dokri,Tiger,tiger,2636,41988,Goth Thiger,geonames,fuzzy,0.909
+PK71302,Larkana,Dokri,Veehar,veehar,2637,41751,Veehar,osm,exact,1.0
+PK71302,Larkana,Dokri,Yaru Lakhair,yarulakhair,2639,42841,Goth Yaru Lakhair,geonames,exact,1.0
+PK71303,Larkana,Larkana,Akil,akil,2496,32984,Akil,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Bero Chandio,berochandio,2499,32997,Bero Chandio,geonames,exact,1.0
+PK71303,Larkana,Larkana,Chakar Ali,chakarali,2502,32822,Chakar Ali,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Chuharpur,chuharpur,2503,32293,Goth Chuhar Pur,geonames,exact,1.0
+PK71303,Larkana,Larkana,Dhamrah,dhamrah,2506,30827,Dhamraha,geonames_alt,fuzzy,0.933
+PK71303,Larkana,Larkana,Dodai,dodai,2507,32564,Goth Dodai,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Fatehpur,fatehpur,2508,31641,Fatehpur,geonames,exact,1.0
+PK71303,Larkana,Larkana,Ghanghro,ghanghro,2510,33102,Goth Ghangro,geonames,fuzzy,0.933
+PK71303,Larkana,Larkana,Kanga,kanga,2514,31446,Kanga,osm,exact,1.0
+PK71303,Larkana,Larkana,Kathar,kathar,2515,30680,Kathar,geonames,exact,1.0
+PK71303,Larkana,Larkana,Khedkar,khedkar,2518,33011,Khedkar,osm,exact,1.0
+PK71303,Larkana,Larkana,Kothi,kothi,2519,30270,Kothi,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Langh,langh,2522,29930,Goth Langah,geonames,fuzzy,0.909
+PK71303,Larkana,Larkana,Masu Hab,masuhab,2526,33013,Masu Hab,geonames,exact,1.0
+PK71303,Larkana,Larkana,Mitho Dero,mithodero,2527,33472,Mithodero,osm,exact,1.0
+PK71303,Larkana,Larkana,Nangar Sangi,nangarsangi,2530,30073,Goth Nanga Sangi,geonames_alt,fuzzy,0.952
+PK71303,Larkana,Larkana,Phul,phul,2535,33900,Goth Phul,geonames,exact,1.0
+PK71303,Larkana,Larkana,Sache Dino Kalhoro,sachedinokalhoro,2539,32279,Sachedino Kalhoro,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Sanhri,sanhri,2540,33972,Sanhri,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Vikia Sangi,vikiasangi,2545,30460,Vikia Sangi,geonames_alt,exact,1.0
+PK71303,Larkana,Larkana,Zakrio Mahesar,zakriomahesar,2547,30615,Zakrio Mahesar,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Phulpota,phulpota,2548,30551,Phulpota,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Akil Hakro,akilhakro,2549,28248,Akil Hakro,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Banguldero,banguldero,2550,28516,Banguldero,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Bhahman,bhahman,2551,29106,Bahman,geonames_alt,fuzzy,0.923
+PK71304,Larkana,Rato Dero,Bhutta,bhutta,2553,30950,Goth Bhutta,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Chajra,chajra,2555,26914,Chajra,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Jumo Agham,jumoagham,2564,24599,Jumo Agham,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Khairodero,khairodero,2566,28743,Khairodero,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Khan Wah,khanwah,2567,28666,Goth Khan Wah,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Khuda Bux Bhutto,khudabuxbhutto,2568,29635,Khuda Bux Bhutto,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Kodrani,kodrani,2569,23539,Goth Kodrani,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Kubro,kubro,2571,30423,Kubro,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Masu Dero,masudero,2575,27166,Masu Dero,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Mevo Ghanghro,mevoghanghro,2576,23776,Mevo Ghangro,geonames,fuzzy,0.957
+PK71304,Larkana,Rato Dero,Moria Faqir,moriafaqir,2579,31814,Goth Moria Faqir,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Mullan Kalhora,mullankalhora,2580,29758,Mulla Kalhora,geonames_alt,fuzzy,0.96
+PK71304,Larkana,Rato Dero,Naudero,naudero,2581,30234,Naudero,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Panju Lorir,panjulorir,2588,25477,Panju Lorir,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Pir Bux Bhutto,pirbuxbhutto,2591,27603,Pir Bux Bhutto,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Rahuja,rahuja,2592,29781,Goth Rahuja,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Saidodero,saidodero,2594,30818,Goth Saidodero,geonames,exact,1.0
+PK71304,Larkana,Rato Dero,Wali Dad Veesar,walidadveesar,2603,26701,Walidad Visar,geonames,fuzzy,0.88
+PK71304,Larkana,Rato Dero,Waris Dino Machhi,warisdinomachhi,2604,21716,Warisdino Machhi,geonames_alt,exact,1.0
+PK71304,Larkana,Rato Dero,Wassayo Bhutto,wassayobhutto,2606,20378,Goth Wassayo Bhutto,osm,exact,1.0
+PK71304,Larkana,Rato Dero,Zangehja,zangehja,2608,27140,Goth Zangeja,geonames,fuzzy,0.933
+PK71501,Matiari,Hala,Bhanoth,bhanoth,2682,83777,Banoth,osm,fuzzy,0.923
+PK71501,Matiari,Hala,Bhit Shah,bhitshah,2683,84597,Bhit Shah,geonames,exact,1.0
+PK71501,Matiari,Hala,Dhabri,dhabri,2688,84378,Dhari,geonames_alt,fuzzy,0.909
+PK71501,Matiari,Hala,Ghotana,ghotana,2692,88507,Ghotana,osm,exact,1.0
+PK71501,Matiari,Hala,Hala,hala,2693,85518,Hala,geonames,exact,1.0
+PK71501,Matiari,Hala,Khandu,khandu,2700,88325,Goth Khandu,geonames,exact,1.0
+PK71501,Matiari,Hala,Khanoth,khanoth,2701,87304,Khanoth,geonames_alt,exact,1.0
+PK71501,Matiari,Hala,Pir Bilawal,pirbilawal,2708,83944,Pir Bilawal,geonames,exact,1.0
+PK71501,Matiari,Hala,Sandhan,sandhan,2712,85106,Goth Sandhan,geonames,exact,1.0
+PK71501,Matiari,Hala,Tarah,tarah,2714,83198,Goth Tara,geonames,fuzzy,0.889
+PK71502,Matiari,Matirai,Baudero,baudero,2719,93579,Bahu Dero,geonames_alt,fuzzy,0.933
+PK71502,Matiari,Matirai,Jaindal Kot,jaindalkot,2729,97797,Jaindalkot,geonames_alt,exact,1.0
+PK71502,Matiari,Matirai,Khorkhani,khorkhani,2734,90330,Goth Khorkhani,osm,exact,1.0
+PK71502,Matiari,Matirai,Matiari,matiari,2740,94852,Matiari,geonames,exact,1.0
+PK71502,Matiari,Matirai,Oderolal,oderolal,2743,90645,Oderolal,geonames_alt,exact,1.0
+PK71502,Matiari,Matirai,Palijani,palijani,2744,96286,Pali Jani,geonames,exact,1.0
+PK71502,Matiari,Matirai,Porath,porath,2747,93748,Porath,geonames_alt,exact,1.0
+PK71502,Matiari,Matirai,Sekhat,sekhat,2753,92379,Sekhat (سیکاٹ),osm,exact,1.0
+PK71502,Matiari,Matirai,Shahpur,shahpur,2754,98474,Shah Pur,geonames,exact,1.0
+PK71502,Matiari,Matirai,Tajpur,tajpur,2760,100761,Tajpur,geonames,exact,1.0
+PK71502,Matiari,Matirai,Thorha,thorha,2762,87392,Thorha,geonames_alt,exact,1.0
+PK71503,Matiari,Saeedabad,Amin lakho,aminlakho,2766,80162,Goth Amin Lakho,geonames,exact,1.0
+PK71503,Matiari,Saeedabad,Chhachhri,chhachhri,2768,81136,New Chhachhar,geonames_alt,fuzzy,0.889
+PK71503,Matiari,Saeedabad,Chitori,chitori,2770,80748,Goth Chitori,geonames,exact,1.0
+PK71503,Matiari,Saeedabad,Ranoo,ranoo,2789,83259,Rano,osm,fuzzy,0.889
+PK71601,Mirpurkhas,Digri,169-Digri,digri,2795,114810,Digri,geonames,exact,1.0
+PK71601,Mirpurkhas,Digri,175-abring,abring,2859,116949,Goth Abring,geonames_alt,exact,1.0
+PK71602,Mirpurkhas,Hussain Bux Mari,105-Bhitaro,bhitaro,2898,98231,Goth Bhitaro,osm,exact,1.0
+PK71602,Mirpurkhas,Hussain Bux Mari,91-Khan,khan,2908,94083,Khan,geonames,exact,1.0
+PK71602,Mirpurkhas,Hussain Bux Mari,94-Miro Mari,miromari,2909,94403,Goth Miro Marri,geonames,fuzzy,0.941
+PK71603,Mirpurkhas,Jhudo,313-Jhudo,jhudo,2947,124728,Jhudo,geonames,exact,1.0
+PK71603,Mirpurkhas,Jhudo,318-Roshanabad,roshanabad,2949,130185,Roshanabad,geonames,exact,1.0
+PK71603,Mirpurkhas,Jhudo,Samroti,samroti,2972,131829,Deh Samroti,geonames,exact,1.0
+PK71604,Mirpurkhas,K.G.M.B,258-Kachelo,kachelo,3061,112290,Kachelo,geonames_alt,exact,1.0
+PK71604,Mirpurkhas,K.G.M.B,259-Sodha Bore,sodhabore,3062,111481,Goth Soda Bore,geonames,fuzzy,0.941
+PK71604,Mirpurkhas,K.G.M.B,286-Rajwah,rajwah,3068,105487,Goth Rajwah,geonames,exact,1.0
+PK71604,Mirpurkhas,K.G.M.B,299-Lal shah,lalshah,3070,113071,Lal Shah,geonames,exact,1.0
+PK71606,Mirpurkhas,Shujabad,Khumbri,khumbri,3123,105825,Khumbri,geonames,exact,1.0
+PK71606,Mirpurkhas,Shujabad,Manjri,manjri,3124,101303,Goth Manjri,geonames_alt,exact,1.0
+PK71606,Mirpurkhas,Shujabad,Mirwah,mirwah,3125,107770,Mirwah,geonames_alt,exact,1.0
+PK71606,Mirpurkhas,Shujabad,Seri,seri,3130,107481,Goth Seri,geonames,exact,1.0
+PK71607,Mirpurkhas,Sindhri,128-Kathri,kathri,3132,94313,Kathri,osm,exact,1.0
+PK71607,Mirpurkhas,Sindhri,136-Jhurbi,jhurbi,3155,95769,Jhurbi,osm,exact,1.0
+PK71607,Mirpurkhas,Sindhri,74-Khirah,khirah,3157,93324,Khirah,geonames,exact,1.0
+PK71607,Mirpurkhas,Sindhri,Hingorno,hingorno,3179,88873,Hingorno,geonames,exact,1.0
+PK71607,Mirpurkhas,Sindhri,Khani Maghrio,khanimaghrio,3186,88508,Goth Khani Mangrio,geonames,fuzzy,0.917
+PK71607,Mirpurkhas,Sindhri,Sain dad Chhoro,saindadchhoro,3200,95713,Goth Saindad Chhoro,geonames,exact,1.0
+PK71607,Mirpurkhas,Sindhri,Sindhri,sindhri,3203,89988,Goth Sindhri,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Bella Wah,bellawah,3406,52863,Bella Wah,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Bhiria,bhiria,3407,50634,Bhiria,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Dali,dali,3412,49243,Dali,geonames_alt,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Dalipota,dalipota,3413,50651,Dalipota,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Dingaro,dingaro,3415,50763,Dingro,geonames_alt,fuzzy,0.923
+PK71701,Naushahro Feroze,Bhiria,Jalbani`,jalbani,3417,51017,Jalbani,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Khah Jagir,khahjagir,3420,48624,Khah Jagir,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Khahi Qasim,khahiqasim,3422,51645,Khahi Qasim,osm,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Kot Bahadur,kotbahadur,3424,51159,Kot Bahadur,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Mango,mango,3428,49528,Mang,geonames_alt,fuzzy,0.889
+PK71701,Naushahro Feroze,Bhiria,Palano,palano,3431,49043,Palano,geonames_alt,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Panhwari,panhwari,3432,52193,Goth Pahwari,geonames,fuzzy,0.933
+PK71701,Naushahro Feroze,Bhiria,Pano Usman,panousman,3433,50944,Pano Usman,geonames,exact,1.0
+PK71701,Naushahro Feroze,Bhiria,Tharushah,tharushah,3436,49559,Tharu Shah,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Bahri-1,bahri,3354,44018,Bakhri,geonames_alt,fuzzy,0.909
+PK71702,Naushahro Feroze,Kandiaro,Belo Bhounar,belobhounar,3360,43196,Belo Bhour,geonames_alt,fuzzy,0.9
+PK71702,Naushahro Feroze,Kandiaro,Bhagodero-1,bhagodero,3361,46844,Bhagodero,geonames_alt,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Budak,budak,3364,48346,Goth Budak,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Detha,detha,3369,47046,Goth Detha,osm,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Ghulam shah,ghulamshah,3371,47271,Ghulam Shah,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Gul shah,gulshah,3372,43458,Gul Shah,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Kamaldero-1,kamaldero,3377,45638,Kamal Dero,osm,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Kamaldero-2,kamaldero,3378,45257,Kamal Dero,osm,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Kandhar,kandhar,3379,47553,Kandhar,geonames_alt,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Kandiaro,kandiaro,3380,45916,Kandiaro,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Kouro khushik,kourokhushik,3383,42954,Kauro Khushik,geonames_alt,fuzzy,0.917
+PK71702,Naushahro Feroze,Kandiaro,Ladho bisharat,ladhobisharat,3384,45925,Ladho Bisharat,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Lundi,lundi,3387,42716,Lundi,osm,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Machi,machi,3388,45031,Machi,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Manjuth,manjuth,3390,48089,Manjuth,geonames_alt,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Mohbatdero Siyal,mohbatderosiyal,3393,42669,Mohabatdero Sial,osm,fuzzy,0.966
+PK71702,Naushahro Feroze,Kandiaro,Mosodero,mosodero,3395,44097,Moosodero,geonames_alt,fuzzy,0.941
+PK71702,Naushahro Feroze,Kandiaro,Salehpur,salehpur,3398,46406,Goth Old Salehpur,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Shah mirdero,shahmirdero,3401,45092,Goth Shahmir Dero,geonames,exact,1.0
+PK71702,Naushahro Feroze,Kandiaro,Shanikhani,shanikhani,3402,43136,Shaikhani,geonames_alt,fuzzy,0.947
+PK71702,Naushahro Feroze,Kandiaro,Sona bindi,sonabindi,3403,47039,Goth Sona Bindi,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Behlani,behlani,3320,45462,Behlani,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Chibhar Babhan,chibharbabhan,3322,46401,Chibhar Banbhan,geonames_alt,fuzzy,0.963
+PK71703,Naushahro Feroze,Meharabpur,Dewan,dewan,3325,44180,Dewan,geonames_alt,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Dodha,dodha,3326,46298,Dodha,osm,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Godho Hindu,godhohindu,3327,44995,Godho Hindu,geonames_alt,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Halani,halani,3328,45733,Halani,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Hote Khan Jalbani,hotekhanjalbani,3329,47350,Hot Khan Jalbani,geonames,fuzzy,0.966
+PK71703,Naushahro Feroze,Meharabpur,Jaindo Rajper,jaindorajper,3330,46267,Goth Jaindo Rajpar,geonames,fuzzy,0.917
+PK71703,Naushahro Feroze,Meharabpur,Kharik,kharik,3332,46786,Kharik,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Khuda Bux Jalbani,khudabuxjalbani,3333,47272,Khudabux Jalbani,geonames_alt,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Mad Ibyani,madibyani,3336,43733,Mad Ibiani,geonames,fuzzy,0.889
+PK71703,Naushahro Feroze,Meharabpur,Mehar Haji,meharhaji,3337,47009,Goth Mehar Haji,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Meharabpur,meharabpur,3338,45225,Mehrabpur,geonames,fuzzy,0.947
+PK71703,Naushahro Feroze,Meharabpur,Moule Dino Haji,mouledinohaji,3339,46643,Mauledino Haji,geonames_alt,fuzzy,0.923
+PK71703,Naushahro Feroze,Meharabpur,Rajo Dahri,rajodahri,3345,48244,Goth Rajo Dahri,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Saleh Sahito,salehsahito,3347,44849,Saleh Sahto,geonames_alt,fuzzy,0.952
+PK71703,Naushahro Feroze,Meharabpur,Sangi,sangi,3348,49282,Sangi,geonames,exact,1.0
+PK71703,Naushahro Feroze,Meharabpur,Sittar Dino Mangrio,sittardinomangrio,3349,49192,Goth Sattar Dino Magrio,geonames,fuzzy,0.909
+PK71703,Naushahro Feroze,Meharabpur,Syed Shuja,syedshuja,3350,47225,Syed Shuja,geonames,exact,1.0
+PK71704,Naushahro Feroze,Moro,Chaneja,chaneja,3273,55570,Chaneja,geonames,exact,1.0
+PK71704,Naushahro Feroze,Moro,Daris,daris,3275,57459,Daris,geonames_alt,exact,1.0
+PK71704,Naushahro Feroze,Moro,Deparja,deparja,3276,54188,Goth Deparja,geonames,exact,1.0
+PK71704,Naushahro Feroze,Moro,Doro Behan,dorobehan,3279,56944,Dooro Behan,osm,fuzzy,0.947
+PK71704,Naushahro Feroze,Moro,Fato Balal,fatobalal,3282,57506,Fatoo Balal,osm,fuzzy,0.947
+PK71704,Naushahro Feroze,Moro,Karocho,karocho,3292,56918,Karoocho,osm,fuzzy,0.933
+PK71704,Naushahro Feroze,Moro,Kot Satabo,kotsatabo,3299,55750,Kotsatābo,geonames,exact,1.0
+PK71704,Naushahro Feroze,Moro,Lalia,lalia,3300,56502,Lalia,osm,exact,1.0
+PK71704,Naushahro Feroze,Moro,Malkani,malkani,3303,54520,Malkani,geonames_alt,exact,1.0
+PK71704,Naushahro Feroze,Moro,Mari,mari,3305,59348,Mari,geonames,exact,1.0
+PK71704,Naushahro Feroze,Moro,Sehra,sehra,3314,52810,Sehra,geonames_alt,exact,1.0
+PK71704,Naushahro Feroze,Moro,Wad Pagia,wadpagia,3316,57545,Wadpagia,geonames,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Bhurnd,bhurnd,3213,52554,Bhurund,osm,fuzzy,0.923
+PK71705,Naushahro Feroze,Naushahro Feroze,Chanari,chanari,3215,57118,Chanari,geonames_alt,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Cheeho,cheeho,3217,54526,Cheeho,osm,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Jarri,jarri,3225,58664,Jari,geonames_alt,fuzzy,0.889
+PK71705,Naushahro Feroze,Naushahro Feroze,Kalro,kalro,3229,56165,Kalro,geonames,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Masur Ji Wai,masurjiwai,3240,59443,Masur-ji-wai,geonames_alt,fuzzy,0.889
+PK71705,Naushahro Feroze,Naushahro Feroze,Miranpur,miranpur,3242,54470,Miranpur,osm,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Mithiani No.1,mithianino,3243,51813,Mithiani,geonames,fuzzy,0.889
+PK71705,Naushahro Feroze,Naushahro Feroze,Naushahro,naushahro,3247,52235,Naushahro,geonames_alt,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Phull,phull,3252,55525,Phul,geonames,fuzzy,0.889
+PK71705,Naushahro Feroze,Naushahro Feroze,Pir Parto,pirparto,3253,53400,Pir Parto,geonames,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Sahib Khan,sahibkhan,3254,59086,Sahib Khan,geonames,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Sher Khan,sherkhan,3257,59549,Sher Khan,geonames_alt,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Tetri,tetri,3259,56538,Tetri,geonames_alt,exact,1.0
+PK71705,Naushahro Feroze,Naushahro Feroze,Wagan,wagan,3263,54614,Wagan,geonames_alt,exact,1.0
+PK71801,Sanghar,Jam Nawaz Ali,Berani,berani,3506,86860,Berani,geonames,exact,1.0
+PK71801,Sanghar,Jam Nawaz Ali,Darhan,darhan,3507,86661,Goth Darhan,geonames_alt,exact,1.0
+PK71801,Sanghar,Jam Nawaz Ali,Hot Wassan,hotwassan,3552,84731,Goth Hot Wasan,geonames,fuzzy,0.941
+PK71801,Sanghar,Jam Nawaz Ali,Jam Jani,jamjani,3553,87971,Goth Jam Jani,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Hathungo,hathungo,3581,86038,Hathungo,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Kamaro,kamaro,3586,85456,Kamaro,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Khahi,khahi,3592,93718,Khahi,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Khipro,khipro,3597,85433,Khipro,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Khori,khori,3598,72515,Kori,geonames,fuzzy,0.889
+PK71802,Sanghar,Khipro,Loon Khan,loonkhan,3605,84582,Village loon khan,osm,exact,1.0
+PK71802,Sanghar,Khipro,Nian,nian,3612,81265,Goth Niyan,geonames_alt,fuzzy,0.889
+PK71802,Sanghar,Khipro,Pabban,pabban,3614,88545,Goth Paban,geonames,fuzzy,0.909
+PK71802,Sanghar,Khipro,Ranahu,ranahu,3619,81884,Ranahu,geonames,exact,1.0
+PK71802,Sanghar,Khipro,Ranak Dehar,ranakdehar,3620,83013,Ranakdar Goth,geonames,fuzzy,0.947
+PK71802,Sanghar,Khipro,Rar,rar,3621,84337,Rar Goth,geonames_alt,exact,1.0
+PK71802,Sanghar,Khipro,Wadhal,wadhal,3632,84499,Goth Wadal,geonames_alt,fuzzy,0.909
+PK71803,Sanghar,Sanghar,Bachna,bachna,3440,79587,Bachhna,geonames_alt,fuzzy,0.923
+PK71803,Sanghar,Sanghar,Bakhoro,bakhoro,3442,77812,Bakhoro,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Baqar,baqar,3444,76760,Baqar,osm,exact,1.0
+PK71803,Sanghar,Sanghar,Bassi,bassi,3445,85704,Bassi,geonames_alt,exact,1.0
+PK71803,Sanghar,Sanghar,Bobi`,bobi,3446,83048,Bobi,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Dabhri,dabhri,3450,77561,Dabhri,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Jakhro,jakhro,3464,69993,Jakhrao,osm,fuzzy,0.923
+PK71803,Sanghar,Sanghar,Kandiari,kandiari,3467,86345,Kandiari,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Loharro,loharro,3473,81566,Loharo,geonames_alt,fuzzy,0.923
+PK71803,Sanghar,Sanghar,Lutko,lutko,3474,79101,Lutko,osm,exact,1.0
+PK71803,Sanghar,Sanghar,Mano Khan Chandio,manokhanchandio,3476,83701,Mano Khan Chandio,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Sanghar,sanghar,3491,77953,Sanghar,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Sinhori,sinhori,3497,64485,Sinhori,geonames,exact,1.0
+PK71803,Sanghar,Sanghar,Tando Mitha Khan,tandomithakhan,3499,80039,Tando Mitha Khan,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Ahmedabad,ahmedabad,3757,73160,Ahmedabad,geonames_alt,exact,1.0
+PK71804,Sanghar,Shahdadpur,Bero Zardari,berozardari,3764,75973,Bero Zardari,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Bhaji,bhaji,3765,78863,Bhaji,geonames_alt,exact,1.0
+PK71804,Sanghar,Shahdadpur,Chamro,chamro,3767,75513,Chamro,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Gango,gango,3771,80053,Gango,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Haji Age Dino,hajiagedino,3773,76079,Haji Agedino,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Kandi,kandi,3777,80109,Goth Kandi,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Kullan,kullan,3780,76158,Kulan,geonames,fuzzy,0.909
+PK71804,Sanghar,Shahdadpur,Liski,liski,3781,76098,Liski,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Lundo,lundo,3782,78953,Lundo,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Maldasi,maldasi,3783,82684,Goth Maldasi,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Mano Jamali,manojamali,3785,77651,Mano Jamali,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Mian Ji Masjid,mianjimasjid,3787,80035,Mianji Masjid,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Mira Chhan,mirachhan,3789,77642,Mira Chhan,geonames_alt,exact,1.0
+PK71804,Sanghar,Shahdadpur,Murad Ali Rind,muradalirind,3792,77154,Murad Ali Rind,osm,exact,1.0
+PK71804,Sanghar,Shahdadpur,Ranjho Bagrani,ranjhobagrani,3797,80225,Goth Ranjho Bagrani,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Runo,runo,3798,74298,Runo,geonames_alt,exact,1.0
+PK71804,Sanghar,Shahdadpur,Sarhari,sarhari,3801,76579,Sarhari,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Shahdadpur,shahdadpur,3803,81777,Shahdadpur,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Shehli Nizamani,shehlinizamani,3805,81443,Goth Shah Ali Nizamani,geonames,fuzzy,0.897
+PK71804,Sanghar,Shahdadpur,Shuja Jakhro`,shujajakhro,3806,79746,Shuja Jakhro,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Topan Dahri,topandahri,3808,76393,Topan Dahri,geonames,exact,1.0
+PK71804,Sanghar,Shahdadpur,Yaro Dahri,yarodahri,3811,74328,Yaru Dahri,geonames,fuzzy,0.889
+PK71805,Sanghar,Sinjhoro,Sinjhoro,sinjhoro,3635,78821,Sinjhoro,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Bothro,bothro,3705,79427,Bothro,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Dham Rakhi,dhamrakhi,3706,82489,Goth Dhamrakhi,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Duthro,duthro,3708,81457,Goth Duthro,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Jarari,jarari,3710,82973,Goth Jarari,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Jhol,jhol,3711,81036,Jhol,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Sarki Kandi,sarkikandi,3724,80017,Sarki Kandi,geonames,exact,1.0
+PK71805,Sanghar,Sinjhoro,Thahim,thahim,3726,82072,Thahim,geonames_alt,exact,1.0
+PK71806,Sanghar,Tando Adam,Bhit Dhano,bhitdhano,3732,82555,Goth Bhit Dhano,osm,exact,1.0
+PK71806,Sanghar,Tando Adam,Dadi,dadi,3735,87154,Goth Dadi,geonames_alt,exact,1.0
+PK71806,Sanghar,Tando Adam,Manik Thahim,manikthahim,3748,83579,Goth Manik Thahim,geonames,exact,1.0
+PK71806,Sanghar,Tando Adam,Sulkandar,sulkandar,3753,86150,Sui Kandar,geonames_alt,fuzzy,0.889
+PK71806,Sanghar,Tando Adam,Sutiari,sutiari,3754,84785,Goth Sutiari,osm,exact,1.0
+PK71806,Sanghar,Tando Adam,Tando Adam,tandoadam,3755,87030,Tando Adam,geonames,exact,1.0
+PK71806,Sanghar,Tando Adam,Wadadani,wadadani,3756,82951,Goth Waddādāni,geonames,fuzzy,0.941
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Charioro,charioro,4041,63199,Chariro,geonames,fuzzy,0.933
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Daulatpur,daulatpur,4042,62124,Daulatpur,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Deran,deran,4043,68952,Derān,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Haberi,haberi,4047,63363,Haberi,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Jari,jari,4049,62931,Jari,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Junjhan,junjhan,4053,65863,Goth Junjhan,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Kunro,kunro,4065,66049,Kunro,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Manharo,manharo,4067,60138,Manharo,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Mehrab Wai,mehrabwai,4068,65888,Mehrab Wai,geonames_alt,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Mehraro,mehraro,4069,64292,Mehararo,geonames_alt,fuzzy,0.933
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Mir Rukan,mirrukan,4071,64272,Mir Rukan,geonames_alt,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Mirza Bagh,mirzabagh,4072,66920,Mirza Bagh,geonames_alt,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Qazi Ahmed,qaziahmed,4081,68249,Qazi Ahmad,geonames,fuzzy,0.889
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Shahpur,shahpur,4089,60299,Shahpur,geonames,exact,1.0
+PK71901,Shaheed Benazirabad,Qazi Ahmed,Sukhpur,sukhpur,4090,63982,Sukhpur,geonames,exact,1.0
+PK71902,Shaheed Benazirabad,Daur,Chack-2,chack,3999,63872,Chak 3,geonames_alt,fuzzy,0.889
+PK71902,Shaheed Benazirabad,Daur,Chack-3,chack,4000,63342,Chak 5,geonames_alt,fuzzy,0.889
+PK71902,Shaheed Benazirabad,Daur,Chack-4,chack,4001,63533,Chak 6,geonames_alt,fuzzy,0.889
+PK71902,Shaheed Benazirabad,Daur,Chack-5,chack,4002,64150,Chak 11,geonames_alt,fuzzy,0.889
+PK71902,Shaheed Benazirabad,Daur,Chack-6,chack,4003,65264,Chak 8,geonames_alt,fuzzy,0.889
+PK71902,Shaheed Benazirabad,Daur,Gojro,gojro,4010,71960,Gojro,geonames,exact,1.0
+PK71902,Shaheed Benazirabad,Daur,Gujhro,gujhro,4012,68442,Gujhro,geonames,exact,1.0
+PK71902,Shaheed Benazirabad,Daur,Gupchani,gupchani,4013,73077,Gupchani,geonames,exact,1.0
+PK71903,Shaheed Benazirabad,Nawabshah,Khiyaroon,khiyaroon,3861,72372,Khinyaryoon,geonames_alt,fuzzy,0.9
+PK71903,Shaheed Benazirabad,Nawabshah,Lakhmir,lakhmir,3862,72966,Lakhmir,osm,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,11-Rahib Shah,rahibshah,4098,73609,Goth Rahib Shah,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,12-Mehrabpur,mehrabpur,4099,76560,Mehrabpur,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,13-Marri,marri,4100,76961,Mari,geonames_alt,fuzzy,0.889
+PK71904,Shaheed Benazirabad,Sakranad,14-Ladho Chandio,ladhochandio,4101,76527,Ladho Chandio,osm,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,16-Jam Jodho,jamjodho,4103,74556,Jam Jodhejo,geonames_alt,fuzzy,0.889
+PK71904,Shaheed Benazirabad,Sakranad,18-Sakrand,sakrand,4105,74766,Sakrand,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,20-Bhutta,bhutta,4108,77093,Bhutta,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,21-Dadh,dadh,4109,74129,Dhadh,geonames_alt,fuzzy,0.889
+PK71904,Shaheed Benazirabad,Sakranad,22-Dino Shah,dinoshah,4110,73144,Goth Dino Shah,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,23-Satt Puri,sattpuri,4111,72816,Satpuri,geonames,fuzzy,0.933
+PK71904,Shaheed Benazirabad,Sakranad,25-Batho,batho,4114,75749,New Batho,osm,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,2-Sukhio Manahijo,sukhiomanahijo,4115,71666,Sukhio Manahejo,geonames_alt,fuzzy,0.929
+PK71904,Shaheed Benazirabad,Sakranad,4-Bachal Rahu,bachalrahu,4117,73192,Bachal Rahu,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,5-Sobho Lund,sobholund,4118,76090,Sobho Lund,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,7-Darri,darri,4120,75761,Dari,geonames_alt,fuzzy,0.889
+PK71904,Shaheed Benazirabad,Sakranad,Bahawal Shah,bahawalshah,4123,74176,Bahawal Shah,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Chattan Shah,chattanshah,4132,73163,Goth Chhattan Shah,geonames,fuzzy,0.957
+PK71904,Shaheed Benazirabad,Sakranad,Golo Dahri,golodahri,4134,71887,Goth Golo Dahri,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Khadhar,khadhar,4138,75109,Khadhar,osm,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Morio Lakho,moriolakho,4147,77415,Morio Lakho,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Munhar,munhar,4149,76599,Munhar,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Sabu Rahu,saburahu,4152,77723,Sabu Rahu,geonames,exact,1.0
+PK71904,Shaheed Benazirabad,Sakranad,Sukh Pur,sukhpur,4153,72944,Sukhpur,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Abdul Rahim Dakhan,abdulrahimdakhan,4314,25273,Abdul Rahim Darkhan,geonames,fuzzy,0.97
+PK72001,Shikarpur,Garhi-Yasin,Abid Markiani,abidmarkiani,4315,25164,Abid Markhiani,osm,fuzzy,0.96
+PK72001,Shikarpur,Garhi-Yasin,Adamji,adamji,4318,27359,Adamji Goth,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Ahsan Junejo,ahsanjunejo,4319,24777,Goth Ahsan Junejo,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Amir Shah,amirshah,4322,27199,Mir Shah,geonames,fuzzy,0.933
+PK72001,Shikarpur,Garhi-Yasin,Amrote,amrote,4323,23598,Amrot,geonames,fuzzy,0.909
+PK72001,Shikarpur,Garhi-Yasin,Bopho,bopho,4327,22216,Goth Bopho,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Chhango Rahuja,chhangorahuja,4330,28002,Chango Rahujo,geonames_alt,fuzzy,0.923
+PK72001,Shikarpur,Garhi-Yasin,Dodo Detho,dododetho,4334,21822,Dodo Detho,osm,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Gaheja,gaheja,4338,26138,Gaheja Goth,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Gahno Wah,gahnowah,4339,19586,Gahno Wah,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Garhi-Yasin,garhiyasin,4341,20693,Garhiyasin,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Habib Jakhro,habibjakhro,4346,21953,Goth Habib Jakhro,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Hasasan Wagan,hasasanwagan,4348,23862,Hasan Wagan,geonames,fuzzy,0.909
+PK72001,Shikarpur,Garhi-Yasin,Hussain Hajam,hussainhajam,4352,26591,Hussain Hajam,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Jindho Dero,jindhodero,4355,27217,Jindo Dero,osm,fuzzy,0.947
+PK72001,Shikarpur,Garhi-Yasin,Kakepota,kakepota,4356,23412,Kakepota,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Kandhar,kandhar,4357,24178,Kandhar,osm,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Khan Kalhoro,khankalhoro,4359,24852,Goth Khān Kalhoro,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Madeji,madeji,4364,27487,Madeji,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Mangria,mangria,4365,26094,Mangria,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Mirzapur,mirzapur,4367,25295,Mirzapur Goth,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Mundho Kalhoro,mundhokalhoro,4371,21574,Mundho Kalhora,geonames,fuzzy,0.923
+PK72001,Shikarpur,Garhi-Yasin,Musti Khan Dal,mustikhandal,4373,23596,Masti Khan Dal,geonames_alt,fuzzy,0.917
+PK72001,Shikarpur,Garhi-Yasin,Nim,nim,4374,20319,Nim,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Ourangabad,ourangabad,4378,23249,Orangabad,osm,fuzzy,0.947
+PK72001,Shikarpur,Garhi-Yasin,Paleja,paleja,4379,27063,Paleja,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Saindad Wagan,saindadwagan,4386,22185,Saindad Wagan,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Sangi,sangi,4389,25040,Goth Sangi,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Shahpur Jakhro,shahpurjakhro,4391,25287,Shahpar Jakhro,geonames_alt,fuzzy,0.923
+PK72001,Shikarpur,Garhi-Yasin,Tagio Darudho,tagiodarudho,4392,23187,Tagio Dhar Udho,geonames_alt,fuzzy,0.96
+PK72001,Shikarpur,Garhi-Yasin,Tajo Dero,tajodero,4393,28217,Tajodero,osm,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Tando Bahar,tandobahar,4394,22915,Tando Bahar Goth,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Tarai,tarai,4395,27538,Goth Tarai,geonames,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Udha,udha,4396,29127,Budha,geonames,fuzzy,0.889
+PK72001,Shikarpur,Garhi-Yasin,Wahni,wahni,4398,18316,Wahni,geonames_alt,exact,1.0
+PK72001,Shikarpur,Garhi-Yasin,Wariaso,wariaso,4401,20692,Goth Wariaso,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Burirra,burirra,4270,14526,Burira,geonames_alt,fuzzy,0.923
+PK72002,Shikarpur,Khanpur,Chiman Sukhpur,chimansukhpur,4271,17438,Chiman Sukhpur,geonames_alt,exact,1.0
+PK72002,Shikarpur,Khanpur,Garhi Budhal,garhibudhal,4277,11340,Garhi Budhal,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Garhi dakho,garhidakho,4278,15054,Garhi Dakho,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Khanpur,khanpur,4283,16467,Khānpur,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Khuhara,khuhara,4284,18573,Goth Khuhara,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Muhro marri,muhromarri,4292,12840,Muhro Mari,geonames,fuzzy,0.947
+PK72002,Shikarpur,Khanpur,Noor Muhammad shujrah,noormuhammadshujrah,4295,12864,Nur Muhammad Shujrah,geonames,fuzzy,0.919
+PK72002,Shikarpur,Khanpur,Panah Shujrah,panahshujrah,4299,18070,Panah Shuja,geonames,fuzzy,0.917
+PK72002,Shikarpur,Khanpur,Panhwar,panhwar,4300,17558,Goth Panhwar,geonames,exact,1.0
+PK72002,Shikarpur,Khanpur,Pir bux shujrah,pirbuxshujrah,4301,13550,Pir Bux Shujrah,geonames_alt,exact,1.0
+PK72002,Shikarpur,Khanpur,Shahpur,shahpur,4306,19281,Shahpur,geonames_alt,exact,1.0
+PK72003,Shikarpur,Lakhi,Abdoo,abdoo,4211,24536,Abdoo,geonames_alt,exact,1.0
+PK72003,Shikarpur,Lakhi,Beechanji,beechanji,4218,25318,Bechanji,geonames_alt,fuzzy,0.941
+PK72003,Shikarpur,Lakhi,Bhaya,bhaya,4222,19918,Goth Bhaya,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Bhirkan,bhirkan,4223,24084,Bhirkan,geonames_alt,exact,1.0
+PK72003,Shikarpur,Lakhi,Chak,chak,4225,23057,Chak,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Chand,chand,4226,21058,Chand,osm,exact,1.0
+PK72003,Shikarpur,Lakhi,Habib Kot,habibkot,4232,23402,Goth Habibkot,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Hothi,hothi,4233,23712,Hothi,osm,exact,1.0
+PK72003,Shikarpur,Lakhi,Jamra,jamra,4234,21268,Goth Jamra,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Jehan Khan,jehankhan,4235,26116,Goth Jehan Khan,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Jhali Kalwari,jhalikalwari,4236,25885,Goth Jhalli Kalwar,geonames,fuzzy,0.917
+PK72003,Shikarpur,Lakhi,Kalari,kalari,4237,25392,Goth Kalwari,geonames_alt,fuzzy,0.923
+PK72003,Shikarpur,Lakhi,Lakhi,lakhi,4239,23546,Lakhi,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Maka,maka,4240,24784,Goth Maka,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Marri,marri,4241,21076,Mari Goth,geonames_alt,fuzzy,0.889
+PK72003,Shikarpur,Lakhi,Mungrani,mungrani,4243,25756,Mungrani,osm,exact,1.0
+PK72003,Shikarpur,Lakhi,Nao Wah,naowah,4244,20355,Nao Wah,geonames_alt,exact,1.0
+PK72003,Shikarpur,Lakhi,Nimhoro,nimhoro,4245,23203,Nimoro Goth,geonames,fuzzy,0.923
+PK72003,Shikarpur,Lakhi,Qasim,qasim,4247,25804,Qasim Goth,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Qazi Wahan,qaziwahan,4248,24703,Qazi Wahan,osm,exact,1.0
+PK72003,Shikarpur,Lakhi,Ruk,ruk,4249,24826,Goth Ruk,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Sarfoo,sarfoo,4253,23607,Goth Sarfo,geonames,fuzzy,0.909
+PK72003,Shikarpur,Lakhi,Sherkot,sherkot,4255,22555,Goth Sherkot,geonames,exact,1.0
+PK72003,Shikarpur,Lakhi,Taib,taib,4257,19440,Taib,geonames_alt,exact,1.0
+PK72003,Shikarpur,Lakhi,Wazirabad,wazirabad,4261,23175,Wazirabad,osm,exact,1.0
+PK72004,Shikarpur,Shikarpur,Shikarpur,shikarpur,4161,17799,Shikarpur,geonames,exact,1.0
+PK72004,Shikarpur,Shikarpur,Abdal,abdal,4162,13792,Abdal,osm,exact,1.0
+PK72004,Shikarpur,Shikarpur,Barri,barri,4165,14889,Bari,osm,fuzzy,0.889
+PK72004,Shikarpur,Shikarpur,Bekhari,bekhari,4166,20530,Bekhari,osm,exact,1.0
+PK72004,Shikarpur,Shikarpur,Dakhan,dakhan,4172,17720,Dakhan,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Daro Sono,darosono,4173,17753,Goth Daro Sono,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Dasti,dasti,4174,14909,Dasti,osm,exact,1.0
+PK72004,Shikarpur,Shikarpur,Jaggan,jaggan,4178,13020,Goth Jagan,geonames,fuzzy,0.909
+PK72004,Shikarpur,Shikarpur,Karan,karan,4183,19902,Karan,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Lodra,lodra,4189,15684,Lodra,geonames,exact,1.0
+PK72004,Shikarpur,Shikarpur,Machi,machi,4190,16894,Machhi Goth,geonames,fuzzy,0.909
+PK72004,Shikarpur,Shikarpur,Mir Daho Jagir,mirdahojagir,4191,11575,Mir Daho Jagir,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Nizam Thariri,nizamthariri,4197,14992,Nizam Thariri,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Phulpota,phulpota,4198,19003,Phulpota,geonames_alt,exact,1.0
+PK72004,Shikarpur,Shikarpur,Pir jalil,pirjalil,4199,14922,Pir Jalil,geonames,exact,1.0
+PK72004,Shikarpur,Shikarpur,Rahuja,rahuja,4201,19978,Rahuja,osm,exact,1.0
+PK72004,Shikarpur,Shikarpur,Sultan kot,sultankot,4207,13375,Sultan Kot,geonames,exact,1.0
+PK72201,Sujawal,Jatti,Bhadh,bhadh,4413,151092,Bhad,geonames,fuzzy,0.889
+PK72201,Sujawal,Jatti,Boohar,boohar,4416,157268,Goth Bohar,geonames,fuzzy,0.909
+PK72201,Sujawal,Jatti,Gadap,gadap,4437,150827,Gada,geonames,fuzzy,0.889
+PK72201,Sujawal,Jatti,Gath,gath,4439,158207,Gath,geonames,exact,1.0
+PK72201,Sujawal,Jatti,Gujo Bari,gujobari,4445,157718,Gujo Bāri,geonames_alt,exact,1.0
+PK72201,Sujawal,Jatti,Jaikri,jaikri,4450,146708,Jaikri,geonames,exact,1.0
+PK72201,Sujawal,Jatti,Khudi,khudi,4471,157043,Goth Khuddi,geonames,fuzzy,0.909
+PK72201,Sujawal,Jatti,Latifpur,latifpur,4479,151885,Latifpur,geonames,exact,1.0
+PK72201,Sujawal,Jatti,Malhia,malhia,4484,148129,Malhia,geonames_alt,exact,1.0
+PK72201,Sujawal,Jatti,Marhobola Khan,marhobolakhan,4487,151477,Maraho Bula Khan,geonames,fuzzy,0.923
+PK72201,Sujawal,Jatti,Saadpur,saadpur,4509,149311,Sadpur,geonames,fuzzy,0.923
+PK72201,Sujawal,Jatti,Shah Kapoor,shahkapoor,4518,144875,Shah Kapoor,geonames_alt,exact,1.0
+PK72201,Sujawal,Jatti,Tal,tal,4522,157916,Goth Tal,geonames_alt,exact,1.0
+PK72201,Sujawal,Jatti,Uplanki Wadi,uplankiwadi,4529,152296,Aplanki Wadi,geonames_alt,fuzzy,0.909
+PK72202,Sujawal,Kharo Chhan,Palki,palki,4557,159414,Palki,geonames,exact,1.0
+PK72202,Sujawal,Kharo Chhan,Rapar,rapar,4558,159482,Rapar,geonames,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Abral,abral,4566,131301,Abral,geonames,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Attal Shah,attalshah,4569,127998,Attal Shah,geonames_alt,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Bachal Gugo,bachalgugo,4571,128961,Goth Bachal Gugo,geonames,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Bano,bano,4573,127086,Bano,osm,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Damri,damri,4584,140240,Dari,geonames,fuzzy,0.889
+PK72203,Sujawal,Mirpur Bathoro,Darro,darro,4586,134195,Daro,geonames_alt,fuzzy,0.889
+PK72203,Sujawal,Mirpur Bathoro,E-Laikpur,elaikpur,4587,131821,Laikpur,geonames_alt,fuzzy,0.933
+PK72203,Sujawal,Mirpur Bathoro,Karim Pur,karimpur,4599,137427,Karimpur,geonames,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Khadi Dini,khadidini,4601,137820,Khudi Dini,geonames,fuzzy,0.889
+PK72203,Sujawal,Mirpur Bathoro,Larcharo,larcharo,4607,140981,Larh Charho,geonames_alt,fuzzy,0.889
+PK72203,Sujawal,Mirpur Bathoro,Lunia,lunia,4609,144021,Lunia,geonames_alt,exact,1.0
+PK72203,Sujawal,Mirpur Bathoro,Manghiladho Gugo,manghiladhogugo,4611,130961,Mangiladho Gugo,geonames,fuzzy,0.966
+PK72203,Sujawal,Mirpur Bathoro,Samani,samani,4620,138807,Samani,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Chuhar Jamali,chuharjamali,4652,153279,Chuhar Jamali,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Doulat Pur,doulatpur,4657,157161,Goth Daulatpur,geonames,fuzzy,0.889
+PK72204,Sujawal,Shah Bunder,Joongo Jalbani,joongojalbani,4670,157432,Jungo Jalbani,geonames,fuzzy,0.88
+PK72204,Sujawal,Shah Bunder,Karna,karna,4673,154558,Karna,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Landhi,landhi,4685,154700,Landhi,geonames_alt,exact,1.0
+PK72204,Sujawal,Shah Bunder,Machki,machki,4688,155123,Machki,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Magsi,magsi,4689,158103,Magsi,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Pir Karim Dino Shah,pirkarimdinoshah,4700,156233,Goth Karimdino Shah,geonames,fuzzy,0.897
+PK72204,Sujawal,Shah Bunder,Qadir Dino Shah,qadirdinoshah,4704,155382,Goth Qadir Dino Shah,geonames,exact,1.0
+PK72204,Sujawal,Shah Bunder,Shah Bunder,shahbunder,4710,159211,Shahbunder,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Ali Bahar,alibahar,4724,145871,Ali Bahar,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Bello,bello,4725,138342,Belo,geonames,fuzzy,0.889
+PK72205,Sujawal,Sujawal,Bhutti,bhutti,4733,143670,Bhuti,geonames,fuzzy,0.909
+PK72205,Sujawal,Sujawal,Bohiki Jagir,bohikijagir,4735,141565,Bohiki Jagir,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Chaksandh,chaksandh,4738,140667,Chak Sand,geonames,fuzzy,0.941
+PK72205,Sujawal,Sujawal,Jar,jar,4752,142443,Goth Jar,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Kandra,kandra,4756,142753,Kandra,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Kutko,kutko,4764,149610,Kutko,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Miranpur,miranpur,4768,138150,Miranpur,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Mirzo Laghari,mirzolaghari,4769,148197,Mirzo Laghari,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Muradpur,muradpur,4772,139909,Muradpur,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Nodo Baran,nodobaran,4773,145691,Nodo Bāran,osm,exact,1.0
+PK72205,Sujawal,Sujawal,Ranta,ranta,4775,133364,Goth Ranta,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Sandki,sandki,4778,143789,Sandki,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Sujawal,sujawal,4782,144267,Sujawal,geonames,exact,1.0
+PK72205,Sujawal,Sujawal,Sukhpur,sukhpur,4783,140856,Sukhpur,geonames_alt,exact,1.0
+PK72205,Sujawal,Sujawal,Vikiya,vikiya,4788,139967,Goth Vikia,geonames_alt,fuzzy,0.909
+PK72205,Sujawal,Sujawal,Walhar,walhar,4789,137778,Goth Walhar,geonames,exact,1.0
+PK72301,Sukkur,New Sukkur,Bagerji,bagerji,4797,27291,Bagerji,geonames_alt,exact,1.0
+PK72301,Sukkur,New Sukkur,Deda,deda,4802,25224,Deda,geonames,exact,1.0
+PK72301,Sukkur,New Sukkur,Dreha,dreha,4803,27210,Goth Dreha,geonames,exact,1.0
+PK72301,Sukkur,New Sukkur,Tanmachani,tanmachani,4813,26899,Goth Tamachani,geonames,fuzzy,0.947
+PK72302,Sukkur,Pano Aqil,Agro,agro,4814,22932,Agro Goth,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Arrero,arrero,4816,27851,Arero,geonames,fuzzy,0.909
+PK72302,Sukkur,Pano Aqil,Baghpai,baghpai,4817,26261,Baghpai,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Bahman,bahman,4818,23679,Bahman,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Bakabad,bakabad,4821,25321,Bakabad,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Bhandki,bhandki,4831,24855,Bhandki,osm,exact,1.0
+PK72302,Sukkur,Pano Aqil,Bohi,bohi,4836,28017,Bohi,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Budh,budh,4837,20912,Budh,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Dadloi,dadloi,4841,20890,Dadloi,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Drib,drib,4844,25431,Drib,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Erazi Sadiki,erazisadiki,4845,25292,Erazi Saidki,geonames_alt,fuzzy,0.909
+PK72302,Sukkur,Pano Aqil,Farakpur,farakpur,4846,23978,Farakpur,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Gajaro,gajaro,4848,26078,Gajaro,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Hasul,hasul,4853,26455,Hasul,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Hingoro,hingoro,4854,26291,Goth Hingoro,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Indharki,indharki,4856,24129,Indharki,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Junas,junas,4860,28228,Junas,osm,exact,1.0
+PK72302,Sukkur,Pano Aqil,Katta,katta,4866,27986,Goth Katta,osm,exact,1.0
+PK72302,Sukkur,Pano Aqil,Khan Belo,khanbelo,4867,20445,Goth Khan Belo,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Kot Sadik Shah,kotsadikshah,4869,24202,Kot Sadik Shah,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Lanjari,lanjari,4870,25627,Lanjari,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Liskani,liskani,4872,22959,Liskani,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Machi,machi,4873,28232,Machi,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Mian Kundho,miankundho,4876,28449,Mian Kund,geonames,fuzzy,0.889
+PK72302,Sukkur,Pano Aqil,Naro Hamthar,narohamthar,4881,27913,Naro Hamthar,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Nindapur,nindapur,4882,22283,Nindapur,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Nirch,nirch,4883,28639,Nirch,osm,exact,1.0
+PK72302,Sukkur,Pano Aqil,Pano aqil,panoaqil,4889,22736,Pano Aqil,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Pano kharKhaso,panokharkhaso,4891,25944,Pano Kharkhaso,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sadhuja,sadhuja,4897,18777,Sadhuja,osm,exact,1.0
+PK72302,Sukkur,Pano Aqil,Salhani,salhani,4898,25089,Salhani,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sangi Kotai,sangikotai,4899,27065,Sangi Kotai,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sarai,sarai,4900,21141,Sarai,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Shahpur,shahpur,4901,19201,Shahpur,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sorho,sorho,4902,27924,Sorho,geonames_alt,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sultanpur,sultanpur,4904,26471,Sultanpur,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Sunder Belo,sunderbelo,4905,23168,Sunder Beli,geonames_alt,fuzzy,0.9
+PK72302,Sukkur,Pano Aqil,Talli,talli,4906,24280,Tali,geonames_alt,fuzzy,0.889
+PK72302,Sukkur,Pano Aqil,Tarar,tarar,4907,22964,Tarar,geonames,exact,1.0
+PK72302,Sukkur,Pano Aqil,Ural,ural,4909,21653,Goth Ural,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Abad,abad,4910,32309,Abad,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Abejano,abejano,4911,31750,Abeejano,osm,fuzzy,0.933
+PK72303,Sukkur,Rohri,Abra,abra,4912,33893,Abra,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Allah abad,allahabad,4914,32722,Allahabad,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Arkohar,arkohar,4915,31618,Goth Arkohar,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Bhiro,bhiro,4918,31176,Bhiro,geonames_alt,exact,1.0
+PK72303,Sukkur,Rohri,Dadah,dadah,4925,32996,Dadrah,geonames,fuzzy,0.909
+PK72303,Sukkur,Rohri,Dhandhi,dhandhi,4928,30445,Dhandi,geonames_alt,fuzzy,0.923
+PK72303,Sukkur,Rohri,Dodanko,dodanko,4929,32743,Dodanko,osm,exact,1.0
+PK72303,Sukkur,Rohri,Dubarwahan,dubarwahan,4931,29292,Dubar Wahan,geonames_alt,exact,1.0
+PK72303,Sukkur,Rohri,Fakirabad,fakirabad,4932,30437,Faqirabad,geonames,fuzzy,0.889
+PK72303,Sukkur,Rohri,Kalari,kalari,4942,28634,Goth Kalai,geonames_alt,fuzzy,0.909
+PK72303,Sukkur,Rohri,Kandhra,kandhra,4944,32771,Kandhra,geonames_alt,exact,1.0
+PK72303,Sukkur,Rohri,Kandri,kandri,4945,34141,Kandri,osm,exact,1.0
+PK72303,Sukkur,Rohri,Kotari,kotari,4954,31654,Kotri,geonames,fuzzy,0.909
+PK72303,Sukkur,Rohri,Mandodero,mandodero,4956,30023,Mandodero,osm,exact,1.0
+PK72303,Sukkur,Rohri,Mangria,mangria,4958,32259,Goth Mangria,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Mari,mari,4959,29797,Mari,osm,exact,1.0
+PK72303,Sukkur,Rohri,Nabi Shah,nabishah,4962,30742,Nabi Shah,geonames,exact,1.0
+PK72303,Sukkur,Rohri,panhwar,panhwar,4964,30689,Panwar,geonames,fuzzy,0.923
+PK72303,Sukkur,Rohri,Patni,patni,4965,30908,Patni,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Rohri,rohri,4967,29824,Rohri,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Sangrar,sangrar,4969,32208,Sangrar,osm,exact,1.0
+PK72303,Sukkur,Rohri,Subhanpur,subhanpur,4971,30987,Subhanpur,geonames,exact,1.0
+PK72303,Sukkur,Rohri,Trimoonh,trimoonh,4974,34096,Trimoonh,osm,exact,1.0
+PK72304,Sukkur,Saleh Patt,Bargah,bargah,4982,35403,Goth Bargah,geonames,exact,1.0
+PK72304,Sukkur,Saleh Patt,Behan Wari,behanwari,4985,38767,Bahanwari,geonames,fuzzy,0.889
+PK72304,Sukkur,Saleh Patt,Berrido,berrido,4986,35265,Berido,geonames,fuzzy,0.923
+PK72304,Sukkur,Saleh Patt,Chanareji,chanareji,4989,41076,Chanreji,geonames,fuzzy,0.941
+PK72304,Sukkur,Saleh Patt,Garhar,garhar,5000,39456,Garhar,geonames,exact,1.0
+PK72304,Sukkur,Saleh Patt,Januji,januji,5005,38944,Januji,geonames_alt,exact,1.0
+PK72304,Sukkur,Saleh Patt,Laiwari,laiwari,5016,42308,Laiwari,geonames,exact,1.0
+PK72304,Sukkur,Saleh Patt,Lundiro,lundiro,5021,32648,Lundro,geonames,fuzzy,0.923
+PK72304,Sukkur,Saleh Patt,Mamro,mamro,5026,37627,Mamro,geonames,exact,1.0
+PK72304,Sukkur,Saleh Patt,Setharo,setharo,5047,34496,Setharo,geonames,exact,1.0
+PK72304,Sukkur,Saleh Patt,Tarai,tarai,5054,37104,Tarai,geonames,exact,1.0
+PK72401,Tando Allahyar,Chambar,Buchar,buchar,5287,108863,Goth Buchar,geonames,exact,1.0
+PK72401,Tando Allahyar,Chambar,Chamber,chamber,5289,108479,Chamber,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Hadeki,hadeki,5231,96339,Hadeki,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Halepotani,halepotani,5232,100597,Halepota,geonames,fuzzy,0.889
+PK72402,Tando Allahyar,Jhando Mari,Mashaikh Hothi,mashaikhhothi,5233,91891,Goth Mashaikh Hothi,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Hotki,hotki,5235,96533,Hotki,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Koraiki,koraiki,5239,92864,Koraiki,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Nimro,nimro,5247,98082,Goth Nimro,geonames,exact,1.0
+PK72402,Tando Allahyar,Jhando Mari,Rajpari,rajpari,5250,91540,Goth Rajpari,geonames,exact,1.0
+PK72403,Tando Allahyar,Tando Allahyar,Bhanoki,bhanoki,5262,99086,Bhanoki,osm,exact,1.0
+PK72403,Tando Allahyar,Tando Allahyar,Bukerani,bukerani,5264,104356,Bukerani,osm,exact,1.0
+PK72403,Tando Allahyar,Tando Allahyar,Khokhar,khokhar,5272,105996,Khokhar,geonames,exact,1.0
+PK72403,Tando Allahyar,Tando Allahyar,Nasarpur,nasarpur,5277,98181,Nasarpur,geonames,exact,1.0
+PK72403,Tando Allahyar,Tando Allahyar,Tando Allahyaar,tandoallahyaar,5282,100402,Tando Allahyar,geonames,fuzzy,0.963
+PK72501,T.M.Khan,Bulri shah Karim,Alipur,alipur,5149,121051,Goth Alipur,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Barchani,barchani,5153,117636,Goth Barchani,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Bulri,bulri,5159,130970,Bulri,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Dhandhi,dhandhi,5166,125041,Dhandi,geonames,fuzzy,0.923
+PK72501,T.M.Khan,Bulri shah Karim,Jado Laghari,jadolaghari,5176,125376,Goth Jado Laghari,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Jalalani,jalalani,5177,126264,Goth Jalalani,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Jhok,jhok,5180,133482,Jhok,geonames_alt,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Kass,kass,5183,118781,Goth Kassu,geonames,fuzzy,0.889
+PK72501,T.M.Khan,Bulri shah Karim,Katiar,katiar,5185,117569,Katiar,geonames_alt,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Khokhar,khokhar,5192,118540,Goth Khokhar,geonames_alt,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Ladhan,ladhan,5196,124182,Ladhan,geonames,exact,1.0
+PK72501,T.M.Khan,Bulri shah Karim,Samepotani,samepotani,5212,116288,Goth Same Pota,geonames,fuzzy,0.889
+PK72501,T.M.Khan,Bulri shah Karim,Umaid Ali Jat,umaidalijat,5222,130556,Goth Umid Ali Jat,geonames,fuzzy,0.952
+PK72502,T.M.Khan,T .Gh.Hyder,Chandia,chandia,5072,129024,Chandia,geonames,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Doderi,doderi,5078,126529,Doderi,geonames,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Fateh bagh,fatehbagh,5079,124539,Fateh Bagh,geonames,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Jio,jio,5086,130441,Jio,geonames,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Lashari,lashari,5097,128185,Lashari,geonames,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Malook Pur,malookpur,5101,126823,Malookpur,geonames_alt,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Tando Ghulam Hyder,tandoghulamhyder,5113,125531,Tando Ghulam Hyder,geonames_alt,exact,1.0
+PK72502,T.M.Khan,T .Gh.Hyder,Tali,tali,5114,130123,Tali,geonames,exact,1.0
+PK72503,T.M.Khan,T.M.Khan,Fatehpur,fatehpur,5124,121659,Goth Fatehpur,geonames,exact,1.0
+PK72503,T.M.Khan,T.M.Khan,Lakhat,lakhat,5128,124553,Lakha,geonames,fuzzy,0.909
+PK72503,T.M.Khan,T.M.Khan,Patghahi,patghahi,5132,119755,Goth Patgahi,geonames,fuzzy,0.933
+PK72503,T.M.Khan,T.M.Khan,Pattar,pattar,5133,116713,Goth Patar,geonames,fuzzy,0.909
+PK72503,T.M.Khan,T.M.Khan,Sheikh Bhirkhio,sheikhbhirkhio,5138,110237,Shaikh Bhirkio,geonames,fuzzy,0.889
+PK72503,T.M.Khan,T.M.Khan,Tando Muhammad Khan,tandomuhammadkhan,5143,115996,Tando Muhammad Khan,geonames,exact,1.0
+PK72601,Tharparkar,Chachro,Chachro,chachro,5586,116414,Chachro,geonames,exact,1.0
+PK72601,Tharparkar,Chachro,Charnore,charnore,5587,117028,Charnor,osm,fuzzy,0.933
+PK72601,Tharparkar,Chachro,Dhakalo,dhakalo,5588,126786,Dhaklo,osm,fuzzy,0.923
+PK72601,Tharparkar,Chachro,Dharendharo,dharendharo,5589,123409,Dharindharo,osm,fuzzy,0.909
+PK72601,Tharparkar,Chachro,Hirar,hirar,5591,119652,Hirar,osm,exact,1.0
+PK72601,Tharparkar,Chachro,Janjhi,janjhi,5592,125800,Jhanjhi,osm,fuzzy,0.923
+PK72601,Tharparkar,Chachro,Kantio,kantio,5593,114479,Kantio,geonames,exact,1.0
+PK72601,Tharparkar,Chachro,Khudi,khudi,5594,122706,Khudi,osm,exact,1.0
+PK72601,Tharparkar,Chachro,Milkam,milkam,5595,113620,Milkam,geonames,exact,1.0
+PK72601,Tharparkar,Chachro,Pabuvero,pabuvero,5597,115588,Pabu Vero,geonames,exact,1.0
+PK72601,Tharparkar,Chachro,Rajoro,rajoro,5598,124006,Rajoro,geonames_alt,exact,1.0
+PK72601,Tharparkar,Chachro,Rarli,rarli,5599,121782,Goth Rarhli,geonames,fuzzy,0.909
+PK72601,Tharparkar,Chachro,Rawatsar,rawatsar,5600,121274,Rawatsar,osm,exact,1.0
+PK72601,Tharparkar,Chachro,Tardos,tardos,5603,119719,Tardos,osm,exact,1.0
+PK72602,Tharparkar,Dahli,Gadhro,gadhro,5609,91627,Gadro,geonames_alt,fuzzy,0.909
+PK72602,Tharparkar,Dahli,Khariryoon,khariryoon,5615,96538,Khararyoon,osm,fuzzy,0.9
+PK72602,Tharparkar,Dahli,Kheensar,kheensar,5616,104742,Khensar,geonames_alt,fuzzy,0.933
+PK72602,Tharparkar,Dahli,Kheme jo Par,khemejopar,5617,96310,Kheme jo Par,geonames,fuzzy,0.889
+PK72602,Tharparkar,Dahli,Laplo,laplo,5618,94773,Laplo,geonames,exact,1.0
+PK72602,Tharparkar,Dahli,Parno,parno,5620,100935,Parno,geonames,exact,1.0
+PK72602,Tharparkar,Dahli,Pirano Par,piranopar,5621,96563,Pirano jo Par,geonames,exact,1.0
+PK72602,Tharparkar,Dahli,Rohar Kelhan,roharkelhan,5622,106426,Rohar Kelhan,geonames,exact,1.0
+PK72602,Tharparkar,Dahli,Sajan Par,sajanpar,5623,95339,Sajan ka Par,geonames,fuzzy,0.889
+PK72603,Tharparkar,Diplo,Balihari,balihari,5627,156059,Baliari,osm,fuzzy,0.933
+PK72603,Tharparkar,Diplo,Chhai Chhapro,chhaichhapro,5631,156776,Chhai Chhapro,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Chhapanhar,chhapanhar,5632,150364,Chhapanhar,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Dabhro,dabhro,5633,148051,Dabhro,osm,exact,1.0
+PK72603,Tharparkar,Diplo,Diplo,diplo,5635,150641,Diplo,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Dohar,dohar,5637,151531,Dohar,osm,exact,1.0
+PK72603,Tharparkar,Diplo,Khetlari,khetlari,5642,151503,Khetlari,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Kounral,kounral,5643,153055,Kunral,geonames,fuzzy,0.923
+PK72603,Tharparkar,Diplo,Murad Lashari,muradlashari,5647,153701,Goth Murad Lashari,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Nabisar,nabisar,5648,147433,Nabisar,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Paneli,paneli,5649,156781,Paneli,osm,exact,1.0
+PK72603,Tharparkar,Diplo,Sadoi,sadoi,5653,155925,Sadoi,osm,exact,1.0
+PK72603,Tharparkar,Diplo,Sajai,sajai,5654,147579,Sajai,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Saran,saran,5656,154086,Saran,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Sobhiar,sobhiar,5660,144265,Sobhiar,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Soomrasar,soomrasar,5661,151463,Somrasar,geonames,fuzzy,0.941
+PK72603,Tharparkar,Diplo,Talo,talo,5662,155088,Tallo,geonames,fuzzy,0.889
+PK72603,Tharparkar,Diplo,Turkiar,turkiar,5665,150036,Turkiar,osm,exact,1.0
+PK72603,Tharparkar,Diplo,Verhar,verhar,5667,151582,Verhar,geonames,exact,1.0
+PK72603,Tharparkar,Diplo,Wingi,wingi,5668,156923,Wingi,geonames,exact,1.0
+PK72604,Tharparkar,Islamkot,Boharri,boharri,5670,155184,Boarri,osm,fuzzy,0.923
+PK72604,Tharparkar,Islamkot,Giryanchho,giryanchho,5672,152239,Giryan Chaho,osm,fuzzy,0.952
+PK72604,Tharparkar,Islamkot,Islamkot,islamkot,5673,138846,Islamkot,geonames,exact,1.0
+PK72604,Tharparkar,Islamkot,Kehri,kehri,5677,146195,Kehri,osm,exact,1.0
+PK72604,Tharparkar,Islamkot,Khario Ghulam Shah,kharioghulamshah,5678,140760,Khario Ghulam Shah,geonames,exact,1.0
+PK72604,Tharparkar,Islamkot,Kurn,kurn,5680,147736,Kuran,osm,fuzzy,0.889
+PK72604,Tharparkar,Islamkot,Mithrau Chhuto,mithrauchhuto,5683,142253,Mithrao Chhutto,geonames,fuzzy,0.889
+PK72605,Tharparkar,Mithi,Bhakuo,bhakuo,5692,147955,Bhakuo,geonames_alt,exact,1.0
+PK72605,Tharparkar,Mithi,Chelhar,chelhar,5693,124915,Chelhar,geonames,exact,1.0
+PK72605,Tharparkar,Mithi,Godhiar,godhiar,5695,132331,Godhiar,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Haido,haido,5696,128050,Haido,geonames,exact,1.0
+PK72605,Tharparkar,Mithi,Janhan,janhan,5697,129909,Janhan,geonames,exact,1.0
+PK72605,Tharparkar,Mithi,Janjhiar,janjhiar,5698,121674,Janjhiar,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Joruo,joruo,5699,128552,Joruo,geonames_alt,exact,1.0
+PK72605,Tharparkar,Mithi,Karam Ali Shah,karamalishah,5700,128888,Goth Karam Ali Shah,geonames,exact,1.0
+PK72605,Tharparkar,Mithi,Khanore,khanore,5701,130919,Khanor,osm,fuzzy,0.923
+PK72605,Tharparkar,Mithi,Lakhmiar,lakhmiar,5702,140593,Lakhmiar,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Lunihar,lunihar,5703,132743,Lunihar,geonames_alt,exact,1.0
+PK72605,Tharparkar,Mithi,Malanhore Khawaria,malanhorekhawaria,5705,139734,Malanhor Khavaria,osm,fuzzy,0.97
+PK72605,Tharparkar,Mithi,Mithi,mithi,5706,135805,Mithi,geonames,exact,1.0
+PK72605,Tharparkar,Mithi,Mithrio Bhatti,mithriobhatti,5707,135646,Mithrio Bhatti,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Mundhawah,mundhawah,5708,126162,Mundhawa,geonames_alt,fuzzy,0.941
+PK72605,Tharparkar,Mithi,Pabuhar,pabuhar,5712,140663,Pabuhar,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Posarko,posarko,5713,139185,Po Sarko,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Talhi,talhi,5715,126602,Talhi,osm,exact,1.0
+PK72605,Tharparkar,Mithi,Vijuto,vijuto,5717,132888,Vijuto,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Adhigam,adhigam,5719,156502,Adigam,osm,fuzzy,0.933
+PK72606,Tharparkar,Nagarparkar,Behrano,behrano,5721,137424,Behrao,osm,fuzzy,0.923
+PK72606,Tharparkar,Nagarparkar,Chotal,chotal,5723,129475,Chotal,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Churio,churio,5724,152999,Churio,geonames,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Dabho,dabho,5725,147998,Dabhro,osm,fuzzy,0.909
+PK72606,Tharparkar,Nagarparkar,Ghoti,ghoti,5728,140469,Ghoti,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Harho,harho,5730,138433,Haro,geonames,fuzzy,0.889
+PK72606,Tharparkar,Nagarparkar,Kasbo,kasbo,5732,157077,Kasbo,geonames,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Kharoro,kharoro,5734,131905,Kharoro,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Mamchero,mamchero,5736,142336,Mam Chero,geonames,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Mithrio Juneja,mithriojuneja,5739,133219,Mithrio Junija,osm,fuzzy,0.923
+PK72606,Tharparkar,Nagarparkar,Nagarparkar,nagarparkar,5741,154662,Nagar Parkar,geonames,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Ranpur,ranpur,5747,154749,Ranpur,geonames_alt,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Rathi,rathi,5748,144560,Rathi,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Satidera,satidera,5751,125561,Satidera,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Shivlo,shivlo,5752,139622,Shivlo,geonames_alt,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Soorachand,soorachand,5754,156623,Sorachand,geonames,fuzzy,0.947
+PK72606,Tharparkar,Nagarparkar,Tigusar,tigusar,5755,132730,Tigusar,osm,exact,1.0
+PK72606,Tharparkar,Nagarparkar,Virawah,virawah,5756,148229,Virawah,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Duba,duba,5388,151971,Duba,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Gambali,gambali,5389,150414,Goth Gambali,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Garho,garho,5391,156538,Garho,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Gulel,gulel,5395,148677,Gulel,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Hayat Gaho,hayatgaho,5397,150274,Hayat Gaho,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Jharandi,jharandi,5403,152204,Goth Jarandi,geonames_alt,fuzzy,0.933
+PK72701,Thatta,Ghorabari,Juho,juho,5405,158780,Goth Juho,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Karolo,karolo,5406,149031,Goth Karolo,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Khan,khan,5410,152939,Khan Goth,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Khanani,khanani,5411,155376,Khanani,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Khatho,khatho,5413,158285,Khatho,geonames_alt,exact,1.0
+PK72701,Thatta,Ghorabari,Larho,larho,5415,149799,Larho,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Marhi,marhi,5419,150378,Goth Marhi,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Mehar,mehar,5423,153713,Mehar,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Miranpur,miranpur,5424,157778,Miranpur,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Palki,palki,5426,157840,Goth Palki,geonames_alt,exact,1.0
+PK72701,Thatta,Ghorabari,Puro Bhiman,purobhiman,5428,150974,Puro Bhiman,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Sanwalpur,sanwalpur,5430,152705,Sanwalpur,geonames_alt,exact,1.0
+PK72701,Thatta,Ghorabari,Shahpur,shahpur,5431,157070,Goth Shahpur,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Shorki,shorki,5432,151073,Deh Shorki,geonames,exact,1.0
+PK72701,Thatta,Ghorabari,Udherolal,udherolal,5437,154829,Uderolal,geonames_alt,fuzzy,0.941
+PK72702,Thatta,Keti Bandar,Ghorabhari,ghorabhari,5453,158624,Ghorabari,geonames,fuzzy,0.947
+PK72702,Thatta,Keti Bandar,Jamani Ibrahim Shah,jamaniibrahimshah,5457,157952,Goth Jamani Ibrahim Shah,geonames,exact,1.0
+PK72702,Thatta,Keti Bandar,Jhalo,jhalo,5463,159415,Goth Jhal,geonames,fuzzy,0.909
+PK72702,Thatta,Keti Bandar,Ketibunder,ketibunder,5468,159338,Ketibunder,geonames_alt,exact,1.0
+PK72702,Thatta,Keti Bandar,Khalifa,khalifa,5470,158670,Khalifa,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Babra,babra,5493,139470,Babra,geonames_alt,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Barandki,barandki,5495,144935,Barandki,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Barosari,barosari,5496,142943,Barosar Colony,geonames,fuzzy,0.933
+PK72703,Thatta,Mirpur Sakro,Buhara,buhara,5498,150942,Buhara,geonames_alt,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Gharo,gharo,5519,135668,Gharo,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Ghulamullah,ghulamullah,5520,144348,Ghulam Ullah,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Gujjo,gujjo,5523,137007,Gujo,geonames,fuzzy,0.889
+PK72703,Thatta,Mirpur Sakro,Haji Ghirano,hajighirano,5524,144079,Haji Girano,geonames,fuzzy,0.952
+PK72703,Thatta,Mirpur Sakro,Karampur,karampur,5533,145666,Karampur,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Mirpur Sakro,mirpursakro,5557,146839,Mirpur Sakro,geonames,exact,1.0
+PK72703,Thatta,Mirpur Sakro,Raj Malik,rajmalik,5570,142133,Raj Malk,geonames_alt,fuzzy,0.933
+PK72704,Thatta,Thatta,Abad,abad,5315,146005,Abad,geonames,exact,1.0
+PK72704,Thatta,Thatta,Bijora,bijora,5329,139528,Goth Bijora,geonames_alt,exact,1.0
+PK72704,Thatta,Thatta,Chatto Chand,chattochand,5330,134361,Goth Chatto Chand,geonames,exact,1.0
+PK72704,Thatta,Thatta,Helaya,helaya,5339,128192,Hellaya,geonames_alt,fuzzy,0.923
+PK72704,Thatta,Thatta,Jhirruk,jhirruk,5340,120977,Jhirruck,geonames_alt,fuzzy,0.933
+PK72704,Thatta,Thatta,Jungshahi,jungshahi,5343,131154,Jungshahi,geonames_alt,exact,1.0
+PK72704,Thatta,Thatta,Kotri Purani,kotripurani,5355,135451,Kotri Purani,geonames_alt,exact,1.0
+PK72704,Thatta,Thatta,Makli,makli,5357,136016,Makli,geonames,exact,1.0
+PK72704,Thatta,Thatta,Nareja,nareja,5361,141306,Nareja,geonames,exact,1.0
+PK72704,Thatta,Thatta,Sonda,sonda,5367,124632,Goth Sonda,geonames,exact,1.0
+PK72704,Thatta,Thatta,Tando Hafiz Shah,tandohafizshah,5370,114307,Tando Hafiz Shah,geonames,exact,1.0
+PK72704,Thatta,Thatta,Tanka,tanka,5371,143006,Tanka,geonames_alt,exact,1.0
+PK72801,Umarkot,Kunri,Barani,barani,5954,118665,Barani,osm,exact,1.0
+PK72801,Umarkot,Kunri,Bustan,bustan,5955,113683,Bustan,geonames,exact,1.0
+PK72801,Umarkot,Kunri,Dadhro,dadhro,5958,114591,Goth Dadhro,geonames,exact,1.0
+PK72801,Umarkot,Kunri,Darelo,darelo,5960,121377,Darelo,osm,exact,1.0
+PK72801,Umarkot,Kunri,Nabisar,nabisar,5980,120038,Nabisar,osm,exact,1.0
+PK72801,Umarkot,Kunri,Naseer Chandio,naseerchandio,5981,125190,Nasir Chandio,osm,fuzzy,0.88
+PK72801,Umarkot,Kunri,Ranawai,ranawai,5984,120078,Rana Wai,osm,exact,1.0
+PK72801,Umarkot,Kunri,Sanwari,sanwari,5987,119688,Sanwari,osm,exact,1.0
+PK72801,Umarkot,Kunri,Shahliwai,shahliwai,5989,120962,Shah Ali ji Wai,osm,fuzzy,0.947
+PK72802,Umarkot,Pithoro,Bareji,bareji,5908,100682,Goth Bāreji,geonames_alt,exact,1.0
+PK72802,Umarkot,Pithoro,Ghulam nabi shah,ghulamnabishah,5916,96628,Ghulam Nabi Shah,geonames,exact,1.0
+PK72802,Umarkot,Pithoro,Hiral-1,hiral,5920,98889,Hiral,geonames_alt,exact,1.0
+PK72802,Umarkot,Pithoro,Jambho kandi,jambhokandi,5933,99494,Jambho Kandi,geonames,exact,1.0
+PK72802,Umarkot,Pithoro,Karu,karu,5935,100554,Goth Karu,geonames,exact,1.0
+PK72802,Umarkot,Pithoro,Pithoro,pithoro,5948,98786,Pithoro,geonames,exact,1.0
+PK72802,Umarkot,Pithoro,Shadi palli,shadipalli,5950,98265,Shadipali,geonames,fuzzy,0.947
+PK72803,Umarkot,Samaro,Araro,araro,5873,103646,Goth Araro,geonames,exact,1.0
+PK72803,Umarkot,Samaro,Hassan Baghban,hassanbaghban,5885,109744,Hasan Baghban,geonames_alt,fuzzy,0.96
+PK72803,Umarkot,Samaro,Khani,khani,5888,108116,Khani,geonames_alt,exact,1.0
+PK72803,Umarkot,Samaro,Kinjhji,kinjhji,5891,110668,Kinjheji,geonames,fuzzy,0.933
+PK72804,Umarkot,Umarkot,Bhodar,bhodar,5763,108466,Bhodar,geonames_alt,exact,1.0
+PK72804,Umarkot,Umarkot,Chelari,chelari,5764,108447,Chelari,osm,exact,1.0
+PK72804,Umarkot,Umarkot,Dinore,dinore,5770,101897,Dinor,geonames,fuzzy,0.909
+PK72804,Umarkot,Umarkot,Doodhar,doodhar,5772,97504,Dodhar,geonames,fuzzy,0.923
+PK72804,Umarkot,Umarkot,Gorsar,gorsar,5776,108010,Gorsar,geonames,exact,1.0
+PK72804,Umarkot,Umarkot,Hasisar,hasisar,5778,98938,Hasisar,osm,exact,1.0
+PK72804,Umarkot,Umarkot,Kalri,kalri,5785,101087,Kalri,geonames,exact,1.0
+PK72804,Umarkot,Umarkot,Kaplore,kaplore,5786,108495,Kaplor,geonames,fuzzy,0.923
+PK72804,Umarkot,Umarkot,Karna,karna,5787,105102,Karna,geonames,exact,1.0
+PK72804,Umarkot,Umarkot,Khejrari,khejrari,5792,108216,Khejrari,osm,exact,1.0
+PK72804,Umarkot,Umarkot,Lashari,lashari,5801,106198,Lashāri,geonames_alt,exact,1.0
+PK72804,Umarkot,Umarkot,Makhyaro,makhyaro,5802,101245,Goth Makheyaro,geonames,fuzzy,0.941
+PK72804,Umarkot,Umarkot,Mandhal,mandhal,5803,100991,Mandhal,osm,exact,1.0
+PK72804,Umarkot,Umarkot,Muhammad Aalam Palli,muhammadaalampalli,5807,101636,Muhammad Alam Pali,geonames,fuzzy,0.941
+PK72804,Umarkot,Umarkot,Padrio,padrio,5813,107505,Padrio,geonames,exact,1.0
+PK72804,Umarkot,Umarkot,Rabario,rabario,5816,100764,Goth Rabbario,geonames,fuzzy,0.933
+PK72804,Umarkot,Umarkot,Sabo,sabo,5821,100284,Goth Sabho,geonames,fuzzy,0.889
+PK72804,Umarkot,Umarkot,Sarreti,sarreti,5826,106490,Goth Sareti,osm,fuzzy,0.923
+PK72804,Umarkot,Umarkot,Shekhro,shekhro,5829,97595,Sekhro,geonames,fuzzy,0.923
+PK72804,Umarkot,Umarkot,Sonpur,sonpur,5832,105484,Sonpur,geonames_alt,exact,1.0
+PK72804,Umarkot,Umarkot,Thathrai,thathrai,5839,104467,Thathrai,geonames,exact,1.0
+PK72804,Umarkot,Umarkot,Walidad Palli,walidadpalli,5846,106925,Goth Wali Dad Pali,geonames,fuzzy,0.957
