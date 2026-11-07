@@ -91,7 +91,9 @@ gee/                run.py (CLI), jobs.py (registry), interactive.py, lib/{commo
 src/{preprocessing,village_mapping,feature_engineering,temporal_analysis,
      graph_construction,models,validation,visualization,utils}/
 scripts/            download_data.py, prepare_admin.py, make_zones.py, gee_to_long.py, drive_fetch.py,
-                    parse_pbs_mouza.py, admin_crosswalk.py, settlement_sources.py, build_settlements.py
+                    parse_pbs_mouza.py, admin_crosswalk.py, admin_history.py, settlement_sources.py,
+                    build_settlements.py, attach_names.py, flag_urban.py, parse_deh_list.py,
+                    assign_deh.py, build_registry.py
 experiments/        gee_task_manifest.csv, run registry
 outputs/{maps,figures,tables,predictions}/
 documentation/      day_tracker.csv, DECISIONS.csv, LOG.md, charter.md, compute.md, data/model cards
@@ -123,7 +125,9 @@ manuscript/  notebooks/  tests/
 | 13 | `submit open_buildings_centroids`, `submit settlement_evidence`; `scripts/settlement_sources.py` |
 | 14 | `src/village_mapping/settlements.py`; `scripts/build_settlements.py pilot`, `sensitivity` |
 | 15 | `scripts/build_settlements.py province` -> `settlements_v0.parquet` |
-| 18 | `src/village_mapping/ids.py`, `tests/test_ids.py` |
+| 16 | `scripts/attach_names.py`; `scripts/flag_urban.py` (gee job `smod_grid`) |
+| 17 | `scripts/parse_deh_list.py` (Board of Revenue deh list), `scripts/assign_deh.py` (proxy dehs) |
+| 18 | `scripts/build_registry.py`, `src/village_mapping/ids.py`, `tests/test_ids.py`, `tests/test_registry.py` |
 | 23 | `src/village_mapping/zones.py`, `scripts/make_zones.py` |
 | 26 | `gee/lib/zonal.py`, `gee/lib/manifest.py`, `upload-zones`, wave 2 |
 | 27-29 | `gee/lib/optical.py` (S2, Cloud Score+), `s2_zonal` |
