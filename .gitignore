@@ -18,3 +18,4 @@ mlruns/
 .env
 configs/resolved_assets.json
 data/village_inventory/admin/*.gpkg
+data/context/**
