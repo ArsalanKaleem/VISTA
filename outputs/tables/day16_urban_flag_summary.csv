@@ -1,0 +1,5 @@
+settlement_class,clusters,buildings,median_buildings,building_share
+peri_urban,52483,3531239,24.0,0.28
+rural,103248,3351662,12.0,0.265
+urban_centre,729,4642408,19.0,0.368
+urban_cluster,3133,1102566,41.0,0.087
