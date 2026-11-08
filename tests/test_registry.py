@@ -47,3 +47,13 @@ def test_crosswalks_have_no_orphans():
         assert set(cw.vid) <= vids, f
     pilot = pd.read_csv(REG / "crosswalks/vid_pilot_v0.csv")
     assert set(pilot.vid.dropna()) <= vids
+
+
+@needs_registry
+def test_name_resolution_consistent():
+    r = pd.read_parquet(REG / "village_registry.parquet", columns=["vid", "name", "name_status", "registry_version"])
+    if "name_status" not in r or r.registry_version.iloc[0] < "v0.6":
+        pytest.skip("dedupe_inventory.py not run")
+    assert set(r.name_status) <= {"unnamed", "unique", "homonym", "village_shared", "conflict_kept", "conflict_dropped"}
+    assert r[r.name_status == "conflict_dropped"].name.isna().all()
+    assert r[r.name_status == "unnamed"].name.isna().all()
