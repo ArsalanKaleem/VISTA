@@ -1,0 +1,7 @@
+rule,decisions
+R1_record_merge,2269
+R4_homonym,574
+R2_same_village,309
+R3_name_conflict,32
+D1_building_pairs_within_1m,1290
+D_threshold_m,600
