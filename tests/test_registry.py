@@ -57,3 +57,13 @@ def test_name_resolution_consistent():
     assert set(r.name_status) <= {"unnamed", "unique", "homonym", "village_shared", "conflict_kept", "conflict_dropped"}
     assert r[r.name_status == "conflict_dropped"].name.isna().all()
     assert r[r.name_status == "unnamed"].name.isna().all()
+
+
+@needs_registry
+def test_every_vid_has_quality_class():
+    r = pd.read_parquet(REG / "village_registry.parquet")
+    if "quality_class" not in r:
+        pytest.skip("quality_classes.py not run")
+    assert r.quality_class.isin(["Q1", "Q2", "Q3"]).all()
+    q12 = r[r.quality_class != "Q3"]
+    assert (q12.n_buildings >= 10).all() and (q12.mean_conf >= 0.70).all()
