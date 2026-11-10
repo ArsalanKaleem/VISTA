@@ -35,25 +35,33 @@ waves:
 
   "3":
     description: >-
-      PROVINCE run on the frozen inventory v1.0 (Days 28-39). Upload zones first:
-      `python -m gee.run upload-zones data/village_inventory/zones/zones_v1_0.parquet zones/v1_0`.
-      Submit in this order; S2 is split into two batches (Days 28-29).
+      PROVINCE run on inventory v1.0 (Q1-Q2 rural hamlets, core + resource zones). Upload first:
+      `python -m gee.run upload-zones data/village_inventory/zones/v1/zones_upload_q12.parquet zones/v1_0`.
+      Tiered by measured cost (documentation/compute_budget.md, D011): wave 3 = cheap coarse products,
+      wave 3b = seasonal composites, wave 3c = monthly products on the pilot talukas only.
     jobs:
-      - {job: s2_zonal, zones: zones/v1_0, years: [2019, 2025]}          # batch 1 (Day 28)
-      - {job: s2_zonal, zones: zones/v1_0, years: [2017, 2018]}          # batch 2 (Day 29)
-      - {job: landsat_zonal, zones: zones/v1_0}                          # Day 31
+      - {job: terrain_zonal, zones: zones/v1_0, chunk_group: 40}
+      - {job: context_zonal, zones: zones/v1_0, chunk_group: 40}
+      - {job: jrc_static_zonal, zones: zones/v1_0, chunk_group: 40}
+      - {job: modis_vi_zonal, zones: zones/v1_0, chunk_group: 40}
+      - {job: modis_lst_zonal, zones: zones/v1_0, chunk_group: 40}
+      - {job: modis_et_zonal, zones: zones/v1_0, chunk_group: 40, years: [2001, 2025]}
+      - {job: jrc_zonal, zones: zones/v1_0, chunk_group: 40}
+
+  "3b":
+    description: Seasonal composites, province (about 1,575 EECU-hours, five weeks of serial queue).
+    jobs:
+      - {job: s2_season_zonal, zones: zones/v1_0, years: [2019, 2025]}
       - {job: landsat_season_zonal, zones: zones/v1_0}
-      - {job: s1_zonal, zones: zones/v1_0}                               # Day 32
-      - {job: dw_zonal, zones: zones/v1_0}                               # Day 33
-      - {job: modis_vi_zonal, zones: zones/v1_0, zone_types: [resource]} # Day 34: resource zone only
-      - {job: modis_lst_zonal, zones: zones/v1_0, zone_types: [resource]}
-      - {job: modis_et_zonal, zones: zones/v1_0, zone_types: [resource]}
-      - {job: chirps_zonal, zones: zones/v1_0}                           # Day 35
-      - {job: era5_zonal, zones: zones/v1_0}                             # Day 36
-      - {job: jrc_zonal, zones: zones/v1_0}                              # Day 37
-      - {job: jrc_static_zonal, zones: zones/v1_0}
-      - {job: terrain_zonal, zones: zones/v1_0}                          # Day 38
-      - {job: context_zonal, zones: zones/v1_0}                          # Day 39
+      - {job: s2_season_zonal, zones: zones/v1_0, years: [2017, 2018]}
+
+  "3c":
+    description: Monthly products on the pilot zones (sample), flood-year S1 (2022 exists).
+    jobs:
+      - {job: s2_zonal, zones: zones/pilot_v0, years: [2017, 2025]}
+      - {job: dw_zonal, zones: zones/pilot_v0, years: [2016, 2025]}
+      - {job: s1_zonal, zones: zones/pilot_v0, years: [2020, 2020]}
+      - {job: s1_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
 
   "4":
     description: Later and optional (Days 73, 92).
