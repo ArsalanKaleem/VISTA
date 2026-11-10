@@ -26,6 +26,7 @@ class Ctx:
     years: tuple[int, int] | None = None
     regions: list[str] = field(default_factory=list)
     zone_types: list[str] | None = None
+    chunk_group: int | None = None      # override products.<p>.chunk_group (province runs use bigger groups)
 
 
 @dataclass
@@ -217,7 +218,7 @@ def zonal_job(name: str, day: str, summary: str, product_key: str, image_fn, ban
         submit_zonal(cfg, sub, job=name, product=name, zones_name=ctx.zones,
                      image_fn=lambda y, r: image_fn(cfg, y, r), band_fn=lambda y: band_fn(cfg, y),
                      years=years, scale=p[scale] if isinstance(scale, str) else scale,
-                     group=p["chunk_group"], stats=stats, zone_types=ctx.zone_types)
+                     group=ctx.chunk_group or p["chunk_group"], stats=stats, zone_types=ctx.zone_types)
     run.__name__ = name
     JOBS[name] = Job(run, day, True, summary)
 
@@ -231,6 +232,8 @@ zonal_job("s2_zonal", "28-29", "Sentinel-2 monthly NDVI/EVI/NDWI/MNDWI/NDMI/SAVI
           "s2", optical.s2_year_stack, _b(optical.s2_bands), "scale")
 zonal_job("landsat_zonal", "31", "Landsat C2 L2 monthly NDVI/EVI/MNDWI/NDMI/LST + n_obs, L7 count (Roy-harmonised)",
           "landsat", optical.landsat_year_stack, _b(optical.landsat_bands), "scale")
+zonal_job("s2_season_zonal", "27-29", "Sentinel-2 Rabi/Kharif seasonal medians (province-scale S2; monthly S2 stays for samples)",
+          "s2", optical.s2_season_stack, _b(optical.s2_season_bands), "scale")
 zonal_job("landsat_season_zonal", "30-31", "Landsat Rabi/Kharif seasonal composites",
           "landsat", optical.landsat_season_stack, _b(optical.landsat_season_bands), "scale")
 zonal_job("s1_zonal", "32, 48", "Sentinel-1 monthly VV/VH/VH-VV, min VH, revisits, inundation fraction/duration",

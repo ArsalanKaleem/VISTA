@@ -29,7 +29,8 @@ def _ctx(args):
     return Ctx(zones=getattr(args, "zones", None),
                years=tuple(args.years) if getattr(args, "years", None) else None,
                regions=getattr(args, "regions", None) or [],
-               zone_types=getattr(args, "zone_types", None))
+               zone_types=getattr(args, "zone_types", None),
+               chunk_group=getattr(args, "chunk_group", None))
 
 
 def cmd_list_jobs(cfg, args):
@@ -61,7 +62,8 @@ def cmd_wave(cfg, args):
     from .jobs import Ctx
     for spec in wave["jobs"]:
         ctx = Ctx(zones=spec.get("zones"), years=tuple(spec["years"]) if spec.get("years") else None,
-                  regions=spec.get("regions") or [], zone_types=spec.get("zone_types"))
+                  regions=spec.get("regions") or [], zone_types=spec.get("zone_types"),
+                  chunk_group=spec.get("chunk_group"))
         try:
             run_job(cfg, spec["job"], ctx, args.dry_run, args.limit)
         except SystemExit as exc:
@@ -135,6 +137,7 @@ def main(argv=None):
     s.add_argument("job")
     s.add_argument("--zones")
     s.add_argument("--zone-types", nargs="*", dest="zone_types")
+    s.add_argument("--chunk-group", type=int, dest="chunk_group", help="villages per task = 250 x this")
     s.add_argument("--years", nargs=2, type=int)
     s.add_argument("--regions", nargs="*")
     s.add_argument("--dry-run", action="store_true")
