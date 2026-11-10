@@ -77,6 +77,25 @@ def s2_bands(year: int) -> list[str]:
     return band_names(S2_VARS + ["nobs"], year) + band_names(["wfrac"], year)
 
 
+def s2_season_stack(cfg: dict, year: int, region: ee.Geometry) -> ee.Image:
+    """Rabi (Nov y-1 .. Apr y) and Kharif (May .. Oct y) medians of the S2 indices, plus nobs and the share
+    of clear observations with MNDWI > 0 (wfrac). Province-scale S2: 6x cheaper than monthly stacks."""
+    out = []
+    for label, start in (("rabi", ee.Date.fromYMD(year - 1, 11, 1)), ("kharif", ee.Date.fromYMD(year, 5, 1))):
+        col = s2_collection(cfg, region, start, start.advance(6, "month"))
+        names = S2_VARS + ["nobs", "wfrac"]
+        comp = col.select(S2_VARS).median().addBands(col.select("ndvi").count().rename("nobs"))             .addBands(col.select("mndwi").map(lambda im: im.gt(0)).mean().rename("wfrac")).toFloat()
+        img = ee.Image(ee.Algorithms.If(col.size().gt(0), comp.rename(names), empty(names)))
+        tag = f"{year - 1}11" if label == "rabi" else f"{year}05"
+        out.append(img.rename([f"{n}_{tag}" for n in names]))
+    return ee.Image.cat(out)
+
+
+def s2_season_bands(year: int) -> list[str]:
+    names = S2_VARS + ["nobs", "wfrac"]
+    return [f"{n}_{year - 1}11" for n in names] + [f"{n}_{year}05" for n in names]
+
+
 # --------------------------------------------------------------------------- Landsat
 
 # Roy et al. (2016) OLS ETM+ -> OLI coefficients (blue, green, red, nir, swir1, swir2).
