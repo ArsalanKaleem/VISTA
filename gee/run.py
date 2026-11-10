@@ -132,6 +132,7 @@ def main(argv=None):
     up.add_argument("file", type=Path)
     up.add_argument("name", help="asset name under asset_root, e.g. zones/pilot_v0")
     up.add_argument("--dry-run", action="store_true")
+    up.add_argument("--part-size", type=int, default=500, help="features per uploaded part")
     sp.add_parser("list-jobs")
     s = sp.add_parser("submit")
     s.add_argument("job")
@@ -166,7 +167,7 @@ def main(argv=None):
     elif args.cmd == "upload-admin":
         it.upload_admin(cfg, dry_run=args.dry_run)
     elif args.cmd == "upload-zones":
-        it.upload_zones(cfg, args.file, args.name, dry_run=args.dry_run)
+        it.upload_zones(cfg, args.file, args.name, dry_run=args.dry_run, part_size=args.part_size)
     elif args.cmd == "submit":
         cmd_submit(cfg, args)
     elif args.cmd == "wave":

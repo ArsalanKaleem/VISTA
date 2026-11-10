@@ -247,7 +247,7 @@ def upload_admin(cfg: dict, dry_run: bool = False) -> None:
             product="admin", chunk=level, destination=aid)
 
 
-def upload_zones(cfg: dict, path: Path, name: str, dry_run: bool = False) -> None:
+def upload_zones(cfg: dict, path: Path, name: str, dry_run: bool = False, part_size: int = 500) -> None:
     """Upload village zones with vid, zone and a deterministic chunk index (sorted by vid)."""
     z = cfg["zones"]
     feats = _features_from_file(path, z["simplify_m"])
@@ -262,4 +262,4 @@ def upload_zones(cfg: dict, path: Path, name: str, dry_run: bool = False) -> Non
         f["properties"][z["chunk_field"]] = idx[str(f["properties"][z["id_field"]])]
     print(f"  {len(feats)} zone features, {len(vids)} villages, {max(idx.values()) + 1} chunks")
     keep = [z["id_field"], z["zone_field"], z["chunk_field"]]
-    upload_features(cfg, feats, name, keep=keep, dry_run=dry_run)
+    upload_features(cfg, feats, name, part_size=part_size, keep=keep, dry_run=dry_run)
