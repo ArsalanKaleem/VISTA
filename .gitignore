@@ -22,3 +22,4 @@ data/context/**
 data/village_inventory/deh/*.parquet
 data/village_inventory/registry/*.parquet
 data/village_inventory/registry/crosswalks/**
+data/village_inventory/zones/v1/*.parquet
