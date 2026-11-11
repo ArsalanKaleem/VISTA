@@ -137,27 +137,31 @@ def spi_fit_transform(acc: np.ndarray, months: list[str], base: tuple[int, int])
                 a, sc = np.nan, np.nan
             params.append((ci, m, a, sc, p0))
             x = acc[ci, sel]
-            cdf = np.where(x <= 0, p0, p0 + (1 - p0) * (stats.gamma.cdf(x, a, 0, sc) if np.isfinite(a) else np.nan))
+            if np.isfinite(a):
+                g = stats.gamma.cdf(x, a, 0, sc)
+            else:  # too few wet months to fit: empirical CDF among the baseline positives (Weibull plotting position)
+                g = (np.searchsorted(np.sort(pos), x, side="right")) / (len(pos) + 1) if len(pos) else np.full_like(x, 0.5)
+            # zero months sit at the centre of the zero mass (p0 / 2), positive months above it
+            cdf = np.where(x <= 0, p0 / 2, p0 + (1 - p0) * g)
             cdf = np.clip(cdf, 0.0005, 0.9995)
             z[ci, sel] = ndtri(cdf)
     return z, pd.DataFrame(params, columns=["cell_idx", "month", "gamma_a", "gamma_scale", "p0"])
 
 
 def loglogistic_lmom(v: np.ndarray):
-    """3-parameter log-logistic by L-moments (Vicente-Serrano et al. 2010, eq. 10-12 with PWMs)."""
+    """3-parameter log-logistic by probability-weighted moments (Vicente-Serrano et al. 2010, eq. 10-13):
+    w_s = mean((1 - F_i)^s D_i) with D ascending and F_i = (i - 0.35) / n."""
+    from scipy.special import gamma as G
     v = np.sort(v)
     n = len(v)
-    i = np.arange(1, n + 1)
-    b0 = v.mean()
-    b1 = np.sum((i - 1) / (n - 1) * v) / n
-    b2 = np.sum((i - 1) * (i - 2) / ((n - 1) * (n - 2)) * v) / n
-    beta = (2 * b1 - b0) / (6 * b1 - b0 - 6 * b2)
-    from scipy.special import gamma as G
+    F = (np.arange(1, n + 1) - 0.35) / n
+    w0, w1, w2 = v.mean(), np.mean((1 - F) * v), np.mean((1 - F) ** 2 * v)
+    beta = (2 * w1 - w0) / (6 * w1 - w0 - 6 * w2)
     if not np.isfinite(beta) or beta <= 1 or beta > 50:
         return np.nan, np.nan, np.nan
-    g1, g2 = G(1 + 1 / beta), G(1 - 1 / beta)
-    alpha = (b0 - 2 * b1) * beta / (g1 * g2)
-    gam = b0 - alpha * g1 * g2
+    g1g2 = G(1 + 1 / beta) * G(1 - 1 / beta)
+    alpha = (w0 - 2 * w1) * beta / g1g2
+    gam = w0 - alpha * g1g2
     return alpha, beta, gam
 
 
