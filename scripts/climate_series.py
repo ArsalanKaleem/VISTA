@@ -12,9 +12,10 @@ Drought indices (cell level, 1981-2025):
          1981-2010 (configs/gee.yaml periods.climate_baseline; ends before the 2018-2025 validation/test
          years) is fitted with a gamma distribution on the non-zero values and a zero probability p0
          (Stagge et al. 2015 mixed distribution); the CDF is mapped to the standard normal.
-  SPEI-k from ERA5-Land P - PET on the ERA5 grid (one grid, no resampling). PET = -pev x 1000 mm: ERA5-Land
-         potential_evaporation_sum is negative downward (checked on the data and recorded). Three-parameter
-         log-logistic fitted by L-moments (Vicente-Serrano et al. 2010).
+  SPEI-k from ERA5-Land P - PET on the ERA5 grid (one grid, no resampling); the exported grid already holds
+         PET in positive mm (sign and unit are checked on the data and recorded). Nonparametric standardisation
+         on the baseline empirical CDF (Farahmand & AghaKouchak 2015); the L-moment log-logistic is kept in
+         the code history but failed on about 1,200 arid cell-months.
 Parameters are saved (spi_params / spei_params) so the same baseline fit is reused on later years.
 
 Outputs: data/climate/zonal_local/
@@ -166,6 +167,11 @@ def loglogistic_lmom(v: np.ndarray):
 
 
 def spei_fit_transform(acc: np.ndarray, months: list[str], base: tuple[int, int]):
+    """Nonparametric standardisation (Farahmand & AghaKouchak 2015): per calendar month, the empirical CDF of
+    the baseline years with Gringorten plotting positions, linearly interpolated for other years and clipped
+    at [0.0005, 0.9995] (about +-3.3) beyond the baseline range. Chosen over the log-logistic fit because, on
+    the Sindh ERA5 cells, the L-moment fit failed for about 1,200 cell-months and gave a baseline sd of 1.4.
+    Returned 'params' are the sorted baseline values per cell and month."""
     yrs = np.array([int(m[:4]) for m in months])
     mon = np.array([int(m[4:]) for m in months])
     inb = (yrs >= base[0]) & (yrs <= base[1])
@@ -175,21 +181,23 @@ def spei_fit_transform(acc: np.ndarray, months: list[str], base: tuple[int, int]
         sel = mon == m
         b = acc[:, sel & inb]
         for ci in range(acc.shape[0]):
-            v = b[ci][~np.isnan(b[ci])]
+            v = np.sort(b[ci][~np.isnan(b[ci])])
             if len(v) < 10:
-                params.append((ci, m, np.nan, np.nan, np.nan))
                 continue
-            a, be, g = loglogistic_lmom(v)
-            params.append((ci, m, a, be, g))
-            if not np.isfinite(a):
-                continue
+            n = len(v)
+            pp = (np.arange(1, n + 1) - 0.44) / (n + 0.12)
             x = acc[ci, sel]
-            with np.errstate(divide="ignore", invalid="ignore"):
-                cdf = 1 / (1 + (a / (x - g)) ** be)
-            cdf = np.where(x <= g, 0.0005, cdf)
+            cdf = np.interp(x, v, pp, left=np.nan, right=np.nan)
+            # beyond the baseline range: extend linearly in probability per unit of the baseline spread, then clip
+            span = (v[-1] - v[0]) or 1.0
+            lo = x < v[0]
+            hi = x > v[-1]
+            cdf[lo] = pp[0] * np.exp((x[lo] - v[0]) / span * 3)
+            cdf[hi] = 1 - (1 - pp[-1]) * np.exp(-(x[hi] - v[-1]) / span * 3)
             cdf = np.clip(cdf, 0.0005, 0.9995)
             z[ci, sel] = ndtri(cdf)
-    return z, pd.DataFrame(params, columns=["cell_idx", "month", "ll_alpha", "ll_beta", "ll_gamma"])
+            params.append((ci, m, n, v[0], v[n // 2], v[-1]))
+    return z, pd.DataFrame(params, columns=["cell_idx", "month", "n_base", "base_min", "base_median", "base_max"])
 
 
 def main() -> int:
@@ -255,7 +263,7 @@ def main() -> int:
     sign = -1.0 if pev_med < 0 else 1.0
     checks.append({"check": "era5_pev_median", "value": round(pev_med, 5), "note": f"PET = {'-' if sign < 0 else '+'}pev x 1000 mm (ERA5-Land flux sign)"})
     tp_med = float(np.nanmedian(tp))
-    unit = 1000.0 if abs(tp_med) < 5 else 1.0  # metres -> mm unless already mm
+    unit = 1000.0 if np.nanmax(tp) < 5 else 1.0  # metres -> mm unless already mm (dry months make the median small)
     checks.append({"check": "era5_tp_median", "value": round(tp_med, 5), "note": f"x{unit:.0f} to mm"})
     D = tp * unit - sign * pev * unit
     valid_e = ~np.isnan(D).all(axis=1)
@@ -271,7 +279,6 @@ def main() -> int:
         zb = z[:, inb]
         checks.append({"check": f"spei{k}_baseline_mean", "value": round(float(np.nanmean(zb)), 3), "note": "expect about 0"})
         checks.append({"check": f"spei{k}_baseline_sd", "value": round(float(np.nanstd(zb)), 3), "note": "expect about 1"})
-        checks.append({"check": f"spei{k}_cells_fit_failed", "value": int(par.ll_alpha.isna().sum()), "note": "cell-months without an L-moment fit"})
         log(f"SPEI-{k} done", t0)
     pd.concat(spei_rows, ignore_index=True).to_parquet(OUT / "spei_cells.parquet", index=False)
     pd.concat(spei_par, ignore_index=True).to_parquet(OUT / "spei_params.parquet", index=False)
