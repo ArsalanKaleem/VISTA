@@ -49,19 +49,17 @@ waves:
       - {job: jrc_zonal, zones: zones/v1_0, chunk_group: 40}
 
   "3b":
-    description: Seasonal composites, province (about 1,575 EECU-hours, five weeks of serial queue).
+    description: >-
+      Community tier (150 EECU-h/month, decision 2026-11-11): seasonal composites on a 10,000-hamlet
+      stratified sample (zones/sample10k, Day 27), one job per month. Province-wide 3b is not affordable.
     jobs:
-      - {job: s2_season_zonal, zones: zones/v1_0, years: [2019, 2025]}
-      - {job: landsat_season_zonal, zones: zones/v1_0}
-      - {job: s2_season_zonal, zones: zones/v1_0, years: [2017, 2018]}
+      - {job: landsat_season_zonal, zones: zones/sample10k}          # Dec 2026, ~40 EECU-h
+      - {job: s2_season_zonal, zones: zones/sample10k, years: [2017, 2025]}   # Jan 2027, ~110 EECU-h
 
   "3c":
-    description: Monthly products on the pilot zones (sample), flood-year S1 (2022 exists).
+    description: Monthly 10 m products on a 2,000-hamlet subsample (zones/sample2k), Feb 2027 (~135 EECU-h).
     jobs:
-      - {job: s2_zonal, zones: zones/pilot_v0, years: [2017, 2025]}
-      - {job: dw_zonal, zones: zones/pilot_v0, years: [2016, 2025]}
-      - {job: s1_zonal, zones: zones/pilot_v0, years: [2020, 2020]}
-      - {job: s1_zonal, zones: zones/pilot_v0, years: [2023, 2023]}
+      - {job: s2_zonal, zones: zones/sample2k, years: [2017, 2025]}
 
   "4":
     description: Later and optional (Days 73, 92).

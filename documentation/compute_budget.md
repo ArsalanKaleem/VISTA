@@ -81,6 +81,24 @@ loss") applies to S1.
 3. Until then: submit wave 3A as soon as the zones are uploaded (it runs in restricted mode and completes
    within the December allowance); hold 3B and 3C; CHIRPS/ERA5/SMOD stay local.
 
+## Decision (user, 2026-11-11): stay on the Community tier
+
+150 EECU-hours per month is the budget. What fits, by month, after the zone upload finishes:
+
+| month | run | EECU-hours |
+|---|---|---|
+| December 2026 | wave 3A: terrain, context, JRC static + monthly, MODIS VI / LST / ET, all Q1-Q2 zones | ~70 |
+| December 2026 | wave 3s-1: Landsat seasonal 2000-2025 on a stratified sample of 10,000 Q1-Q2 hamlets | ~40 |
+| January 2027 | wave 3s-2: S2 seasonal 2017-2025 on the same 10,000-hamlet sample | ~110 |
+| February 2027 | wave 3s-3: S2 monthly 2017-2025 on 2,000 of those hamlets (the fine-scale sample) | ~135 |
+| later / never | province-wide seasonal S2 (~1,150), S1 (pilot only), DW province | not on this tier |
+
+So the design becomes **province coarse + sample fine**: MODIS (250 m, 16-day) and the local CHIRPS/ERA5
+series carry every Q1-Q2 hamlet; Sentinel-2 and Landsat describe a 10,000-hamlet stratified sample (by
+district, ecoregion and quality class), and monthly 10 m dynamics a 2,000-hamlet subsample. Models that need
+10 m inputs are trained and evaluated on the sample, and the sampling weights are reported. Samples are drawn
+on Day 27 with a logged seed (`scripts/sample_hamlets.py`, to write).
+
 ## Checks to keep
 
 * Record EECU per task from the operations list after each wave (`experiments/ee_operations_snapshot.csv`).
