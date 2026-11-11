@@ -191,3 +191,13 @@ later. They use the same commands; see `configs/gee_jobs.yaml`.
 | zonal task "Computation timed out" / "memory limit exceeded" | chunk group too large | re-run the same `wave`/`submit`: failed groups are split into halves automatically (and halved again if those fail). For a whole new run, lower `chunk_group` (e.g. s2 4 -> 2) |
 | `Dictionary.get: Dictionary does not contain key` in s1 | month with images but no pixels in the region | report it; set the month's threshold to the fallback |
 | an `open_buildings` CSV is very large | dense taluka | normal; buildings on taluka borders appear twice, so dedupe by `plus_code` locally |
+
+
+## Status 2026-11-11: province zones uploaded, quota
+
+* `zones/v1_0`: 207 parts of 1,000 features (206,782 Q1-Q2 core + resource zones) submitted as asset-export
+  tasks; they run one at a time in **restricted mode** (the Community tier's 150 EECU-hours per month were
+  used by the pilot wave). Check with `python -m gee.run status`; when no `upload_zones_v1_0_*` task is
+  PENDING or RUNNING, submit `python -m gee.run wave 3` (coarse products, about 70 EECU-hours, D011), then
+  fetch with `scripts/drive_fetch.py`. Waves `3b` and `3c` wait for the tier change (D012).
+* Before any province submission after the 1st of the month, re-read documentation/compute_budget.md.
