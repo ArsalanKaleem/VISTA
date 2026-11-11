@@ -205,8 +205,9 @@ def main() -> int:
         z["key"] = z.vid + "|" + zone
         zones.append(z[["key", "geometry"]])
     zones = gpd.GeoDataFrame(pd.concat(zones, ignore_index=True), crs=4326)
-    zones = zones[~zones.geometry.is_empty]
-    log(f"{len(zones):,} zones", t0)
+    zones = zones[~zones.geometry.is_empty].copy()
+    zones["geometry"] = zones.geometry.make_valid()  # reprojection to WGS84 can leave side-location conflicts
+    log(f"{len(zones):,} zones ({int((~zones.is_valid).sum())} invalid after repair)", t0)
 
     series = {}
     for product in ("chirps", "era5"):
