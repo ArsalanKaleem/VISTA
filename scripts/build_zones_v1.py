@@ -143,6 +143,25 @@ def main() -> int:
     rural["resource"] = gpd.GeoSeries(rural.resource.values, index=rural.index, crs=CRS).make_valid()
     log(f"resource zones built for {len(rural):,} hamlets", t0)
 
+    core = gpd.GeoDataFrame({"vid": rural.vid.values, "quality_class": rural.quality_class.values,
+                             "adm3_pcode": rural.adm3_pcode.values}, geometry=rural.core.values, crs=CRS)
+    core["area_m2"] = core.geometry.area.round(1)
+    core.to_crs(4326).to_parquet(OUT / "zones_core.parquet")
+    res = gpd.GeoDataFrame({"vid": rural.vid.values, "quality_class": rural.quality_class.values,
+                            "adm3_pcode": rural.adm3_pcode.values, "r_max": rural.r_max.values},
+                           geometry=rural.resource.values, crs=CRS)
+    res["area_m2"] = res.geometry.area.round(1)
+    res.to_crs(4326).to_parquet(OUT / "zones_resource.parquet")
+
+    # upload table for Q1-Q2
+    q12 = rural.quality_class != "Q3"
+    up = pd.concat([core[q12.values][["vid", "geometry", "area_m2"]].assign(zone="core"),
+                    res[q12.values][["vid", "geometry", "area_m2"]].assign(zone="resource")], ignore_index=True)
+    up = gpd.GeoDataFrame(up, geometry="geometry", crs=CRS)
+    up = up[~up.geometry.is_empty & (up.area_m2 > 0)]
+    up["geometry"] = up.geometry.simplify(5, preserve_topology=True).make_valid()
+    up.to_crs(4326).to_parquet(OUT / "zones_upload_q12.parquet")
+
     # connectivity
     edges = None
     conn = None
@@ -167,14 +186,18 @@ def main() -> int:
         log(f"network: {len(roads):,} road lines, {int((net.cls != 'road').sum()):,} canal/drain lines", t0)
         segs = shapely.linestrings(np.stack([xy[e.i.values], xy[e.j.values]], axis=1))
         corr = shapely.buffer(segs, CORRIDOR_HALF, cap_style="flat")
-        q = net_tree.query(corr, predicate="intersects")
-        pieces = shapely.intersection(corr[q[0]], net.geometry.values[q[1]])
-        plen = shapely.length(pieces)
-        cls = net.cls.values[q[1]]
-        agg = pd.DataFrame({"e": q[0], "cls": cls, "len": plen}).pivot_table(index="e", columns="cls", values="len",
-                                                                             aggfunc="sum", fill_value=0.0)
-        for c in ("road", "canal", "drain"):
-            e[f"{c}_m"] = agg[c].reindex(range(len(e))).fillna(0.0).values if c in agg else 0.0
+        # network length per edge, in batches (the pair list is large)
+        e["road_m"] = 0.0; e["canal_m"] = 0.0; e["drain_m"] = 0.0
+        B = 50_000
+        for s0 in range(0, len(e), B):
+            q = net_tree.query(corr[s0:s0 + B], predicate="intersects")
+            if len(q[0]) == 0:
+                continue
+            plen = shapely.length(shapely.intersection(corr[s0 + q[0]], net.geometry.values[q[1]]))
+            agg = pd.DataFrame({"e": s0 + q[0], "cls": net.cls.values[q[1]], "len": plen})                 .pivot_table(index="e", columns="cls", values="len", aggfunc="sum", fill_value=0.0)
+            for col in agg.columns:
+                e.loc[agg.index, f"{col}_m"] = agg[col].values
+            log(f"  edge network lengths {min(s0 + B, len(e)):,}/{len(e):,}", t0)
         e["same_tehsil"] = rural.teh.values[e.i.values] == rural.teh.values[e.j.values]
         vid = rural.vid.values
         edges = pd.DataFrame({"vid_i": vid[e.i.values], "vid_j": vid[e.j.values], "dist_m": e.dist_m.round(1),
@@ -182,51 +205,38 @@ def main() -> int:
                               "same_tehsil": e.same_tehsil})
         edges.to_parquet(OUT / "village_graph_knn8.parquet", index=False)
         log("edges written", t0)
-        # K_i: network pieces of the hamlet's edges within REACH of its core, buffered
-        piece_edge = q[0]
-        by_edge = pd.Series(np.arange(len(pieces))).groupby(piece_edge).apply(list).to_dict()
-        conn_geoms = []
+        # K_i per hamlet: network inside the corridors of its edges, within REACH of its core (WKB kept, not geometries)
+        inc: dict = {}
+        for row, (a_, b_) in enumerate(zip(e.i.values, e.j.values)):
+            inc.setdefault(a_, []).append(row)
+            inc.setdefault(b_, []).append(row)
         reach = rural.core.buffer(REACH - CORE_BUF).values
-        inc = {}
-        for row, (a, b) in enumerate(zip(e.i.values, e.j.values)):
-            inc.setdefault(a, []).append(row)
-            inc.setdefault(b, []).append(row)
+        wkb = []
+        empty_wkb = shapely.to_wkb(shapely.Polygon())
         for h in range(len(rural)):
-            pid = [p for ed in inc.get(h, []) for p in by_edge.get(ed, [])]
-            if not pid:
-                conn_geoms.append(shapely.Polygon())
+            rows = inc.get(h, [])
+            if not rows:
+                wkb.append(empty_wkb)
                 continue
-            g = shapely.union_all(shapely.buffer(pieces[pid], NET_BUF))
-            conn_geoms.append(shapely.intersection(g, reach[h]))
+            cs = corr[rows]
+            q = net_tree.query(cs, predicate="intersects")
+            if len(q[0]) == 0:
+                wkb.append(empty_wkb)
+                continue
+            pieces = shapely.intersection(cs[q[0]], net.geometry.values[q[1]])
+            g = shapely.intersection(shapely.union_all(shapely.buffer(pieces, NET_BUF)), reach[h])
+            wkb.append(shapely.to_wkb(g))
             if h % 20000 == 0:
                 log(f"  connectivity {h:,}/{len(rural):,}", t0)
+        conn_geoms = shapely.from_wkb(wkb)
         conn = gpd.GeoDataFrame({"vid": rural.vid.values}, geometry=conn_geoms, crs=CRS)
         conn["n_edges"] = conn.vid.map(pd.concat([edges.vid_i, edges.vid_j]).value_counts()).fillna(0).astype(int)
-        conn["network_km"] = (conn.vid.map(pd.concat([edges.assign(v=edges.vid_i), edges.assign(v=edges.vid_j)])
-                                           .groupby("v").apply(lambda d: (d.road_m + d.canal_m + d.drain_m).sum() / 1000,
-                                                               include_groups=False)).fillna(0).round(2))
+        tot = (edges.road_m + edges.canal_m + edges.drain_m) / 1000
+        per_v = pd.concat([pd.Series(tot.values, index=edges.vid_i.values), pd.Series(tot.values, index=edges.vid_j.values)])             .groupby(level=0).sum()
+        conn["network_km"] = conn.vid.map(per_v).fillna(0).round(2)
         conn["area_m2"] = conn.geometry.area.round(1)
         conn.to_crs(4326).to_parquet(OUT / "zones_connectivity.parquet")
         log("connectivity zones written", t0)
-
-    core = gpd.GeoDataFrame({"vid": rural.vid.values, "quality_class": rural.quality_class.values,
-                             "adm3_pcode": rural.adm3_pcode.values}, geometry=rural.core.values, crs=CRS)
-    core["area_m2"] = core.geometry.area.round(1)
-    core.to_crs(4326).to_parquet(OUT / "zones_core.parquet")
-    res = gpd.GeoDataFrame({"vid": rural.vid.values, "quality_class": rural.quality_class.values,
-                            "adm3_pcode": rural.adm3_pcode.values, "r_max": rural.r_max.values},
-                           geometry=rural.resource.values, crs=CRS)
-    res["area_m2"] = res.geometry.area.round(1)
-    res.to_crs(4326).to_parquet(OUT / "zones_resource.parquet")
-
-    # upload table for Q1-Q2
-    q12 = rural.quality_class != "Q3"
-    up = pd.concat([core[q12.values][["vid", "geometry", "area_m2"]].assign(zone="core"),
-                    res[q12.values][["vid", "geometry", "area_m2"]].assign(zone="resource")], ignore_index=True)
-    up = gpd.GeoDataFrame(up, geometry="geometry", crs=CRS)
-    up = up[~up.geometry.is_empty & (up.area_m2 > 0)]
-    up["geometry"] = up.geometry.simplify(5, preserve_topology=True).make_valid()
-    up.to_crs(4326).to_parquet(OUT / "zones_upload_q12.parquet")
 
     # QC
     rows = []
