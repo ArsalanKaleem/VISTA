@@ -131,7 +131,7 @@ def atlas(reg: gpd.GeoDataFrame) -> int:
     res = gpd.read_parquet(ZV1 / "zones_resource.parquet").set_index("vid").to_crs(CRS)
     conn = gpd.read_parquet(ZV1 / "zones_connectivity.parquet").set_index("vid").to_crs(CRS) \
         if (ZV1 / "zones_connectivity.parquet").exists() else None
-    fp = gpd.read_parquet(VI / "raw/footprints.parquet", columns=["lon", "lat", "geometry"])
+    fp = pd.read_parquet(VI / "raw/footprints.parquet", columns=["lon", "lat"])
     roads = gpd.read_file(ROOT / "data/raw/osm/geofabrik_pakistan_260712_shp/gis_osm_roads_free_1.shp",
                           bbox=(66.4, 23.6, 71.2, 28.6), columns=["fclass"]).to_crs(CRS)
     water = gpd.read_file(ROOT / "data/raw/osm/geofabrik_pakistan_260712_shp/gis_osm_waterways_free_1.shp",
@@ -152,6 +152,15 @@ def atlas(reg: gpd.GeoDataFrame) -> int:
                 picks.append(sub.iloc[rng.integers(len(sub))])
     MAPS.mkdir(parents=True, exist_ok=True)
     regm = reg.set_index("vid").to_crs(CRS)
+    # buildings: keep only those inside the 20 sheet windows, reprojected once (13 M points otherwise)
+    wins = [res.loc[h.vid].geometry.buffer(300).bounds for h in picks[:20]]
+    keep = np.zeros(len(fp), bool)
+    from pyproj import Transformer
+    bx, by = Transformer.from_crs(4326, CRS, always_xy=True).transform(fp.lon.values, fp.lat.values)
+    for (x0, y0, x1, y1) in wins:
+        keep |= (bx >= x0) & (bx <= x1) & (by >= y0) & (by <= y1)
+    fpu = gpd.GeoDataFrame(geometry=gpd.points_from_xy(bx[keep], by[keep]), crs=CRS)
+    del fp, bx, by
     with PdfPages(MAPS / "atlas_v0.1.pdf") as pdf:
         for h in picks[:20]:
             vid = h.vid
@@ -163,7 +172,7 @@ def atlas(reg: gpd.GeoDataFrame) -> int:
             box = gpd.GeoSeries([__import__("shapely").box(*win)], crs=CRS)
             rd = roads[roads.intersects(box.iloc[0])]
             wt = water[water.intersects(box.iloc[0])]
-            bl = fp.cx[win[0]:win[2], win[1]:win[3]] if False else fp.to_crs(CRS).cx[win[0]:win[2], win[1]:win[3]]
+            bl = fpu.cx[win[0]:win[2], win[1]:win[3]]
             gpd.GeoSeries([rz], crs=CRS).plot(ax=ax, facecolor="#fde0a6", edgecolor="#e08214", alpha=.5, linewidth=1)
             if conn is not None and vid in conn.index and not conn.loc[vid].geometry.is_empty:
                 gpd.GeoSeries([conn.loc[vid].geometry], crs=CRS).plot(ax=ax, facecolor="#b2abd2", edgecolor="#5e3c99", alpha=.6)
