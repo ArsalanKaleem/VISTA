@@ -93,7 +93,8 @@ src/{preprocessing,village_mapping,feature_engineering,temporal_analysis,
 scripts/            download_data.py, prepare_admin.py, make_zones.py, gee_to_long.py, drive_fetch.py,
                     parse_pbs_mouza.py, admin_crosswalk.py, admin_history.py, settlement_sources.py,
                     build_settlements.py, attach_names.py, flag_urban.py, parse_deh_list.py,
-                    assign_deh.py, build_registry.py, dedupe_inventory.py, quality_classes.py
+                    assign_deh.py, build_registry.py, dedupe_inventory.py, quality_classes.py,
+                    build_zones_v1.py, coverage_report.py, freeze_inventory.py, climate_series.py
 experiments/        gee_task_manifest.csv, run registry
 outputs/{maps,figures,tables,predictions}/
 documentation/      day_tracker.csv, DECISIONS.csv, LOG.md, charter.md, compute.md, data/model cards
@@ -129,6 +130,9 @@ manuscript/  notebooks/  tests/
 | 17 | `scripts/parse_deh_list.py` (Board of Revenue deh list), `scripts/assign_deh.py` (proxy dehs) |
 | 18 | `scripts/build_registry.py`, `src/village_mapping/ids.py`, `tests/test_ids.py`, `tests/test_registry.py` |
 | 19-20 | `scripts/dedupe_inventory.py`, `scripts/quality_classes.py` (run after `build_registry.py`) |
+| 23 | `scripts/build_zones_v1.py` -> `zones/v1/` (core, resource, connectivity, knn8 graph) |
+| 24 | `scripts/coverage_report.py` -> coverage tables, `outputs/maps/interactive_map.html`, atlas |
+| 25 | `scripts/freeze_inventory.py` -> `village_inventory_v1.0/`, tag v0.2.0; `documentation/decision_memo_inventory.md` |
 | 23 | `src/village_mapping/zones.py`, `scripts/make_zones.py` |
 | 26 | `gee/lib/zonal.py`, `gee/lib/manifest.py`, `upload-zones`, wave 2 |
 | 27-29 | `gee/lib/optical.py` (S2, Cloud Score+), `s2_zonal` |
@@ -136,7 +140,7 @@ manuscript/  notebooks/  tests/
 | 32 | `gee/lib/radar.py`, `s1_zonal` |
 | 33 | `gee/lib/landcover.py`, `dw_zonal` |
 | 34 | `gee/lib/coarse.py`, `modis_*_zonal` |
-| 35-36 | `chirps_grid`/`chirps_zonal`, `era5_grid`/`era5_zonal` (SPI/SPEI are computed locally) |
+| 35-36 | `chirps_grid`/`era5_grid` then `scripts/climate_series.py` (cell series, zone weights, SPI/SPEI) and `src/preprocessing/climate.py`; `chirps_zonal`/`era5_zonal` only for cross-checks |
 | 37 | `jrc_zonal`, `jrc_static_zonal` |
 | 38-39 | `terrain_zonal`, `context_zonal` |
 | 40 | `scripts/gee_to_long.py` -> env_store_v0.9 |
