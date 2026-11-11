@@ -22,6 +22,21 @@ Whole pilot wave: 157 EECU-hours of batch compute in 83 wall-clock hours. At mos
 time** (noncommercial batch queue), so throughput is about **1.9 EECU-hours per wall hour**. Everything
 below converts EECU-hours to days with that rate. Local disk: 12 GB free (2026-11-11).
 
+## The quota (found 2026-11-11)
+
+On submitting the v1.0 zone upload the API warned: *project has exceeded its noncommercial compute quota and is
+now in restricted mode*. Earth Engine's noncommercial tiers (developers.google.com/earth-engine/guides/
+noncommercial_tiers) give a **Community tier of 150 EECU-hours per calendar month** (reset on the 1st, midnight
+PT, no carry-over), a **Contributor tier of 1,000 EECU-hours per month** (needs a billing account attached;
+noncommercial use is not charged) and a **Partner tier of 100,000 EECU-hours** (application, review of up to
+several weeks). The pilot wave used 157 EECU-hours: it consumed the whole November allowance, which is why
+tasks ran one at a time ("restricted mode limits your online and batch concurrency"). Tasks still run in
+restricted mode, only slowly.
+
+Consequence: the plan below is a budget against **1,000 EECU-hours per month at best without a Partner
+application**. Wave 3A (about 70 EECU-hours) fits any tier; wave 3B (about 1,575) needs the Contributor tier
+for two months or the Partner tier; wave 3C (about 700) likewise. See D012.
+
 ## Province (Q1-Q2 rural hamlets: 103,659, core + resource zones = 12.6 x pilot)
 
 | product, period | EECU-hours | wall days at 1.9/h | verdict |
@@ -57,6 +72,14 @@ province-wide SAR flood series. Flood exposure province-wide comes from JRC mont
 MODIS-scale inundation signals and the seasonal S2 water fraction; the S1 flood product is a pilot-only
 layer unless the quota changes. The ablation of Milestone 3 ("proceed without a product and register the
 loss") applies to S1.
+
+## Decision D012: quota actions (user actions, proposed)
+
+1. Attach a billing account to project vista-sindh and select the Contributor tier (free for noncommercial
+   use; +850 EECU-hours per month, applied immediately).
+2. Apply for the Partner tier with the budget above (draft text: documentation/ee_partner_tier_request.md).
+3. Until then: submit wave 3A as soon as the zones are uploaded (it runs in restricted mode and completes
+   within the December allowance); hold 3B and 3C; CHIRPS/ERA5/SMOD stay local.
 
 ## Checks to keep
 
