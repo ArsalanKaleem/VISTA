@@ -1,0 +1,5 @@
+zone,n,empty,invalid,area_km2_min,area_km2_p10,area_km2_median,area_km2_p90,area_km2_max,area_km2_total
+core,155731,0.0,0.0,0.0784,0.094,0.136,0.303,6.88,28075.8
+resource,155731,722.0,0.0,0.0,0.035,0.213,1.148,31.04,85311.7
+resource_vs_any_core_overlap_pairs_in_20k_sample,0,,,,,,,,
+q12_resource_empty,1065,,,,,,,,
