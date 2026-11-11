@@ -261,7 +261,7 @@ def main() -> int:
     pev = long[long["var"] == "pev"].set_index("cell_id")[months_e].values.astype("float64")
     pev_med = float(np.nanmedian(pev))
     sign = -1.0 if pev_med < 0 else 1.0
-    checks.append({"check": "era5_pev_median", "value": round(pev_med, 5), "note": f"PET = {'-' if sign < 0 else '+'}pev x 1000 mm (ERA5-Land flux sign)"})
+    checks.append({"check": "era5_pev_median", "value": round(pev_med, 5), "note": f"PET = {'-' if sign < 0 else '+'}pev (grid already in positive mm)"})
     tp_med = float(np.nanmedian(tp))
     unit = 1000.0 if np.nanmax(tp) < 5 else 1.0  # metres -> mm unless already mm (dry months make the median small)
     checks.append({"check": "era5_tp_median", "value": round(tp_med, 5), "note": f"x{unit:.0f} to mm"})

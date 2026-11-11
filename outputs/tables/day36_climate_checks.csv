@@ -1,0 +1,23 @@
+check,value,note
+chirps_zones_with_weights,310740.0,"of 310,740; median cells per zone 1"
+era5_zones_with_weights,310740.0,"of 310,740; median cells per zone 1"
+chirps_cells_with_data,9051.0,of 9600
+zero_rain_month_share_baseline,0.4915,handled with a zero-mass term p0 per cell and calendar month
+spi1_baseline_mean,0.04,expect about 0
+spi1_baseline_sd,0.828,expect about 1
+spi3_baseline_mean,0.022,expect about 0
+spi3_baseline_sd,0.945,expect about 1
+spi6_baseline_mean,0.004,expect about 0
+spi6_baseline_sd,0.989,expect about 1
+spi12_baseline_mean,0.001,expect about 0
+spi12_baseline_sd,1.0,expect about 1
+era5_pev_median,219.47253,PET = +pev (grid already in positive mm)
+era5_tp_median,2.37381,x1 to mm
+spei1_baseline_mean,-0.0,expect about 0
+spei1_baseline_sd,0.968,expect about 1
+spei3_baseline_mean,-0.0,expect about 0
+spei3_baseline_sd,0.968,expect about 1
+spei6_baseline_mean,-0.0,expect about 0
+spei6_baseline_sd,0.967,expect about 1
+spei12_baseline_mean,-0.0,expect about 0
+spei12_baseline_sd,0.967,expect about 1
